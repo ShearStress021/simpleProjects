@@ -40,7 +40,23 @@ class Contact{
 
 };
 
-void addContact( vector<Contact> contactList ) ;
+class ContactList {
+	private:
+		vector<Contact> contactList;
 
+	public:
+		ContactList();
+		ContactList(vector<Contact> cl);
+		
+		const vector<Contact>& getContactList() const ;
+
+
+};
+
+void addContact(vector<Contact>& contactList,const string& filename);
+void listContacts(vector<Contact>& contactList , const string& filename);
+void saveToFile(string& input,const string& filename);
+void clearScreen(void);
+void pause();
 
 #endif
