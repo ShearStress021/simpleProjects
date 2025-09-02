@@ -31,18 +31,9 @@ int Contact::getIc() const {return incomingCalls;}
 int Contact::getOc() const {return outgoingCalls;}
 
 
-ContactList::ContactList(){}
-ContactList::ContactList(vector<Contact> cl)
-
-			:contactList(cl){}
-
-const vector<Contact>& ContactList::getContactList() const { return contactList; }
-
-
-
 int main(){
 	int num;
-	ContactList contactList;
+	vector<Contact> contactList;
 	bool quit = false;
 
 	while(!quit){
@@ -115,20 +106,13 @@ int main(){
 		}
 	}
 		
-	
-	
-	
 	return 0;
 }
 
 
-void addContact(ContactList* contactList,const string& filename){
+void addContact(vector<Contact>& contactList,const string& filename){
 	int id, ic, oc;
 	string fn, ln, pNum;
-	
-
-
-
 
 	std::random_device rd;  
     std::mt19937 gen(rd());
@@ -153,10 +137,16 @@ void addContact(ContactList* contactList,const string& filename){
 	Contact newContact(id, fn,ln,pNum,ic,oc);
 	contactList.push_back(newContact);
 	string fullname = fn + " " + ln;
-	string contactLine = to_string(id) + "|" + fullname + "|" + pNum + "|" +
-                     to_string(ic) + "|" + to_string(oc); 
+	string contactLine = to_string(id) + " " + fullname + " " + pNum + " " +
+                     to_string(ic) + " " + to_string(oc); 
 
-	saveToFile(contactLine, filename);
+	if(fileExists(filename)){
+		appendToFile(contactLine, filename);
+		
+	}else {
+
+		saveToFile(contactLine, filename);
+	}
 
 
 }
@@ -166,36 +156,50 @@ void listContacts(vector<Contact>& contactList, const string& filename){
 	string name, pNum;
 	int id, ic, oc;
 	
+	cout << "\n\t----------------------------------------------------------------------------\n";
+
+	cout << "\t| "
+		  << left << setw(4) << "ID"<< " | "
+		  << left << setw(20) << "NAME" << " | "
+		  << left << setw(15) << "PHONE" << " | "
+		  << left << setw(10) << "INCOMING" << " | "
+		  << left << setw(10) << "OUTGOING" << " |\n";	
+	cout << "\n\t----------------------------------------------------------------------------\n";
+
 	while(fin >> id){
-		cout << "\n\t--------------------------------------------\n";
 
+		fin >>  name >> pNum >> ic >> oc;
+		
+		
 		cout << "\t| "
-              << left << setw(4) << "ID"<< " | "
-              << left << setw(20) << "NAME" << " | "
-              << left << setw(15) << "PHONE" << " | "
-              << left << setw(10) << "INCOMING" << " | "
-              << left << setw(10) << "OUTGOING" << " |\n";	
+              << left << setw(4) << id << " | "
+              << left << setw(20) << name << " | "
+              << left << setw(15) << pNum << " | "
+              << left << setw(10) << ic << " | "
+              << left << setw(10) << oc << " \n";	
 
-		cout << "\t--------------------------------------------\n";
 
-		
-		fin  >> "\t| "
-              >> left >> setw(4) >> id >> " | "
-              >> left >> setw(20) >> name >>" | "
-              >> left >> setw(15) >> pNum >> " | "
-              >> left << setw(10) >> ic >> " | "
-              >> left << setw(10) >> oc >> " |\n";	
-		
 		
 
 	}
 }
 
 
-void addInternalContact(ContactList* list, Contact contact){
+void addInternalContact(vector<Contact> contactlist, Contact contact){
+
 
 }
+void appendToFile(string& input , const string& filename){
+	ofstream myFile(filename, ios::app);
+	if (myFile.is_open()){
+		myFile << input;
+		myFile.close();
+	}else {
+		cout << "Error in file Opening";
+	}
+}
 void saveToFile(string& input , const string& filename){
+
 	ofstream myFile(filename);
 
 	if (myFile.is_open()){
@@ -204,6 +208,11 @@ void saveToFile(string& input , const string& filename){
 	}else {
 		cout << "Error in file Opening";
 	}
+}
+
+bool fileExists(const string& filename){
+	ifstream file(filename);
+	return file.is_open();
 }
 
 void pause(){

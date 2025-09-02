@@ -42,21 +42,23 @@ class Contact{
 
 class ContactList {
 	private:
-		vector<Contact> contactList;
+	Contact* contact;
 
 	public:
 		ContactList();
-		ContactList(vector<Contact> cl);
+		ContactList(Contact* cl);
 		
-		const vector<Contact>& getContactList() const ;
+		const Contact  getContactList() const ;
 
 
 };
 
 void addContact(vector<Contact>& contactList,const string& filename);
 void listContacts(vector<Contact>& contactList , const string& filename);
-void saveToFile(string& input,const string& filename);
+void saveToFile(string& input,const string& filename );
+void appendToFile(string& input,const string& filename );
 void clearScreen(void);
+bool fileExists(const string& filename);
 void pause();
 
 #endif
