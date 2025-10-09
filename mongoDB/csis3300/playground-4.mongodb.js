@@ -15,9 +15,5 @@ db.users.aggregate(
     {$match: {"address.province": {$exists: true}}},
     {$match: {"address.city": {$exists: true}}},
     {$group: {_id: {"province": "$address.province", "city": "$address.city"}}},
-    {$sort: {"_id.province": 1, "_id.city": 1}}
-    
-
-
-   
+    {$sort: {"_id.province": 1, "_id.city": 1}} 
 )
