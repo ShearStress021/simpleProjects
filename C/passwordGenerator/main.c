@@ -1,7 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+const char *random_state = "/dev/random";
+
 void generate_password(char *memory , int length){
+	FILE *file = fopen(random_state, "r");
+	
+	int c = fgetc(file);
+
+	if (c == EOF){
+		printf("%s file could not be read", random_state);
+
+		exit(-1);
+	}
+
+	int r;
+	for (int i =0; i < length; i ++){
+		int r = fgetc(file);
+		r = (r % (126 - 33)) + 33;
+		*(memory + i) = r;
+	}
+
+	
 	 
 }
 int main(int argc, const char* argv[]){

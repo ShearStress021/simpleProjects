@@ -1,4 +1,4 @@
-target="#1"
+target="$1"
 OS_NAME :=  $(shell uname -s)
 
 
@@ -12,7 +12,7 @@ res: main.c
 	gcc $< -o $@
 
 run: res
-	./res $(target) 
+	./res ${target} 
 
 clean:
-	$(RM) res.exe
+	$(RM) res*
