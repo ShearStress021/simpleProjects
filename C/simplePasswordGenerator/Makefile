@@ -1,13 +1,13 @@
-main = main.c
+
+target="$1"
 
 
-res:$(main)
+res: main.c
 	gcc $< -o $@
 
 
 run: res
-	./res 
-
+	./res ${target}
 
 clean:
-	del res*
+	rm -rf res*
