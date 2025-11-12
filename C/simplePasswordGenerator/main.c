@@ -60,19 +60,12 @@ void generate_password(char * memory, int length){
 	strcat(alphabets,numbers);
 	strcat(alphabets, symbols);
 	
-
 	int n = strlen(alphabets);
-	
-
-
-	
 	for(int i = 0; i < length; i++){
 		int r = generate_random(0, n);
 		*(memory + i) = alphabets[r];
 		
 	}
-
-	
 
 	free(alphabets);
 	
