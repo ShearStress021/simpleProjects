@@ -15,7 +15,12 @@ matplotlib = "^3.10.7"
 seaborn = "^0.13.2"
 scikit-learn = "^1.7.2"
 imblearn = "^0.0"
+<<<<<<< HEAD
+keras = "^3.12.0"
+tensorflow = "^2.20.0"
+=======
 nltk = "^3.9.2"
+>>>>>>> origin/master
 
 
 [build-system]
