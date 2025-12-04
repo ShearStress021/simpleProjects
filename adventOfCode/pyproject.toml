@@ -1,5 +1,9 @@
 [tool.poetry]
+<<<<<<< HEAD
 name = "env"
+=======
+name = "en"
+>>>>>>> origin/master
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
