@@ -7,6 +7,17 @@ ROOT = Path().absolute()
 FILENAME = "data/d2.txt"
 path = ROOT / FILENAME
 
+
+def partOne(x):  
+    s = str(x)
+    return len(s) % 2 == 0 and s[: len(s)//2] == s[len(s)//2: ]
+
+
+def partTwo(x):
+    s = str(x)
+
+
+
 def part1():
     lines = read_file()
     
@@ -43,6 +54,9 @@ def part2() -> int:
                 break
 
     return total
+
+
+
 def read_file():
 
     with open(path, 'r') as f:
@@ -51,7 +65,21 @@ def read_file():
 
 
 
+def main():
+    p1 = 0
+    p2 = 0
+
+    lines = read_file()
+    ranges = [list(map(int, n.strip().split("-"))) for n in lines.split(",")]
+    for nums in ranges:
+        for num in range(nums[0], nums[-1] + 1):
+            if partOne(num):
+                p1 += num
+
+     
+    
+    return p1   
 
 print(part1())
 print(part2())
-
+print(main())
