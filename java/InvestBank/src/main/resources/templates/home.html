@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+    >
+<head>
+    <meta charset="UTF-8">
+    <title>Investor web</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- HEAD (CSS), if you will use CDN you can now remove the webjars -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- END OF BODY (JS) -->
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        section {
+            margin-top: 120px;
+            width: 80%;
+            border: 1px solid rgba(0,0,0,0.6);
+            padding: 20px 30px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Customer List Section -->
+<section>
+    <h1 class="text-center mb-3">Saving Investment Record</h1>
+        <h1 th:text="${total}"></h1>
+
+        <h1>Regular
+        <span th:text="${regular}"></span></h1>
+        <h1>
+            Deluxe <span th:text="${deluxe}"></span>
+        </h1>
+
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+
+                <th>Customer number</th>
+                <th>Customer Name</th>
+                <th>Customer Deposit</th>
+                <th>Number of Years</th>
+                <th>Saving Type</th>
+                <th class="text-end">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="c : ${investors}">
+
+                <td th:text="${c.code}"></td>
+                <td th:text="${c.name}"></td>
+                <td th:text="${c.initialDeposit}"></td>
+                <td th:text="${c.years}"></td>
+                <td th:text="${c.saveType}"></td>
+                <td class="text-end">
+
+                    <a class="btn btn-sm btn-outline-primary" th:href="@{/edit/{id}(id=${c.id})}">Edit</a>
+                    <form th:action="@{/{id}/delete(id=${c.id})}" method="post" class="d-inline" onsubmit="return confirm('Delete this record?')">
+                        <button class="btn btn-sm btn-outline-danger" type="submit">Delete</button>
+                    </form>
+                    <a class="btn btn-sm btn-outline-info" th:href="@{/projections/{id}(id=${c.id})}">Projected Investment</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-success" th:href="@{/add}">Add</a>
+
+
+</section>
+<script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
