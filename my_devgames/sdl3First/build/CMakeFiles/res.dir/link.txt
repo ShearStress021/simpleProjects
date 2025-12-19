@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/res.dir/link.d CMakeFiles/res.dir/main.cpp.o -o res  -lSDL3

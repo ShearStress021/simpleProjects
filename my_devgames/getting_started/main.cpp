@@ -72,8 +72,12 @@ int main(){;
 							(u_r_y <= b_circle_y) && 
 							(r_r_x >= l_circle_x) &&
 							(l_r_x <= r_circle_x);
+			
+			
 
+		
 
+		
 
 
 

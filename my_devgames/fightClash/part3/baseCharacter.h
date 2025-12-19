@@ -3,6 +3,7 @@
 
 
 #include "raylib.h"
+#include "raymath.h"
 
 
 
@@ -14,6 +15,10 @@ class BaseCharacter{
 		void undoMovement();
 		virtual void tick(float deltaTime);
 		Rectangle getCollisionRec();
+		virtual Vector2 getCharacterPosition() = 0;
+
+		bool getAlive() {return alive;}
+		void setAlive(bool isAlive) {alive = isAlive;}
 		~BaseCharacter();
 	protected:
 		Texture2D texture{LoadTexture("../characters/goblin_idle_spritesheet.png")};
@@ -31,9 +36,10 @@ class BaseCharacter{
 		float width{};
 		float height{};
 		float scale{4.0f};
-		
 
-
+		Vector2 velocity{};
+	private:
+		bool alive{true};
 
 };
 

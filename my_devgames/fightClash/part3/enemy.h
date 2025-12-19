@@ -11,11 +11,15 @@ class Enemy : public BaseCharacter{
 		void setTarget(Character* character){
 			target = character;
 		}
+
+		virtual Vector2 getCharacterPosition() override;
 		~Enemy();
 		 
 
 	private:
 		Character* target;
+		float damagePerSec{10.f};
+		float radius{25.f};
 
 
 };

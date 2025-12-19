@@ -6,6 +6,8 @@
 #include <iostream>
 #include <ostream>
 #include <string_view>
+#include <string>
+using namespace std;
 
 int main(){
 	const int windowHeight{384};
@@ -33,11 +35,25 @@ int main(){
 	};
 
 
-	Enemy goblin{Vector2{},
+
+
+
+	Enemy goblin{Vector2{333.f, 500.f},
 			LoadTexture("../characters/goblin_idle_spritesheet.png"),
 			LoadTexture("../characters/goblin_run_spritesheet.png")};
+	Enemy slime{Vector2{800.f, 800.f},
+			LoadTexture("../characters/slime_idle_spritesheet.png"),
+			LoadTexture("../characters/sli_run_spritesheet.png")};
 
-	goblin.setTarget(&knight);
+
+	Enemy * enemies[]{
+		&goblin,
+		&slime
+	};
+
+	for (auto& enemy: enemies){
+		enemy->setTarget(&knight);
+	}
 
 
 	SetTargetFPS(60); while(!WindowShouldClose()){ BeginDrawing(); ClearBackground(WHITE);
@@ -57,9 +73,20 @@ int main(){
 			
 
 		}
+		if (!knight.getAlive()){
+			DrawText("Game Over", 55.f, 45.f, 40, RED);
+			EndDrawing();
+			continue;
+
+		}
+		else {
+			string damageStr = "Health: ";
+			damageStr.append(to_string(knight.getHealth()),0,5);
+			DrawText(damageStr.c_str(), 55.f, 45.f, 40, GREEN);
+
+		}
 		
 		knight.tick(GetFrameTime());
-
 
 		// Check map undo
 		if (knight.getWorldPosition().x < 0.f ||
@@ -77,7 +104,22 @@ int main(){
 			}
 		}
 
-		goblin.tick(GetFrameTime());
+		for (auto & enemy: enemies){
+			
+			enemy->tick(GetFrameTime());
+
+		}
+
+
+		if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+			for(auto & enemy: enemies){
+				if (CheckCollisionRecs(enemy->getCollisionRec(), knight.getWeaponCollionRec())){
+					enemy->setAlive(false);
+			}
+
+
+			}
+		}
 		
 		EndDrawing();
 	}
