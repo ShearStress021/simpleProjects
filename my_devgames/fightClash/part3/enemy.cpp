@@ -18,20 +18,29 @@ Enemy::Enemy(Vector2 pos, Texture2D idle_texture, Texture2D run_texture)
 
 void Enemy::tick(float deltaTime ){
 	// Get To Target Vector
-	 Vector2 toTarget = Vector2Subtract(target->getCharacterPosition(), characterPosition);
 	
 	// Normalize To Target
-	toTarget = Vector2Normalize(toTarget);
 	// Multiply toTarget by speed
-	toTarget = Vector2Scale(toTarget, speed);
 	//
+	if (!getAlive()) return;
 	// Move the Enemy
-	worldPosition = Vector2Add(worldPosition, toTarget);
+	velocity = Vector2Subtract(target->getCharacterPosition(), getCharacterPosition());
+	if (Vector2Length(velocity) < radius) velocity = {};
+	
 	characterPosition = Vector2Subtract(worldPosition, target->getWorldPosition());
 	
 	BaseCharacter::tick(deltaTime);
 
 
+	if (CheckCollisionRecs(target->getCollisionRec(), getCollisionRec())){
+		target->takeDamage(damagePerSec* deltaTime);
+	}
+
+
+}
+
+Vector2 Enemy::getCharacterPosition(){
+	return Vector2Subtract(worldPosition, target->getWorldPosition());
 }
 
 Enemy::~Enemy(){}

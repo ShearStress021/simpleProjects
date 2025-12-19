@@ -1,6 +1,7 @@
 #include "baseCharacter.h"
 
 
+
 BaseCharacter::BaseCharacter(){
 
 }
@@ -13,8 +14,8 @@ Vector2 BaseCharacter::getWorldPosition(){
 
 Rectangle BaseCharacter::getCollisionRec(){
 	return {
-		characterPosition.x,
-		characterPosition.y,
+		getCharacterPosition().x,
+		getCharacterPosition().y,
 		width * scale,
 		height * scale
 	};
@@ -32,9 +33,19 @@ void BaseCharacter::tick(float deltaTime) {
 		runningTime = 0.f;
 		if (frame > maxFrames) frame = 0;
 	}
+	if (Vector2Length(velocity) != 0.0){
+		worldPosition = Vector2Add(worldPosition, 
+			Vector2Scale(Vector2Normalize(velocity),speed));
+		velocity.x < 0.f ? rightLeft = -1.f : rightLeft = 1.f;
+		texture = run;
+	}else{
+		texture = idle;
+	}
+
+	velocity = {};
 	Rectangle source{frame * width, 0.f, rightLeft * width , height};
-	Rectangle destination{characterPosition.x, 
-		characterPosition.y,scale * width,scale * height};
+	Rectangle destination{getCharacterPosition().x, 
+		getCharacterPosition().y,scale * width,scale * height};
 	DrawTexturePro(texture, source,destination,Vector2{},0.f,WHITE);
 
 }

@@ -77,10 +77,7 @@ int main(){
 
 		Rectangle source{frame*(float)knight.width/6.0f,0.f,rightLeft * (float)knight.width/6.f , (float)knight.height};
 		Rectangle destination{knightPosition.x, knightPosition.y,4.f * knight.width/6.f,4.f * (float)knight.height};
-
 		DrawTexturePro(knight, source,destination,Vector2{},0.f,WHITE);
-
-
 		EndDrawing();
 
 	}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/res.dir/link.d CMakeFiles/res.dir/main.cpp.o CMakeFiles/res.dir/character.cpp.o CMakeFiles/res.dir/prop.cpp.o CMakeFiles/res.dir/enemy.cpp.o CMakeFiles/res.dir/baseCharacter.cpp.o -o res  /usr/local/lib/libraylib.a -lm

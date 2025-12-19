@@ -1,0 +1,20 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/res.dir/link.d"
+  "CMakeFiles/res.dir/baseCharacter.cpp.o"
+  "CMakeFiles/res.dir/baseCharacter.cpp.o.d"
+  "CMakeFiles/res.dir/character.cpp.o"
+  "CMakeFiles/res.dir/character.cpp.o.d"
+  "CMakeFiles/res.dir/enemy.cpp.o"
+  "CMakeFiles/res.dir/enemy.cpp.o.d"
+  "CMakeFiles/res.dir/main.cpp.o"
+  "CMakeFiles/res.dir/main.cpp.o.d"
+  "CMakeFiles/res.dir/prop.cpp.o"
+  "CMakeFiles/res.dir/prop.cpp.o.d"
+  "res"
+  "res.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/res.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
