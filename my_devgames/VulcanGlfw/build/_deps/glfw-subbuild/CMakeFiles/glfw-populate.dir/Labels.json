@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/173797f13d8fc1b2ef4c6e724fcf3554/glfw-populate.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/5c660fb59ceb59e35b22456c84e7cf95/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-build.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-download.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-install.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-test.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

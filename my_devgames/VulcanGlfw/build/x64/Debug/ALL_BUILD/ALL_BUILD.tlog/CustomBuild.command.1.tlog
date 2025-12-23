@@ -1,0 +1,10 @@
+^E:\PROJECTS\SIMPLEPROJECTS\MY_DEVGAMES\VULCANGLFW\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/projects/simpleProjects/my_devgames/VulcanGlfw -BE:/projects/simpleProjects/my_devgames/VulcanGlfw/build --check-stamp-file E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

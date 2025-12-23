@@ -1,0 +1,10 @@
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/CMakeFiles/res.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/CMakeFiles/INSTALL.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/CMakeFiles/ALL_BUILD.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/CMakeFiles/ZERO_CHECK.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/CMakeFiles/uninstall.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/CMakeFiles/INSTALL.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-build/src/CMakeFiles/INSTALL.dir

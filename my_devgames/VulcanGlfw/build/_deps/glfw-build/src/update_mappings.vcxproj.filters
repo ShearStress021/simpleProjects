@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\projects\simpleProjects\my_devgames\VulcanGlfw\build\CMakeFiles\2a89a6cb46de8f776e3ca6511c6b1a32\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\my_devgames\VulcanGlfw\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\projects\simpleProjects\my_devgames\VulcanGlfw\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="E:\projects\simpleProjects\my_devgames\VulcanGlfw\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="E:\projects\simpleProjects\my_devgames\VulcanGlfw\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2CF15F54-F941-3146-BC25-7013C370283B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7115A433-9561-3583-9DCC-612F609BACFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

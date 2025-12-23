@@ -1,0 +1,10 @@
+^E:\PROJECTS\SIMPLEPROJECTS\MY_DEVGAMES\VULCANGLFW\BUILD\CMAKEFILES\76E9B38272279DC4E7829D6CBABA03E4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/projects/simpleProjects/my_devgames/VulcanGlfw -BE:/projects/simpleProjects/my_devgames/VulcanGlfw/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/VulkanApp.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

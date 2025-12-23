@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/173797f13d8fc1b2ef4c6e724fcf3554/glfw-populate.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/5c660fb59ceb59e35b22456c84e7cf95/glfw-populate-complete.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-build.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-configure.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-download.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-install.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-mkdir.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-patch.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-test.rule
+E:/projects/simpleProjects/my_devgames/VulcanGlfw/build/_deps/glfw-subbuild/CMakeFiles/db08bbb5b2d1f19ed1018b1aee0ec885/glfw-populate-update.rule
