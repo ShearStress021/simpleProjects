@@ -1,0 +1,3 @@
+/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles/res.dir
+/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles/edit_cache.dir
+/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles/rebuild_cache.dir

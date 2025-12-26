@@ -1,5 +1,5 @@
 CMakeFiles/res.dir/main.cpp.o: \
- /home/kanja/projects/simpleProjects/my_devgames/sdl3First/main.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/mySdlGame/main.cpp \
  /usr/include/stdc-predef.h /usr/local/include/SDL3/SDL.h \
  /usr/local/include/SDL3/SDL_stdinc.h \
  /usr/local/include/SDL3/SDL_platform_defines.h \

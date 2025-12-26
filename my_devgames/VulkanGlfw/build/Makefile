@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/sdl3First
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ res/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/build
 .PHONY : res/fast
 
+first_app.o: first_app.cpp.o
+.PHONY : first_app.o
+
+# target to build an object file
+first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.o
+.PHONY : first_app.cpp.o
+
+first_app.i: first_app.cpp.i
+.PHONY : first_app.i
+
+# target to preprocess a source file
+first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.i
+.PHONY : first_app.cpp.i
+
+first_app.s: first_app.cpp.s
+.PHONY : first_app.s
+
+# target to generate assembly for a file
+first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.s
+.PHONY : first_app.cpp.s
+
+lve_window.o: lve_window.cpp.o
+.PHONY : lve_window.o
+
+# target to build an object file
+lve_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.o
+.PHONY : lve_window.cpp.o
+
+lve_window.i: lve_window.cpp.i
+.PHONY : lve_window.i
+
+# target to preprocess a source file
+lve_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.i
+.PHONY : lve_window.cpp.i
+
+lve_window.s: lve_window.cpp.s
+.PHONY : lve_window.s
+
+# target to generate assembly for a file
+lve_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.s
+.PHONY : lve_window.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... res"
+	@echo "... first_app.o"
+	@echo "... first_app.i"
+	@echo "... first_app.s"
+	@echo "... lve_window.o"
+	@echo "... lve_window.i"
+	@echo "... lve_window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

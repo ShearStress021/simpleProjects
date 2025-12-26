@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanja/projects/simpleProjects/my_devgames/sdl3First/main.cpp" "CMakeFiles/res.dir/main.cpp.o" "gcc" "CMakeFiles/res.dir/main.cpp.o.d"
+  "/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/first_app.cpp" "CMakeFiles/res.dir/first_app.cpp.o" "gcc" "CMakeFiles/res.dir/first_app.cpp.o.d"
+  "/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp" "CMakeFiles/res.dir/lve_window.cpp.o" "gcc" "CMakeFiles/res.dir/lve_window.cpp.o.d"
+  "/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/main.cpp" "CMakeFiles/res.dir/main.cpp.o" "gcc" "CMakeFiles/res.dir/main.cpp.o.d"
   "" "res" "gcc" "CMakeFiles/res.dir/link.d"
   )
 

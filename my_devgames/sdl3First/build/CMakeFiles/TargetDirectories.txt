@@ -1,3 +1,0 @@
-/home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles/res.dir
-/home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles/edit_cache.dir
-/home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles/rebuild_cache.dir

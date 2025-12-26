@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/sdl3First
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/res.dir/clean
 CMakeFiles/res.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles --progress-num=1,2 "Built target res"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=1,2,3,4 "Built target res"
 .PHONY : CMakeFiles/res.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/res.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/res.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles 0
 .PHONY : CMakeFiles/res.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ res: CMakeFiles/res.dir/rule
 # codegen rule for target.
 CMakeFiles/res.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/sdl3First/build/CMakeFiles --progress-num=1,2 "Finished codegen for target res"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target res"
 .PHONY : CMakeFiles/res.dir/codegen
 
 # clean rule for target.
