@@ -4,6 +4,7 @@ res: \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/res.dir/main.cpp.o \
   /usr/local/lib/libSDL3.so \
+  /usr/local/lib/libSDL3_image.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -42,6 +43,8 @@ res: \
 CMakeFiles/res.dir/main.cpp.o:
 
 /usr/local/lib/libSDL3.so:
+
+/usr/local/lib/libSDL3_image.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so:
 

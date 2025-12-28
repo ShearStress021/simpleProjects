@@ -5,6 +5,9 @@ project(MySDL VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(SDL3 REQUIRED)
+find_package(SDL3_image REQUIRED)
+
 # 1. Find the Raylib package
 # This works because you installed it to /usr/local
 #find_package(raylib 5.0 REQUIRED)
@@ -17,7 +20,9 @@ add_executable(res
 
 # 3. Link libraries
 # This automatically handles include paths and linking
-target_link_libraries(res PRIVATE SDL3)
+target_link_libraries(res PRIVATE 
+    SDL3
+    SDL3_image)
 
 # 4. Optional: Add standard Linux system libraries if needed
 # Raylib usually handles these via find_package, but if you get 
