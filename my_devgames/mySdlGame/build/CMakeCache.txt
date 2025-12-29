@@ -219,6 +219,9 @@ SDL3_DIR:PATH=/usr/local/lib/cmake/SDL3
 //The directory containing a CMake configuration file for SDL3_image.
 SDL3_image_DIR:PATH=/usr/local/lib/cmake/SDL3_image
 
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=/usr/share/cmake/glm
+
 
 ########################
 # INTERNAL cache entries

@@ -6,6 +6,7 @@
 #include <vector>
 #include "animation.h"
 #include "string"
+#include <glm/glm.hpp>
 
 struct SDLState {
     SDL_Window *window;
