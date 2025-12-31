@@ -1,27 +1,48 @@
-
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include <SDL3/SDL_render.h>
+#include <SDL3/SDL_scancode.h>
 #include <SDL3_image/SDL_image.h>
 #include <vector>
-#include "animation.h"
+#include "gameobject.h"
 #include "string"
 #include <glm/glm.hpp>
+#include <array>
+
+
 
 struct SDLState {
-    SDL_Window *window;
-    SDL_Renderer *renderer;
-
+    SDL_Window *window{};
+    SDL_Renderer *renderer{};
     int width, height, logW, logH;
+    const bool *keys{};
+
+    SDLState(): keys(SDL_GetKeyboardState(nullptr))
+    {
+
+    }
 };
 
+const size_t LAYER_IDX_LEVEL{0};
+const size_t LAYER_IDX_CHARACTERS{1};
+
+struct GameState {
+    std::array<std::vector<GameObject>, 2> layers{};
+    int playerIndex{};
+
+
+    GameState() {
+        playerIndex = 0;
+        
+    }
+
+};
 
 struct Resources {
     const int ANIM_PLAYER_IDLE{0};
-    std::vector<Animation> playerAnims;
-    SDL_Texture * textIdle;
+    std::vector<Animation> playerAnims{};
+    SDL_Texture * textIdle{};
 
-    std::vector<SDL_Texture *> textures;
+    std::vector<SDL_Texture *> textures{};
 
     SDL_Texture *loadTexture(SDL_Renderer *renderer,const std::string &filePath){
         SDL_Texture *tex = IMG_LoadTexture(renderer, filePath.c_str());
@@ -53,7 +74,13 @@ void cleanUp(SDLState & state);
 
 bool initialize(SDLState & state);
 
-int main(int argc, char* argv[]) {
+void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float deltaTime);
+
+void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
+        float deltaTime);
+
+int main(int argc, char* argv[]) 
+{
     SDLState state;
     bool running = true;
 
@@ -72,18 +99,19 @@ int main(int argc, char* argv[]) {
     res.load(state);
 
 
-    const bool *keys = SDL_GetKeyboardState(nullptr);
+    GameState gs;
+    GameObject player;
 
+    player.type = ObjectType::player;
+    player.texture = res.textIdle;
+    player.animations = res.playerAnims;
+    player.currentAnimation = res.ANIM_PLAYER_IDLE;
+    player.acceleration = glm::vec2(300, 0);
+    player.maxSpeedx= 100;
+    gs.layers[LAYER_IDX_CHARACTERS].push_back(player);
 
-    float playerX{150};
-    
-    const float floor =state.logH;
 
     uint64_t prevTime{SDL_GetTicks()};
-
-    float flipH {false};
-
-
 
     while (running){
 
@@ -109,47 +137,31 @@ int main(int argc, char* argv[]) {
             }
         }
 
+        //update all objects
+        for (auto &layer : gs.layers){
+            for (GameObject &obj : layer){
+
+                update(state,gs,res,obj,deltaTime);
+                if (obj.currentAnimation != 1){
+                    obj.animations[obj.currentAnimation].step(deltaTime);
+                }
+            }
+        }
+
 
         // handle movement
-        //
-        float moveAmount{0};
-
-        if (keys[SDL_SCANCODE_A]){
-            moveAmount += -75.f;
-            flipH = true;
-        }
-
-        if (keys[SDL_SCANCODE_D]){
-            moveAmount += 75.f;
-            flipH = false;
-
-        }
-
-        playerX += moveAmount * deltaTime;
-
 
         SDL_SetRenderDrawColor(state.renderer, 25,25,25,255);
 
         SDL_RenderClear(state.renderer);
 
+        for (auto &layer : gs.layers){
+            for (GameObject &obj : layer){
+                drawObject(state,gs,obj,deltaTime);
+            }
+        }
 
-        const float spriteSize{32};
-        SDL_FRect src {
-            .x = 0,
-            .y = 0,
-            .w = spriteSize, 
-            .h = spriteSize 
-        };
 
-        SDL_FRect dest {
-            .x = playerX,
-            .y = floor - spriteSize,
-            .w = spriteSize, 
-            .h = spriteSize 
-        };
-        SDL_RenderTextureRotated(state.renderer, 
-                res.textIdle, &src, &dest,0,
-                nullptr, (flipH) ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE);
 
 
         SDL_RenderPresent(state.renderer);
@@ -213,4 +225,88 @@ void cleanUp(SDLState& state){
     SDL_DestroyRenderer(state.renderer);
     SDL_DestroyWindow(state.window);
     SDL_Quit();
+}
+
+void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float deltaTime){
+
+        const float spriteSize{32};
+
+        float srcX = obj.currentAnimation != -1 ? obj.animations[obj.currentAnimation]
+            .currentFrame() * spriteSize : 0.f;
+        SDL_FRect src {
+            .x = srcX,
+            .y = 0,
+            .w = spriteSize, 
+            .h = spriteSize 
+        };
+
+        SDL_FRect dest {
+            .x = obj.position.x,
+            .y = obj.position.y,
+            .w = spriteSize, 
+            .h = spriteSize 
+        };
+
+        SDL_FlipMode flipmode = obj.direction == -1 ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
+        SDL_RenderTextureRotated(state.renderer, obj.texture, &src, &dest,0,
+                nullptr,flipmode);
+}
+
+void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
+        float deltaTime)
+{
+    if(obj.type == ObjectType::player)
+    {
+        float currentDirection{0};
+
+        if(state.keys[SDL_SCANCODE_A])
+        {
+            currentDirection += -1;
+        }
+
+        if (state.keys[SDL_SCANCODE_D])
+        {
+            currentDirection += 1;
+        }
+
+        if (currentDirection)
+        {
+            obj.direction = currentDirection;
+        }
+
+        switch (obj.data.player.state)
+        {
+           case PlayerState::idle:
+            {
+                if(currentDirection)
+                {
+                    obj.data.player.state = PlayerState::running;
+                }
+                break;
+            }
+           case PlayerState::running:
+           {
+               if(!currentDirection)
+               {
+                   obj.data.player.state = PlayerState::idle;
+               }
+               break;
+           }
+
+
+
+        }
+
+
+    obj.velocity += currentDirection * obj.acceleration * deltaTime;
+
+    if (std::abs(obj.velocity.x) > obj.maxSpeedx)
+    {
+        obj.velocity.x = currentDirection * deltaTime;
+    }
+
+
+    obj.position += obj.velocity * deltaTime;
+
+    }
 }

@@ -11,10 +11,10 @@ class Timer {
 			length(length),
 			time(0),
 			timeout(false)
-	{
+		{
+			
+		}
 		
-	}
-	
 		void step(float deltaTime){
 			time += deltaTime;
 
