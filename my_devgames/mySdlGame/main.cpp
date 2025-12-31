@@ -2,6 +2,8 @@
 #include <SDL3/SDL_main.h>
 #include <SDL3/SDL_scancode.h>
 #include <SDL3_image/SDL_image.h>
+#include <cstdlib>
+#include <glm/detail/qualifier.hpp>
 #include <vector>
 #include "gameobject.h"
 #include "string"
@@ -24,6 +26,9 @@ struct SDLState {
 
 const size_t LAYER_IDX_LEVEL{0};
 const size_t LAYER_IDX_CHARACTERS{1};
+const int MAP_ROWS{5};
+const int MAP_COLS{50};
+const int TILE_SIZE{32};
 
 struct GameState {
     std::array<std::vector<GameObject>, 2> layers{};
@@ -39,8 +44,9 @@ struct GameState {
 
 struct Resources {
     const int ANIM_PLAYER_IDLE{0};
+    const int ANIM_PLAYER_RUN{1};
     std::vector<Animation> playerAnims{};
-    SDL_Texture * textIdle{};
+    SDL_Texture * textIdle{}, *textRun{}, *textGrass{}, *textGround{}, * textPanel{};
 
     std::vector<SDL_Texture *> textures{};
 
@@ -58,8 +64,14 @@ struct Resources {
     void load(SDLState &state){
         playerAnims.resize(5);
         playerAnims[ANIM_PLAYER_IDLE] = Animation(8, 1.6f);
+        playerAnims[ANIM_PLAYER_RUN] =  Animation(4, 0.5f);
 
         textIdle = loadTexture(state.renderer, "data/idle.png");
+        textRun = loadTexture(state.renderer, "data/run.png");
+        textGrass = loadTexture(state.renderer, "data/tiles/grass.png");
+        textGround = loadTexture(state.renderer, "data/tiles/ground.png");
+        textPanel = loadTexture(state.renderer, "data/tiles/panel.png");
+
     }
 
     void unload(){
@@ -78,6 +90,9 @@ void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float del
 
 void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
         float deltaTime);
+
+
+void createTile(const SDLState &state, GameState &gs, const Resources &res);
 
 int main(int argc, char* argv[]) 
 {
@@ -100,15 +115,7 @@ int main(int argc, char* argv[])
 
 
     GameState gs;
-    GameObject player;
-
-    player.type = ObjectType::player;
-    player.texture = res.textIdle;
-    player.animations = res.playerAnims;
-    player.currentAnimation = res.ANIM_PLAYER_IDLE;
-    player.acceleration = glm::vec2(300, 0);
-    player.maxSpeedx= 100;
-    gs.layers[LAYER_IDX_CHARACTERS].push_back(player);
+    createTile(state,gs,res);
 
 
     uint64_t prevTime{SDL_GetTicks()};
@@ -280,7 +287,26 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
             {
                 if(currentDirection)
                 {
+                    
                     obj.data.player.state = PlayerState::running;
+                    obj.texture = res.textRun;
+                    obj.currentAnimation = res.ANIM_PLAYER_RUN;
+                }
+                else 
+                {
+                    if(obj.velocity.x)
+                    {
+                        const float factor = obj.velocity.x > 0 ? -1.5f : 1.5f;
+                        float amount = factor * obj.acceleration.x * deltaTime;
+                        if(std::abs(obj.velocity.x) < std::abs(amount))
+                        {
+                            obj.velocity.x = 0;
+                        }
+                        else 
+                        {
+                            obj.velocity.x += amount;
+                        }
+                    }
                 }
                 break;
             }
@@ -289,6 +315,8 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                if(!currentDirection)
                {
                    obj.data.player.state = PlayerState::idle;
+                   obj.texture = res.textIdle;
+                   obj.currentAnimation = res.ANIM_PLAYER_IDLE;
                }
                break;
            }
@@ -309,4 +337,49 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
     obj.position += obj.velocity * deltaTime;
 
     }
+}
+
+
+void createTile(const SDLState &state, GameState &gs, const Resources &res)
+{
+    short map[MAP_ROWS][MAP_COLS] = {
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    };
+
+    
+
+
+    for (int r = 0; r < MAP_ROWS; r ++)
+    {
+        for (int c = 0; c < MAP_COLS; c++)
+        {
+            switch(map[r][c])
+            {
+                case 4:
+                    {
+                        GameObject player;
+                        player.position = glm::vec2(
+                                c * TILE_SIZE,
+                                state.logH - (MAP_ROWS -r) * TILE_SIZE
+                                );
+                        player.type = ObjectType::player;
+                        player.data.player = PlayerData();
+                        player.texture = res.textIdle;
+                        player.animations = res.playerAnims;
+                        player.currentAnimation = res.ANIM_PLAYER_IDLE;
+                        player.acceleration = glm::vec2(300, 0);
+                        player.maxSpeedx= 100;
+                        gs.layers[LAYER_IDX_CHARACTERS].push_back(player);
+
+                        break;
+                    }
+            }
+        }
+    }
+
+
 }
