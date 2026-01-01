@@ -1,13 +1,12 @@
 #include <SDL3/SDL.h>
-#include <SDL3/SDL_rect.h>
 #include <SDL3_image/SDL_image.h>
 #include <cstdio>
 #include <cstdlib>
-#include <mutex>
 #include <vector>
 #include "gameobject.h"
 #include "string"
 #include <glm/glm.hpp>
+#include <iostream>
 #include <array>
 
 
@@ -48,8 +47,10 @@ struct GameState {
 struct Resources {
     const int ANIM_PLAYER_IDLE{0};
     const int ANIM_PLAYER_RUN{1};
+    const int ANIM_PLAYER_SLIDE{2};
     std::vector<Animation> playerAnims{};
-    SDL_Texture * textPanel , *textIdle{}, *textRun{}, *textGrass{}, *textGround{};
+    SDL_Texture * textPanel , *textIdle{}, *textRun{}, *textGrass{}, 
+                *textGround{},*textBrick{}, *textSlide{};
 
     std::vector<SDL_Texture *> textures{};
 
@@ -68,12 +69,16 @@ struct Resources {
         playerAnims.resize(5);
         playerAnims[ANIM_PLAYER_IDLE] = Animation(8, 1.6f);
         playerAnims[ANIM_PLAYER_RUN] =  Animation(4, 0.5f);
+        playerAnims[ANIM_PLAYER_SLIDE] = Animation(1, 1.0f);
 
         textIdle = loadTexture(state.renderer, "data/idle.png");
         textRun = loadTexture(state.renderer, "data/run.png");
+        textSlide = loadTexture(state.renderer, "data/slide.png");
         textGrass = loadTexture(state.renderer, "data/tiles/ground.png");
         textGround = loadTexture(state.renderer, "data/tiles/ground.png");
         textPanel = loadTexture(state.renderer, "data/tiles/panel.png");
+        textBrick = loadTexture(state.renderer, "data/tiles/brick.png");
+
 
     }
 
@@ -323,8 +328,6 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                 {
                     
                     obj.data.player.state = PlayerState::running;
-                    obj.texture = res.textRun;
-                    obj.currentAnimation = res.ANIM_PLAYER_RUN;
                 }
                 else 
                 {
@@ -342,6 +345,8 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                         }
                     }
                 }
+                obj.texture = res.textIdle;
+                obj.currentAnimation = res.ANIM_PLAYER_IDLE;
                 break;
             }
            case PlayerState::running:
@@ -349,10 +354,26 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                if(!currentDirection)
                {
                    obj.data.player.state = PlayerState::idle;
-                   obj.texture = res.textIdle;
-                   obj.currentAnimation = res.ANIM_PLAYER_IDLE;
+               }
+               if (obj.velocity.x * obj.direction < 0 && obj.grounded)
+               {
+                   obj.texture = res.textSlide;
+                   obj.currentAnimation = res.ANIM_PLAYER_SLIDE;
+               }
+               else
+               {
+                    obj.texture = res.textRun;
+                    obj.currentAnimation = res.ANIM_PLAYER_RUN;
                }
                break;
+           }
+           case PlayerState::jumping:
+           {
+                obj.texture = res.textRun;
+                obj.currentAnimation = res.ANIM_PLAYER_RUN;
+
+               break;
+
            }
 
 
@@ -412,6 +433,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
     if(obj.grounded != foundGround)
     {
         obj.grounded = foundGround;
+        std::cout << obj.grounded << "\n";
 
         if (foundGround && obj.type == ObjectType::player)
         {
@@ -512,7 +534,7 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
         0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     };
 
     auto createObject = [&state](int r, int c, SDL_Texture *tex, ObjectType type) 
@@ -563,7 +585,7 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
                         player.acceleration = glm::vec2(300, 0);
                         player.collider = {
                             .x = 11.f,
-                            .y = 6.f,
+                            .y = 6,
                             .w = 10.f,
                             .h = 26.f
                         };
