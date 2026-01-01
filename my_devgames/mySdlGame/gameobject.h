@@ -49,8 +49,11 @@ struct GameObject{
 	std::vector<Animation> animations;
 	int currentAnimation;
 	SDL_Texture *texture;
+	bool dynamic{};
+	bool grounded{};
+	SDL_FRect collider{};
 
-	GameObject() : data{.level = LevelData()}
+	GameObject() : data{.level = LevelData()}, collider{0}
 	{
 		type = ObjectType::level;
 		direction = 1;
@@ -58,6 +61,8 @@ struct GameObject{
 		currentAnimation = -1;
 		texture = nullptr;
 		maxSpeedx = 0;
+		dynamic = false;
+		grounded = false;
 	}
 
 };
