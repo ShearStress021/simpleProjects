@@ -6,8 +6,12 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /home/kanja/projects/simpleProjects/my_devgames/mySdlGame/gameobject.h \
   /home/kanja/projects/simpleProjects/my_devgames/mySdlGame/timer.h \
   /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
   /usr/include/assert.h \
   /usr/include/c++/14/array \
   /usr/include/c++/14/backward/binders.h \
@@ -18,6 +22,7 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/c++/14/bits/basic_string.tcc \
   /usr/include/c++/14/bits/char_traits.h \
   /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/chrono.h \
   /usr/include/c++/14/bits/concept_check.h \
   /usr/include/c++/14/bits/cpp_type_traits.h \
   /usr/include/c++/14/bits/cxxabi_forced.h \
@@ -33,6 +38,7 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/c++/14/bits/move.h \
   /usr/include/c++/14/bits/new_allocator.h \
   /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/parse_numbers.h \
   /usr/include/c++/14/bits/postypes.h \
   /usr/include/c++/14/bits/predefined_ops.h \
   /usr/include/c++/14/bits/ptr_traits.h \
@@ -41,6 +47,7 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/c++/14/bits/requires_hosted.h \
   /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/std_mutex.h \
   /usr/include/c++/14/bits/stl_algobase.h \
   /usr/include/c++/14/bits/stl_bvector.h \
   /usr/include/c++/14/bits/stl_construct.h \
@@ -53,6 +60,7 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/c++/14/bits/stl_vector.h \
   /usr/include/c++/14/bits/string_view.tcc \
   /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/unique_lock.h \
   /usr/include/c++/14/bits/uses_allocator.h \
   /usr/include/c++/14/bits/uses_allocator_args.h \
   /usr/include/c++/14/bits/utility.h \
@@ -71,18 +79,22 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/c++/14/cstdint \
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/ctime \
   /usr/include/c++/14/cwchar \
   /usr/include/c++/14/debug/assertions.h \
   /usr/include/c++/14/debug/debug.h \
   /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/atomicity.h \
   /usr/include/c++/14/ext/numeric_traits.h \
   /usr/include/c++/14/ext/string_conversions.h \
   /usr/include/c++/14/ext/type_traits.h \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
   /usr/include/c++/14/limits \
+  /usr/include/c++/14/mutex \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/ratio \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
   /usr/include/c++/14/tr1/bessel_function.tcc \
@@ -241,17 +253,25 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -276,7 +296,9 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -285,8 +307,10 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
@@ -303,8 +327,12 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -316,15 +344,20 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
@@ -332,7 +365,11 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
+  /usr/lib/linux/uapi/x86/asm/bitsperlong.h \
   /usr/lib/linux/uapi/x86/asm/errno.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
+  /usr/lib/linux/uapi/x86/asm/types.h \
   /usr/local/include/SDL3/SDL.h \
   /usr/local/include/SDL3/SDL_assert.h \
   /usr/local/include/SDL3/SDL_asyncio.h \
@@ -365,7 +402,6 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/local/include/SDL3/SDL_loadso.h \
   /usr/local/include/SDL3/SDL_locale.h \
   /usr/local/include/SDL3/SDL_log.h \
-  /usr/local/include/SDL3/SDL_main.h \
   /usr/local/include/SDL3/SDL_messagebox.h \
   /usr/local/include/SDL3/SDL_metal.h \
   /usr/local/include/SDL3/SDL_misc.h \
@@ -427,8 +463,6 @@ res: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
 
-/usr/lib/x86_64-linux-gnu/libm.so:
-
 /usr/lib/x86_64-linux-gnu/crti.o:
 
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
@@ -481,8 +515,6 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/local/include/SDL3/SDL_error.h:
 
-/usr/local/include/SDL3/SDL_endian.h:
-
 /usr/local/include/SDL3/SDL_dialog.h:
 
 /usr/local/include/SDL3/SDL_clipboard.h:
@@ -497,6 +529,8 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/local/include/SDL3/SDL_audio.h:
 
+/usr/lib/linux/uapi/x86/asm/bitsperlong.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h:
@@ -504,6 +538,10 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/local/include/SDL3/SDL_endian.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -513,11 +551,17 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
+/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
+
 /usr/local/include/SDL3/SDL_iostream.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
+
+/usr/lib/linux/uapi/x86/asm/types.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -537,13 +581,21 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -573,6 +625,8 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
@@ -581,9 +635,9 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -613,37 +667,25 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/local/include/SDL3/SDL_cpuinfo.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/glm/detail/type_mat2x4.inl:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/local/include/SDL3/SDL_metal.h:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/glm/ext/vector_bool4.hpp:
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/glm/ext/matrix_float3x4.hpp:
+/usr/include/time.h:
 
-/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/main.cpp:
+/usr/lib/linux/uapi/x86/asm/errno.h:
 
-/usr/include/glm/mat2x2.hpp:
+/usr/include/stdio.h:
 
-/usr/include/glm/detail/type_half.inl:
-
-/usr/include/glm/detail/type_mat2x3.hpp:
-
-/usr/include/glm/detail/qualifier.hpp:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
-
-/usr/include/glm/detail/func_vector_relational.inl:
-
-/usr/include/glm/ext/matrix_float4x4_precision.hpp:
+/usr/include/pthread.h:
 
 /usr/include/glm/detail/func_matrix.inl:
 
@@ -651,9 +693,11 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/errno.h:
 
-/usr/include/glm/detail/type_half.hpp:
-
 /usr/include/glm/detail/compute_vector_relational.hpp:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 /usr/include/c++/14/bits/localefwd.h:
 
@@ -677,7 +721,15 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/bits/exception_defines.h:
 
+/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/glm/ext/vector_double2.hpp:
+
 /usr/include/c++/14/tr1/bessel_function.tcc:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/glm/ext/scalar_uint_sized.hpp:
 
@@ -685,23 +737,37 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/string_view:
 
-/usr/local/include/SDL3/SDL_main.h:
-
 /usr/include/glm/ext/matrix_float4x2.hpp:
 
 /usr/include/glm/ext/matrix_float4x3_precision.hpp:
 
 /usr/include/c++/14/pstl/pstl_config.h:
 
-/usr/local/include/SDL3/SDL_tray.h:
-
-/usr/include/c++/14/bits/std_abs.h:
-
 /usr/include/c++/14/new:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/14/mutex:
+
+/usr/include/linux/stddef.h:
 
 /usr/include/c++/14/ext/type_traits.h:
 
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/animation.h:
+
 /usr/include/limits.h:
+
+/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/usr/include/stdlib.h:
+
+/usr/include/glm/detail/func_integer.inl:
+
+/usr/include/glm/ext/scalar_int_sized.hpp:
+
+/usr/include/c++/14/ext/alloc_traits.h:
 
 /usr/include/c++/14/ext/string_conversions.h:
 
@@ -717,25 +783,7 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/ext/numeric_traits.h:
 
-/usr/include/glm/detail/setup.hpp:
-
-/usr/include/glm/ext/scalar_int_sized.hpp:
-
-/usr/include/c++/14/ext/alloc_traits.h:
-
-/usr/include/glm/detail/func_exponential.inl:
-
-/usr/include/c++/14/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/glm/detail/type_mat2x2.inl:
-
-/usr/include/c++/14/cstdlib:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/c++/14/compare:
+/usr/include/c++/14/ctime:
 
 /usr/include/c++/14/debug/debug.h:
 
@@ -759,8 +807,6 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/cfloat:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/glm/detail/func_packing.inl:
@@ -768,6 +814,22 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
 
 /usr/include/c++/14/cerrno:
+
+/usr/include/glm/detail/type_mat3x2.inl:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/include/c++/14/cassert:
+
+/usr/local/include/SDL3/SDL_platform.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
+
+/usr/include/c++/14/bits/vector.tcc:
+
+/usr/include/c++/14/string:
+
+/usr/include/c++/14/climits:
 
 /usr/include/c++/14/cwchar:
 
@@ -783,8 +845,6 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/cstddef:
 
-/usr/include/c++/14/cassert:
-
 /usr/include/c++/14/bits/stl_iterator.h:
 
 /usr/local/include/SDL3/SDL_camera.h:
@@ -797,21 +857,25 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/linux/limits.h:
 
-/usr/include/endian.h:
-
-/usr/include/stdint.h:
-
 /usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/bits/concept_check.h:
 
 /usr/include/c++/14/bits/functexcept.h:
 
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/14/ratio:
+
 /usr/include/glm/ext/vector_uint2_sized.hpp:
 
-/usr/include/c++/14/array:
+/usr/include/sched.h:
 
-/usr/include/glm/ext/vector_float2_precision.hpp:
+/usr/include/glm/detail/func_exponential.inl:
+
+/usr/include/c++/14/tr1/special_function_util.h:
+
+/usr/include/c++/14/bits/memory_resource.h:
 
 /lib/x86_64-linux-gnu/libc.so.6:
 
@@ -821,13 +885,17 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/mat3x3.hpp:
 
-/usr/include/glm/ext/vector_double2.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/math.h:
 
-/usr/local/include/SDL3/SDL_power.h:
+/usr/include/glm/common.hpp:
 
-/usr/include/c++/14/bits/invoke.h:
+/usr/include/c++/14/vector:
+
+/usr/include/string.h:
+
+/usr/include/c++/14/bits/allocator.h:
 
 /usr/include/glm/ext/matrix_double4x4_precision.hpp:
 
@@ -838,6 +906,42 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/include/c++/14/bits/basic_string.tcc:
 
 /usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/c++/14/backward/binders.h:
+
+/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/main.cpp:
+
+/usr/include/c++/14/cstdlib:
+
+/usr/include/glm/detail/type_mat2x2.inl:
+
+/usr/include/glm/mat2x2.hpp:
+
+/usr/local/include/SDL3/SDL_atomic.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/14/tr1/poly_hermite.tcc:
+
+/usr/include/glm/ext/vector_uint3.hpp:
+
+/usr/include/c++/14/array:
+
+/usr/include/glm/ext/vector_float2_precision.hpp:
+
+/usr/local/include/SDL3/SDL_pen.h:
+
+/usr/include/c++/14/bits/specfun.h:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/14/bits/hash_bytes.h:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/c++/14/ext/atomicity.h:
 
 /usr/include/features.h:
 
@@ -855,39 +959,45 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /home/kanja/projects/simpleProjects/my_devgames/mySdlGame/gameobject.h:
 
-/usr/include/glm/vec2.hpp:
+/usr/local/include/SDL3/SDL_dlopennote.h:
 
-/usr/include/c++/14/bits/uses_allocator.h:
+/usr/include/c++/14/type_traits:
 
-/usr/local/include/SDL3/SDL_filesystem.h:
+/usr/include/c++/14/tr1/exp_integral.tcc:
 
-/usr/include/c++/14/bits/memoryfwd.h:
+/usr/lib/x86_64-linux-gnu/libm.so:
 
-/usr/include/c++/14/backward/binders.h:
+/usr/include/asm-generic/int-ll64.h:
 
-/usr/include/glm/detail/type_mat2x2.hpp:
+/usr/include/c++/14/bits/unique_lock.h:
 
-/usr/lib/x86_64-linux-gnu/crtn.o:
+/usr/include/glm/ext/vector_double3.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/local/include/SDL3/SDL_power.h:
 
-/usr/include/c++/14/bits/hash_bytes.h:
+/usr/include/c++/14/bits/invoke.h:
 
-/usr/include/c++/14/bits/char_traits.h:
+/usr/include/c++/14/cstdio:
 
-/usr/local/include/SDL3/SDL_pen.h:
+/usr/include/c++/14/bits/utility.h:
 
-/usr/include/c++/14/bits/specfun.h:
+/usr/include/c++/14/tr1/legendre_function.tcc:
 
-/usr/include/c++/14/vector:
+/usr/include/glm/detail/type_mat4x4.inl:
 
-/usr/local/include/SDL3/SDL_mutex.h:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/include/glm/detail/func_trigonometric.inl:
+/usr/include/glm/ext/matrix_double2x4_precision.hpp:
 
-/usr/include/glm/ext/matrix_double2x2.hpp:
+/usr/include/c++/14/bits/chrono.h:
 
-/usr/include/glm/ext/vector_bool3_precision.hpp:
+/usr/include/c++/14/bit:
+
+/usr/include/glm/vec4.hpp:
+
+/usr/include/c++/14/tr1/ell_integral.tcc:
+
+/usr/include/c++/14/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -901,6 +1011,20 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_float2x2_precision.hpp:
 
+/usr/local/include/SDL3/SDL_filesystem.h:
+
+/usr/include/c++/14/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/14/compare:
+
+/usr/include/c++/14/bits/parse_numbers.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
+
+/usr/include/glm/mat3x4.hpp:
+
 /usr/include/c++/14/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/14/bits/stl_construct.h:
@@ -913,25 +1037,17 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/bits/predefined_ops.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
 /usr/include/asm-generic/errno.h:
 
 /usr/include/glm/vector_relational.hpp:
 
-/usr/include/glm/detail/type_mat3x2.inl:
-
-/usr/include/c++/14/debug/assertions.h:
-
-/usr/include/c++/14/string:
-
-/usr/include/c++/14/climits:
+/usr/include/glm/detail/type_half.inl:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/14/tr1/gamma.tcc:
-
-/usr/include/glm/detail/type_mat2x3.inl:
-
-/usr/include/glm/detail/type_vec2.hpp:
 
 /usr/local/include/SDL3/SDL_timer.h:
 
@@ -945,17 +1061,25 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_float3x3_precision.hpp:
 
-/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/timer.h:
-
-/usr/include/glm/detail/compute_common.hpp:
-
-/usr/include/strings.h:
-
 /usr/include/glm/detail/func_geometric.inl:
 
 /usr/include/c++/14/bits/functional_hash.h:
 
 /usr/include/c++/14/limits:
+
+/usr/include/strings.h:
+
+/usr/include/glm/detail/compute_common.hpp:
+
+/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/timer.h:
+
+/usr/include/glm/ext/matrix_double4x3.hpp:
+
+/usr/include/c++/14/bits/version.h:
+
+/usr/include/glm/ext/matrix_double3x2.hpp:
+
+/usr/include/c++/14/bits/std_mutex.h:
 
 /usr/include/c++/14/cstdint:
 
@@ -975,13 +1099,13 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
-/usr/include/glm/detail/type_mat2x4.hpp:
-
 /usr/include/c++/14/bits/stl_uninitialized.h:
 
-/usr/include/glm/ext/matrix_float4x3.hpp:
+/usr/include/linux/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/glm/detail/type_mat2x4.hpp:
+
+/usr/include/glm/ext/matrix_float4x3.hpp:
 
 /usr/include/c++/14/bits/stringfwd.h:
 
@@ -991,43 +1115,61 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_double4x2_precision.hpp:
 
-/usr/include/c++/14/tr1/ell_integral.tcc:
+/usr/include/wchar.h:
 
-/usr/include/c++/14/bits/move.h:
+/usr/include/glm/mat3x2.hpp:
 
-/usr/include/c++/14/cstdio:
+/usr/local/include/SDL3/SDL_mutex.h:
 
-/usr/include/c++/14/bits/utility.h:
+/usr/lib/linux/uapi/x86/asm/posix_types.h:
 
-/usr/include/c++/14/tr1/legendre_function.tcc:
+/usr/include/glm/detail/func_trigonometric.inl:
 
-/usr/include/glm/detail/type_mat4x4.inl:
+/usr/include/glm/ext/matrix_double2x2.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+/usr/include/glm/ext/vector_bool3_precision.hpp:
 
-/usr/include/glm/ext/matrix_double2x4_precision.hpp:
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
-/usr/include/c++/14/bit:
+/usr/include/glm/detail/func_vector_relational.inl:
 
-/usr/include/glm/vec4.hpp:
+/usr/include/glm/ext/matrix_float4x4_precision.hpp:
 
-/usr/local/include/SDL3/SDL_platform.h:
+/usr/include/glm/detail/setup.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
+/usr/include/c++/14/bits/uses_allocator.h:
 
-/usr/include/c++/14/bits/vector.tcc:
+/usr/include/glm/vec2.hpp:
 
-/usr/include/glm/ext/matrix_double4x3.hpp:
+/usr/include/glm/detail/type_half.hpp:
 
-/usr/include/glm/ext/matrix_double3x2.hpp:
+/usr/include/glm/detail/type_mat2x2.hpp:
 
-/usr/include/c++/14/bits/version.h:
+/usr/include/glm/detail/qualifier.hpp:
 
-/usr/local/include/SDL3/SDL_dlopennote.h:
+/usr/include/glm/detail/type_mat2x3.hpp:
 
-/usr/include/c++/14/type_traits:
+/usr/include/glm/ext/matrix_float3x4.hpp:
 
-/usr/include/c++/14/tr1/exp_integral.tcc:
+/usr/include/glm/detail/type_vec2.hpp:
+
+/usr/include/glm/detail/type_mat2x3.inl:
+
+/usr/local/include/SDL3/SDL_cpuinfo.h:
+
+/usr/include/glm/detail/type_mat2x4.inl:
+
+/usr/local/include/SDL3/SDL_metal.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/glm/ext/vector_bool4.hpp:
 
 /usr/include/glm/detail/type_mat3x2.hpp:
 
@@ -1055,6 +1197,10 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/detail/type_mat4x3.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/glm/detail/type_mat4x3.inl:
+
 /usr/include/glm/detail/type_mat4x4.hpp:
 
 /usr/include/glm/ext/vector_int4_sized.hpp:
@@ -1079,10 +1225,6 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/detail/type_vec3.inl:
 
-/usr/include/glm/mat3x2.hpp:
-
-/usr/include/wchar.h:
-
 /usr/include/glm/ext/matrix_double2x3.hpp:
 
 /usr/local/include/SDL3/SDL_misc.h:
@@ -1092,10 +1234,6 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/include/glm/ext/vector_int2_sized.hpp:
 
 /usr/include/glm/ext/matrix_double2x4.hpp:
-
-/usr/lib/linux/uapi/x86/asm/errno.h:
-
-/usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -1143,15 +1281,11 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_float4x4.hpp:
 
-/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/animation.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/include/linux/posix_types.h:
 
 /usr/include/glm/ext/vector_bool2_precision.hpp:
 
 /usr/include/glm/ext/vector_double2_precision.hpp:
-
-/usr/include/glm/ext/vector_double3.hpp:
 
 /usr/local/include/SDL3/SDL_asyncio.h:
 
@@ -1171,14 +1305,6 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/ext/vector_int3_sized.hpp:
 
-/usr/local/include/SDL3/SDL_atomic.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/14/tr1/poly_hermite.tcc:
-
-/usr/include/glm/ext/vector_uint3.hpp:
-
 /usr/include/glm/ext/vector_uint3_sized.hpp:
 
 /usr/include/glm/ext/vector_uint4.hpp:
@@ -1186,12 +1312,6 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/include/c++/14/bits/requires_hosted.h:
 
 /usr/include/glm/glm.hpp:
-
-/lib/x86_64-linux-gnu/libmvec.so.1:
-
-/usr/include/glm/detail/func_integer.inl:
-
-/usr/include/stdlib.h:
 
 /usr/local/include/SDL3/SDL_assert.h:
 
@@ -1203,23 +1323,15 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/mat2x4.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
-
-/usr/include/glm/mat3x4.hpp:
-
 /lib/x86_64-linux-gnu/libm.so.6:
 
 /usr/include/c++/14/iosfwd:
 
 /usr/include/glm/mat4x4.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/glm/common.hpp:
-
-/usr/include/math.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
 
 /usr/include/glm/ext/vector_bool3.hpp:
 
@@ -1229,16 +1341,12 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/linux/errno.h:
 
+/usr/local/include/SDL3/SDL_tray.h:
+
+/usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/linux/sched/types.h:
+
 /usr/include/glm/detail/type_vec4.hpp:
 
 /usr/include/locale.h:
-
-/usr/include/c++/14/bits/allocator.h:
-
-/usr/include/string.h:
-
-/usr/include/glm/detail/type_mat4x3.inl:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
