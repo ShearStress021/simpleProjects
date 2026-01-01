@@ -1,4 +1,5 @@
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_render.h>
 #include <SDL3_image/SDL_image.h>
 #include <cstdio>
 #include <cstdlib>
@@ -32,12 +33,22 @@ const int TILE_SIZE{32};
 struct GameState {
     std::array<std::vector<GameObject>, 2> layers{};
     int playerIndex{};
+    SDL_FRect mapViewport{};
+    float bg2Scroll, bg3scroll, bg4scroll;
 
 
-    GameState() {
+    GameState(const SDLState &state) {
         playerIndex = -1;
+
+        mapViewport = SDL_FRect{
+            .x =0, .y=0,
+            .w=static_cast<float>(state.logW),
+            .h =static_cast<float>(state.logH)
+        };
+        bg2Scroll = bg3scroll = bg4scroll = 0;
         
     }
+    
 
     GameObject &player(){return layers[LAYER_IDX_CHARACTERS][playerIndex];}
 
@@ -50,7 +61,8 @@ struct Resources {
     const int ANIM_PLAYER_SLIDE{2};
     std::vector<Animation> playerAnims{};
     SDL_Texture * textPanel , *textIdle{}, *textRun{}, *textGrass{}, 
-                *textGround{},*textBrick{}, *textSlide{};
+                *textGround{},*textBrick{}, *textSlide{}, *textBg1, *textBg2{}, 
+                *textBg3{}, *textBg4{};
 
     std::vector<SDL_Texture *> textures{};
 
@@ -78,6 +90,13 @@ struct Resources {
         textGround = loadTexture(state.renderer, "data/tiles/ground.png");
         textPanel = loadTexture(state.renderer, "data/tiles/panel.png");
         textBrick = loadTexture(state.renderer, "data/tiles/brick.png");
+
+
+        //background
+        textBg1 = loadTexture(state.renderer, "data/bg/bg_layer1.png");
+        textBg2 = loadTexture(state.renderer, "data/bg/bg_layer2.png");
+        textBg3 = loadTexture(state.renderer, "data/bg/bg_layer3.png");
+        textBg4 = loadTexture(state.renderer, "data/bg/bg_layer4.png");
 
 
     }
@@ -111,6 +130,9 @@ void checkCollision(const SDLState &state, GameState &gs, Resources &res, GameOb
 void handleKeyInput(const SDLState &state, GameState &gs, GameObject &obj, 
         SDL_Scancode key, bool keyDown);
 
+void drawParalaxBackGround(SDL_Renderer *renderer, SDL_Texture *texture,
+        float xVelocity, float &scrollPos, float scrollFactor, float deltaTime);
+
 int main(int argc, char* argv[]) 
 {
     SDLState state;
@@ -130,7 +152,7 @@ int main(int argc, char* argv[])
     res.load(state);
 
 
-    GameState gs;
+    GameState gs(state);
     createTile(state,gs,res);
 
 
@@ -186,9 +208,27 @@ int main(int argc, char* argv[])
 
         // handle movement
 
+        gs.mapViewport.x = (gs.player().position.x + TILE_SIZE /2.f) -
+            gs.mapViewport.w / 2.f;
+
+
         SDL_SetRenderDrawColor(state.renderer, 25,25,25,255);
 
         SDL_RenderClear(state.renderer);
+
+
+        // draw backgrounds
+        SDL_RenderTexture(state.renderer,res.textBg1,nullptr,nullptr) ;
+
+        drawParalaxBackGround(state.renderer, res.textBg4, gs.player().velocity.x,
+                gs.bg2Scroll,0.075f,deltaTime);
+        drawParalaxBackGround(state.renderer, res.textBg3, gs.player().velocity.x,
+                gs.bg2Scroll,0.15f,deltaTime);
+        drawParalaxBackGround(state.renderer, res.textBg2, gs.player().velocity.x,
+                gs.bg2Scroll,0.3f,deltaTime);
+
+
+
 
         for (auto &layer : gs.layers){
             for (GameObject &obj : layer){
@@ -280,7 +320,7 @@ void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float del
         };
 
         SDL_FRect dest {
-            .x = obj.position.x,
+            .x = obj.position.x -gs.mapViewport.x,
             .y = obj.position.y,
             .w = spriteSize, 
             .h = spriteSize 
@@ -351,12 +391,16 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
             }
            case PlayerState::running:
            {
+               std::cout << currentDirection << "\n";
                if(!currentDirection)
                {
                    obj.data.player.state = PlayerState::idle;
                }
                if (obj.velocity.x * obj.direction < 0 && obj.grounded)
                {
+                   std::cout << "ground " << obj.grounded << 
+                       (obj.velocity.x * obj.direction);
+
                    obj.texture = res.textSlide;
                    obj.currentAnimation = res.ANIM_PLAYER_SLIDE;
                }
@@ -369,15 +413,10 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
            }
            case PlayerState::jumping:
            {
-                obj.texture = res.textRun;
-                obj.currentAnimation = res.ANIM_PLAYER_RUN;
-
+               obj.texture = res.textRun;
+               obj.currentAnimation = res.ANIM_PLAYER_RUN;
                break;
-
            }
-
-
-
         }
 
 
@@ -433,7 +472,6 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
     if(obj.grounded != foundGround)
     {
         obj.grounded = foundGround;
-        std::cout << obj.grounded << "\n";
 
         if (foundGround && obj.type == ObjectType::player)
         {
@@ -532,8 +570,8 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
     short map[MAP_ROWS][MAP_COLS] = {
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     };
 
@@ -641,4 +679,22 @@ void handleKeyInput(const SDLState &state, GameState &gs, GameObject &obj,
     }
 
     
+}
+
+void drawParalaxBackGround(SDL_Renderer *renderer, SDL_Texture *texture,
+        float xVelocity, float &scrollPos, float scrollFactor, float deltaTime)
+{
+    scrollPos -= xVelocity * scrollFactor * deltaTime;
+
+    if (scrollPos <= -texture->w)
+    {
+        scrollPos = 0;
+    }
+    SDL_FRect dest {
+        .x = scrollPos, .y=30,
+        .w = texture->w * 2.f,
+        .h = static_cast<float>(texture->h)
+    };
+
+    SDL_RenderTextureTiled(renderer, texture, nullptr, 1, &dest);
 }
