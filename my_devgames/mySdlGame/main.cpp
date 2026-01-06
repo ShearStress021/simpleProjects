@@ -3,6 +3,8 @@
 #include <SDL3_image/SDL_image.h>
 #include <cstdio>
 #include <cstdlib>
+#include <glm/ext/vector_float2.hpp>
+#include <string>
 #include <vector>
 #include "gameobject.h"
 #include "string"
@@ -32,9 +34,13 @@ const int TILE_SIZE{32};
 
 struct GameState {
     std::array<std::vector<GameObject>, 2> layers{};
+    std::vector<GameObject> backgroundTiles{};
+    std::vector<GameObject> foregroundTiles{};
+    std::vector<GameObject> bullets{};
     int playerIndex{};
     SDL_FRect mapViewport{};
     float bg2Scroll, bg3scroll, bg4scroll;
+    bool debugMode{};
 
 
     GameState(const SDLState &state) {
@@ -46,6 +52,7 @@ struct GameState {
             .h =static_cast<float>(state.logH)
         };
         bg2Scroll = bg3scroll = bg4scroll = 0;
+        debugMode = false;
         
     }
     
@@ -59,10 +66,21 @@ struct Resources {
     const int ANIM_PLAYER_IDLE{0};
     const int ANIM_PLAYER_RUN{1};
     const int ANIM_PLAYER_SLIDE{2};
+    const int ANIM_PLAYER_SHOOT{3};
+    const int ANIM_PLAYER_SLIDE_SHOOT{4};
     std::vector<Animation> playerAnims{};
+    // bullets animations
+    const int ANIM_BULLET_MOVING{0};
+    const int ANIM_BULLET_HIT{1};
+
+    
+    std::vector<Animation> bulletAnims{};
+
+
     SDL_Texture * textPanel , *textIdle{}, *textRun{}, *textGrass{}, 
                 *textGround{},*textBrick{}, *textSlide{}, *textBg1, *textBg2{}, 
-                *textBg3{}, *textBg4{};
+                *textBg3{}, *textBg4{}, *textBullet{}, *textBulletHit{}, *textShoot{},
+                *textRunShoot{}, *textSlideShoot{};
 
     std::vector<SDL_Texture *> textures{};
 
@@ -82,14 +100,29 @@ struct Resources {
         playerAnims[ANIM_PLAYER_IDLE] = Animation(8, 1.6f);
         playerAnims[ANIM_PLAYER_RUN] =  Animation(4, 0.5f);
         playerAnims[ANIM_PLAYER_SLIDE] = Animation(1, 1.0f);
+        playerAnims[ANIM_PLAYER_SHOOT] = Animation(4, .5f);
+        playerAnims[ANIM_PLAYER_SLIDE_SHOOT] = Animation(4, 0.5f);
+
+
+        //bullet Animation
+        //
+        bulletAnims.resize(2);
+        bulletAnims[ANIM_BULLET_MOVING] = Animation(1,1.15f);
+        bulletAnims[ANIM_BULLET_HIT] = Animation(4,0.15f);
+
 
         textIdle = loadTexture(state.renderer, "data/idle.png");
         textRun = loadTexture(state.renderer, "data/run.png");
         textSlide = loadTexture(state.renderer, "data/slide.png");
-        textGrass = loadTexture(state.renderer, "data/tiles/ground.png");
+        textGrass = loadTexture(state.renderer, "data/tiles/grass.png");
         textGround = loadTexture(state.renderer, "data/tiles/ground.png");
         textPanel = loadTexture(state.renderer, "data/tiles/panel.png");
         textBrick = loadTexture(state.renderer, "data/tiles/brick.png");
+        textShoot = loadTexture(state.renderer, "data/shoot.png");
+        textSlideShoot = loadTexture(state.renderer, "data/slide_shoot.png");
+        textRunShoot = loadTexture(state.renderer, "data/shoot_run.png");
+
+        
 
 
         //background
@@ -97,6 +130,11 @@ struct Resources {
         textBg2 = loadTexture(state.renderer, "data/bg/bg_layer2.png");
         textBg3 = loadTexture(state.renderer, "data/bg/bg_layer3.png");
         textBg4 = loadTexture(state.renderer, "data/bg/bg_layer4.png");
+
+        //bullets
+        //
+        textBullet = loadTexture(state.renderer, "data/bullet.png");
+        textBulletHit = loadTexture(state.renderer,"data/bullet_hit.png");
 
 
     }
@@ -113,7 +151,7 @@ void cleanUp(SDLState & state);
 
 bool initialize(SDLState & state);
 
-void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float deltaTime);
+void drawObject(const SDLState &state, GameState &gs, GameObject &obj,float width, float height, float deltaTime);
 
 void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
         float deltaTime);
@@ -188,6 +226,10 @@ int main(int argc, char* argv[])
                 case SDL_EVENT_KEY_UP:
                     {
                         handleKeyInput(state,gs,gs.player(),event.key.scancode,false);
+                        if (event.key.scancode == SDL_SCANCODE_F12)
+                        {
+                            gs.debugMode = !gs.debugMode;
+                        }
                         break;
                     }
             }
@@ -203,6 +245,15 @@ int main(int argc, char* argv[])
                     obj.animations[obj.currentAnimation].step(deltaTime);
                 }
             }
+        }
+
+        for(GameObject &bullet : gs.bullets)
+        {
+                update(state,gs,res,bullet,deltaTime);
+                if (bullet.currentAnimation != -1){
+                    bullet.animations[bullet.currentAnimation].step(deltaTime);
+                }
+
         }
 
 
@@ -228,20 +279,59 @@ int main(int argc, char* argv[])
                 gs.bg2Scroll,0.3f,deltaTime);
 
 
+        for (GameObject &obj: gs.backgroundTiles)
+        {
+            SDL_FRect dst{
+                .x = obj.position.x -gs.mapViewport.x,
+                .y = obj.position.y,
+                .w = static_cast<float>(obj.texture->w),
+                .h = static_cast<float>(obj.texture->h)
+                };
+
+            SDL_RenderTexture(state.renderer, obj.texture, nullptr, &dst);
+
+        }
+
+
 
 
         for (auto &layer : gs.layers){
             for (GameObject &obj : layer){
-                drawObject(state,gs,obj,deltaTime);
+                drawObject(state,gs,obj,TILE_SIZE, TILE_SIZE,deltaTime);
             }
         }
 
 
 
-        SDL_SetRenderDrawColor(state.renderer, 255,255,255,255);
-        std::string result = "State :";
-        result.append(std::to_string(static_cast<int>(gs.player().data.player.state)));
-        SDL_RenderDebugText(state.renderer, 5,5, result.c_str());
+        for (auto & bullet : gs.bullets)
+        {
+            drawObject(state, gs,bullet,bullet.collider.w, bullet.collider.h, deltaTime);
+        }
+        for (GameObject &obj: gs.foregroundTiles)
+        {
+            SDL_FRect dst{
+                .x = obj.position.x - gs.mapViewport.x,
+                .y = obj.position.y,
+                .w = static_cast<float>(obj.texture->w),
+                .h = static_cast<float>(obj.texture->h)
+                };
+
+            SDL_RenderTexture(state.renderer, obj.texture, nullptr, &dst);
+
+        }
+
+        if (gs.debugMode)
+        {
+            SDL_SetRenderDrawColor(state.renderer, 255,255,255,255);
+            std::string result = "S :";
+            result.append(std::to_string(static_cast<int>(gs.player().data.player.state)));
+            result.append(" B: ");
+            result.append(std::to_string(gs.bullets.size()));
+            result.append(" G: ");
+            result.append(std::to_string(gs.player().grounded));
+            SDL_RenderDebugText(state.renderer, 5,5, result.c_str());
+
+        }
 
         SDL_RenderPresent(state.renderer);
 
@@ -293,6 +383,7 @@ bool initialize(SDLState & state){
         cleanUp(state);
         initSuccess = false;
     }
+    SDL_SetRenderVSync(state.renderer,1);
     
     SDL_SetRenderLogicalPresentation(state.renderer,state.logW, state.logH, 
             SDL_LOGICAL_PRESENTATION_LETTERBOX);
@@ -306,35 +397,50 @@ void cleanUp(SDLState& state){
     SDL_Quit();
 }
 
-void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float deltaTime){
+void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float width, float height, float deltaTime){
 
-        const float spriteSize{32};
 
         float srcX = obj.currentAnimation != -1 ? obj.animations[obj.currentAnimation]
-            .currentFrame() * spriteSize : 0.f;
+            .currentFrame()  * width: 0.f;
         SDL_FRect src {
             .x = srcX,
             .y = 0,
-            .w = spriteSize, 
-            .h = spriteSize 
+            .w = width, 
+            .h = height 
         };
 
         SDL_FRect dest {
             .x = obj.position.x -gs.mapViewport.x,
             .y = obj.position.y,
-            .w = spriteSize, 
-            .h = spriteSize 
+            .w = width, 
+            .h = height 
         };
 
         SDL_FlipMode flipmode = obj.direction == -1 ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
         SDL_RenderTextureRotated(state.renderer, obj.texture, &src, &dest,0,
                 nullptr,flipmode);
+
+        if (gs.debugMode)
+        {
+            SDL_FRect rectA {
+                .x = obj.position.x + obj.collider.x -gs.mapViewport.x,
+                .y = obj.position.y + obj.collider.y,
+                .w = obj.collider.w, 
+                .h = obj.collider.h 
+            };
+
+            SDL_SetRenderDrawBlendMode(state.renderer, SDL_BLENDMODE_BLEND);
+            SDL_SetRenderDrawColor(state.renderer, 255, 0,0,150);
+            SDL_RenderFillRect(state.renderer, &rectA);
+            SDL_SetRenderDrawBlendMode(state.renderer, SDL_BLENDMODE_NONE);
+
+
+        }
 }
 
 void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
-        float deltaTime)
-{
-    if (obj.dynamic)
+        float deltaTime) {
+    if (obj.dynamic && !obj.grounded)
     {
         obj.velocity += glm::vec2(0, 500) * deltaTime;
     }
@@ -349,7 +455,6 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
         {
             currentDirection += -1;
         }
-
         if (state.keys[SDL_SCANCODE_D])
         {
             currentDirection += 1;
@@ -360,6 +465,53 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
             obj.direction = currentDirection;
         }
 
+        Timer &weaponTimer = obj.data.player.weaponTimer;
+        weaponTimer.step(deltaTime);
+
+        const auto handleShooting = [&state, &gs, &res, &obj, &weaponTimer](
+                SDL_Texture *tex, SDL_Texture *shootTex, int animIndex, 
+                int shootAnimIndex)
+        {
+            if (state.keys[SDL_SCANCODE_J])
+            {
+
+                obj.texture = shootTex;
+                obj.currentAnimation = shootAnimIndex;
+                if (weaponTimer.isTimeout()){
+                    weaponTimer.reset();
+                    GameObject bullet;
+                    bullet.type = ObjectType::bullet;
+                    bullet.direction = gs.player().direction;
+                    bullet.texture = res.textBullet;
+                    bullet.currentAnimation = res.ANIM_BULLET_MOVING;
+                    bullet.collider = SDL_FRect{
+                        .x = 0, .y = 0,
+                        .w = static_cast<float>(res.textBullet->w),
+                        .h = static_cast<float>(res.textBullet->h),
+                    };
+                    bullet.velocity = glm::vec2(
+                            obj.velocity.x + 600.f * obj.direction,
+                            0
+                            );
+                    bullet.animations = res.bulletAnims;
+                    const float left{4};
+                    const float right{24};
+                    const float t = (obj.direction + 1) / 2.0f;
+                    const float xOffset = left + right * t;
+                    bullet.position = glm::vec2(
+                            obj.position.x  + xOffset,
+                            obj.position.y + TILE_SIZE/2.0f
+                            );
+                    gs.bullets.push_back(bullet);
+                }
+                
+            }
+            else {
+                obj.texture = tex;
+                obj.currentAnimation = animIndex;
+            }
+
+        };
         switch (obj.data.player.state)
         {
            case PlayerState::idle:
@@ -385,27 +537,26 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                         }
                     }
                 }
+                handleShooting(res.textIdle, res.textShoot,res.ANIM_PLAYER_IDLE, res.ANIM_PLAYER_SHOOT);
                 obj.texture = res.textIdle;
                 obj.currentAnimation = res.ANIM_PLAYER_IDLE;
                 break;
             }
            case PlayerState::running:
            {
-               std::cout << currentDirection << "\n";
                if(!currentDirection)
                {
                    obj.data.player.state = PlayerState::idle;
-               }
+               }   
                if (obj.velocity.x * obj.direction < 0 && obj.grounded)
                {
-                   std::cout << "ground " << obj.grounded << 
-                       (obj.velocity.x * obj.direction);
-
-                   obj.texture = res.textSlide;
-                   obj.currentAnimation = res.ANIM_PLAYER_SLIDE;
+                   handleShooting(res.textSlide, res.textSlideShoot, res.ANIM_PLAYER_SLIDE_SHOOT, 
+                           res.ANIM_PLAYER_SLIDE_SHOOT);
                }
                else
                {
+                   handleShooting(res.textRun,res.textRunShoot, res.ANIM_PLAYER_RUN,
+                           res.ANIM_PLAYER_RUN);
                     obj.texture = res.textRun;
                     obj.currentAnimation = res.ANIM_PLAYER_RUN;
                }
@@ -413,8 +564,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
            }
            case PlayerState::jumping:
            {
-               obj.texture = res.textRun;
-               obj.currentAnimation = res.ANIM_PLAYER_RUN;
+               handleShooting(res.textRun, res.textRunShoot,res.ANIM_PLAYER_RUN, res.ANIM_PLAYER_RUN);
                break;
            }
         }
@@ -426,7 +576,6 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
     {
         obj.velocity.x = currentDirection * deltaTime;
     }
-
 
 
     }
@@ -442,6 +591,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
 
 
                 checkCollision(state,gs,res,obj,objB,deltaTime);
+           
 
 
                 // grounded sensor
@@ -468,6 +618,8 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
             }
             
         }
+        std::cout << foundGround << "\n" ;
+
     }
     if(obj.grounded != foundGround)
     {
@@ -574,70 +726,97 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
         0,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     };
-
-    auto createObject = [&state](int r, int c, SDL_Texture *tex, ObjectType type) 
-    {
-        GameObject o;
-        o.position = glm::vec2(c * TILE_SIZE, state.logH - (MAP_ROWS - r) * TILE_SIZE);
-        o.type = type; 
-        o.collider = {.x =0, .y=0,.w=TILE_SIZE,.h=TILE_SIZE};
-        o.texture = tex;
-        return  o;
+    short foreground[MAP_ROWS][MAP_COLS] = {
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,0,0,0,0,0,0,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    };
+    short background[MAP_ROWS][MAP_COLS] = {
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     };
 
-    for (int r = 0; r < MAP_ROWS; r ++)
+
+    const auto loadMap = [&state, &res, &gs](short layer[MAP_ROWS][MAP_COLS])
     {
-        for (int c = 0; c < MAP_COLS; c++)
+        const  auto createObject = [&state](int r, int c, SDL_Texture *tex, ObjectType type) 
         {
-            switch(map[r][c])
+            GameObject o;
+            o.position = glm::vec2(c * TILE_SIZE, state.logH - (MAP_ROWS - r) * TILE_SIZE);
+            o.type = type; 
+            o.collider = {.x =0, .y=0,.w=TILE_SIZE,.h=TILE_SIZE};
+            o.texture = tex;
+            return  o;
+        };
+        for (int r = 0; r < MAP_ROWS; r ++)
+        {
+            for (int c = 0; c < MAP_COLS; c++)
             {
-                case 1:
-                    {
+                switch(layer[r][c])
+                {
+                    case 1:
+                        {
 
-                        GameObject o = createObject(r,c,res.textGrass, ObjectType::level);
-                        gs.layers[LAYER_IDX_LEVEL].push_back(o);
-                        break;
-                    }
-                case 2:
-                    {
+                            GameObject o = createObject(r,c,res.textGround, ObjectType::level);
+                            gs.layers[LAYER_IDX_LEVEL].push_back(o);
+                            break; } case 2:
+                        {
 
-                        GameObject o = createObject(r,c,res.textPanel, ObjectType::level);
-                        gs.layers[LAYER_IDX_LEVEL].push_back(o);
-                        break;
-                    }
-                case 3:
-                    {
+                            GameObject o = createObject(r,c,res.textPanel, ObjectType::level);
+                            gs.layers[LAYER_IDX_LEVEL].push_back(o);
+                            break;
+                        }
 
-                        GameObject o = createObject(r,c,res.textGrass, ObjectType::level);
+                    case 4:
+                        {
+                            GameObject player = createObject(r, c,res.textIdle,  ObjectType::player);
+                            player.data.player = PlayerData();
+                            player.animations = res.playerAnims;
+                            player.currentAnimation = res.ANIM_PLAYER_IDLE;
+                            player.acceleration = glm::vec2(300, 0);
+                            player.collider = {
+                                .x = 11.f,
+                                .y = 6,
+                                .w = 10.f,
+                                .h = 26.f
+                            };
+                            player.dynamic = true;
+                            player.maxSpeedx= 100;
+                        
+                            gs.layers[LAYER_IDX_CHARACTERS].push_back(player);
+                            gs.playerIndex = gs.layers[LAYER_IDX_CHARACTERS].size() - 1;
+                            break;
+                        }
 
-                        gs.layers[LAYER_IDX_LEVEL].push_back(o);
-                        break;
-                    }
+                    case 5:
+                        {
+                            GameObject o = createObject(r, c,res.textGrass, ObjectType::level);
+                            gs.foregroundTiles.push_back(o);
+                            break;
+                        }
 
-                case 4:
-                    {
-                        GameObject player = createObject(r, c,res.textIdle,  ObjectType::player);
-                        player.data.player = PlayerData();
-                        player.animations = res.playerAnims;
-                        player.currentAnimation = res.ANIM_PLAYER_IDLE;
-                        player.acceleration = glm::vec2(300, 0);
-                        player.collider = {
-                            .x = 11.f,
-                            .y = 6,
-                            .w = 10.f,
-                            .h = 26.f
-                        };
-                        player.dynamic = true;
-                        player.maxSpeedx= 100;
-                    
-                        gs.layers[LAYER_IDX_CHARACTERS].push_back(player);
-                        gs.playerIndex = gs.layers[LAYER_IDX_CHARACTERS].size() - 1;
-                        break;
-                    }
+                    case 6:
+                        {
+                            GameObject o = createObject(r, c , res.textBrick, ObjectType::level);
+                            gs.backgroundTiles.push_back(o);
+                            break;
+                        }
+                }
             }
         }
-    }
 
+
+                
+    };
+    
+    loadMap(background);
+    loadMap(foreground);
+    loadMap(map);
     assert(gs.playerIndex != -1);
 }
 
