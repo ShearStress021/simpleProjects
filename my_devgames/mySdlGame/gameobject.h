@@ -12,15 +12,20 @@ enum class PlayerState {
 
 struct PlayerData {
     PlayerState state{};
-    PlayerData()
+	Timer weaponTimer;
+    PlayerData(): weaponTimer(0.1f)
     {
         state =  PlayerState::idle;
     }
 };
 
 enum class ObjectType {
-	player, level, enemy
+	player, level, enemy, bullet
 
+};
+enum class BulletState 
+{
+	moving, colling, inactive
 };
 
 struct LevelData 
@@ -32,11 +37,22 @@ struct EnemyData
 {
 
 };
+
+struct BulletData 
+{
+
+	BulletState state;
+	BulletData(): state(BulletState::moving)
+	{
+
+	}
+};
 union ObjectData
 {
     PlayerData player;
 	LevelData level;
 	EnemyData enemy;
+	BulletData bullet;
 
 };
 struct GameObject{
@@ -50,8 +66,7 @@ struct GameObject{
 	int currentAnimation;
 	SDL_Texture *texture;
 	bool dynamic{};
-	bool grounded{};
-	SDL_FRect collider{};
+	bool grounded{}; SDL_FRect collider{};
 
 	GameObject() : data{.level = LevelData()}, collider{0}
 	{
