@@ -1,6 +1,8 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_render.h>
+#include <SDL3/SDL_video.h>
 #include <SDL3_image/SDL_image.h>
+#include <SDL3_mixer/SDL_mixer.h>
 #include <cstdio>
 #include <cstdlib>
 #include <glm/ext/vector_float2.hpp>
@@ -17,11 +19,14 @@
 struct SDLState {
     SDL_Window *window{};
     SDL_Renderer *renderer{};
+    MIX_Mixer *mixer{};
     int width, height, logW, logH;
     const bool *keys{};
+    bool fullScreen{};
 
     SDLState(): keys(SDL_GetKeyboardState(nullptr))
     {
+        fullScreen = false;
 
     }
 };
@@ -72,17 +77,25 @@ struct Resources {
     // bullets animations
     const int ANIM_BULLET_MOVING{0};
     const int ANIM_BULLET_HIT{1};
-
-    
     std::vector<Animation> bulletAnims{};
+
+    const int ANIM_ENEMY{0};
+    const int ANIM_ENEMY_HIT{1};
+    const int ANIM_ENEMY_DIE{2};
+    std::vector<Animation> enemyAnims{};
 
 
     SDL_Texture * textPanel , *textIdle{}, *textRun{}, *textGrass{}, 
                 *textGround{},*textBrick{}, *textSlide{}, *textBg1, *textBg2{}, 
                 *textBg3{}, *textBg4{}, *textBullet{}, *textBulletHit{}, *textShoot{},
-                *textRunShoot{}, *textSlideShoot{};
+                *textRunShoot{}, *textSlideShoot{}, *textEnemy{}, *textEnemyHit{}, *textEnemyDie{};
 
     std::vector<SDL_Texture *> textures{};
+
+    std::vector<MIX_Audio *> chucks{};
+    MIX_Audio *chuckShoot{}, *chuckShootHit{}, *chuckEnemyHit{};
+
+    MIX_Audio *musicMain{};
 
     SDL_Texture *loadTexture(SDL_Renderer *renderer,const std::string &filePath){
         SDL_Texture *tex = IMG_LoadTexture(renderer, filePath.c_str());
@@ -91,6 +104,15 @@ struct Resources {
         return tex;
 
     };
+
+
+    MIX_Audio* loadChunk(MIX_Mixer *mixer, const std::string& filename)
+    {
+        MIX_Audio * chunk = MIX_LoadAudio(mixer,filename.c_str(),false);
+        chucks.push_back(chunk);
+        return chunk;
+        
+    }
 
 
 
@@ -110,6 +132,12 @@ struct Resources {
         bulletAnims[ANIM_BULLET_MOVING] = Animation(1,1.15f);
         bulletAnims[ANIM_BULLET_HIT] = Animation(4,0.15f);
 
+        enemyAnims.resize(3);
+        enemyAnims[ANIM_ENEMY] = Animation(8, 1.0f);
+        enemyAnims[ANIM_ENEMY_HIT] = Animation(8, 1.f);
+        enemyAnims[ANIM_ENEMY_DIE] = Animation(18, 2.f);
+        
+
 
         textIdle = loadTexture(state.renderer, "data/idle.png");
         textRun = loadTexture(state.renderer, "data/run.png");
@@ -122,6 +150,11 @@ struct Resources {
         textSlideShoot = loadTexture(state.renderer, "data/slide_shoot.png");
         textRunShoot = loadTexture(state.renderer, "data/shoot_run.png");
 
+
+        // Enemy
+        textEnemy = loadTexture(state.renderer, "data/enemy.png");
+        textEnemyHit = loadTexture(state.renderer, "data/enemy_hit.png");
+        textEnemyDie = loadTexture(state.renderer, "data/enemy_die.png");
         
 
 
@@ -136,6 +169,13 @@ struct Resources {
         textBullet = loadTexture(state.renderer, "data/bullet.png");
         textBulletHit = loadTexture(state.renderer,"data/bullet_hit.png");
 
+        // audio
+        chuckShoot = loadChunk(state.mixer, "data/audio/shoot.wav");
+        chuckShootHit = loadChunk(state.mixer, "data/audio/shoot_hit.wav");
+        chuckEnemyHit = loadChunk(state.mixer, "data/audio/enemy_hit.wav");
+
+        musicMain = MIX_LoadAudio(state.mixer, "data/audio/Juhani Junkala [Retro Game Music Pack] Level 1.mp3", false);
+
 
     }
 
@@ -143,6 +183,13 @@ struct Resources {
         for (SDL_Texture * tex : textures){
             SDL_DestroyTexture(tex);
         }
+
+        for (MIX_Audio * chuck : chucks)
+        {
+            MIX_DestroyAudio(chuck);
+        }
+
+        MIX_DestroyAudio(musicMain);
     }
     
 
@@ -196,6 +243,8 @@ int main(int argc, char* argv[])
 
     uint64_t prevTime{SDL_GetTicks()};
 
+    MIX_PlayAudio(state.mixer, res.musicMain);
+
     while (running){
 
 
@@ -230,6 +279,11 @@ int main(int argc, char* argv[])
                         {
                             gs.debugMode = !gs.debugMode;
                         }
+                        else if (event.key.scancode == SDL_SCANCODE_F11)
+                        {
+                            state.fullScreen =! state.fullScreen;
+                            SDL_SetWindowFullscreen(state.window,state.fullScreen);
+                        }
                         break;
                     }
             }
@@ -241,18 +295,12 @@ int main(int argc, char* argv[])
             for (GameObject &obj : layer){
 
                 update(state,gs,res,obj,deltaTime);
-                if (obj.currentAnimation != -1){
-                    obj.animations[obj.currentAnimation].step(deltaTime);
-                }
             }
         }
 
         for(GameObject &bullet : gs.bullets)
         {
-                update(state,gs,res,bullet,deltaTime);
-                if (bullet.currentAnimation != -1){
-                    bullet.animations[bullet.currentAnimation].step(deltaTime);
-                }
+           update(state,gs,res,bullet,deltaTime);
 
         }
 
@@ -305,7 +353,10 @@ int main(int argc, char* argv[])
 
         for (auto & bullet : gs.bullets)
         {
-            drawObject(state, gs,bullet,bullet.collider.w, bullet.collider.h, deltaTime);
+            if (bullet.data.bullet.state != BulletState::inactive)
+            {
+                drawObject(state, gs,bullet,bullet.collider.w, bullet.collider.h, deltaTime);
+            }
         }
         for (GameObject &obj: gs.foregroundTiles)
         {
@@ -355,6 +406,14 @@ bool initialize(SDLState & state){
 
         initSuccess = false;
     };              // Initialize SDL3
+                    //
+    if (!MIX_Init()){
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", 
+                "Error initilizing MIXER", nullptr);
+
+        initSuccess = false;
+
+    }
 
     // Create an application window with the following settings:
     state.window = SDL_CreateWindow(
@@ -388,12 +447,23 @@ bool initialize(SDLState & state){
     SDL_SetRenderLogicalPresentation(state.renderer,state.logW, state.logH, 
             SDL_LOGICAL_PRESENTATION_LETTERBOX);
 
+    state.mixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
+    if(!state.mixer)
+    {
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", 
+                "Error Loading Audio", state.window);
+        cleanUp(state);
+        initSuccess = false;
+        
+    }
+
     return initSuccess;
 
 }
 void cleanUp(SDLState& state){
     SDL_DestroyRenderer(state.renderer);
     SDL_DestroyWindow(state.window);
+    MIX_DestroyMixer(state.mixer);
     SDL_Quit();
 }
 
@@ -401,7 +471,8 @@ void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float wid
 
 
         float srcX = obj.currentAnimation != -1 ? obj.animations[obj.currentAnimation]
-            .currentFrame()  * width: 0.f;
+            .currentFrame()  * width: (obj.spriteFrame - 1) * width ;
+
         SDL_FRect src {
             .x = srcX,
             .y = 0,
@@ -417,8 +488,27 @@ void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float wid
         };
 
         SDL_FlipMode flipmode = obj.direction == -1 ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
-        SDL_RenderTextureRotated(state.renderer, obj.texture, &src, &dest,0,
-                nullptr,flipmode);
+        if (!obj.shouldFlash){
+
+            SDL_RenderTextureRotated(state.renderer, obj.texture, &src, &dest,0,
+                    nullptr,flipmode);
+        }
+        else
+        {
+            SDL_SetTextureColorModFloat(obj.texture, 2.5f, 1.0f, 1.0f);
+
+            SDL_RenderTextureRotated(state.renderer, obj.texture, &src, &dest,0,
+                    nullptr,flipmode);
+            SDL_SetTextureColorModFloat(obj.texture, 1.0f, 1.0f, 1.0f);
+
+
+            if (obj.flashTimer.step(deltaTime))
+            {
+                obj.shouldFlash = false;
+            }
+        }
+
+        
 
         if (gs.debugMode)
         {
@@ -439,17 +529,21 @@ void drawObject(const SDLState &state, GameState &gs, GameObject &obj, float wid
 }
 
 void update(const SDLState & state, GameState &gs, Resources &res, GameObject &obj, 
-        float deltaTime) {
+        float deltaTime) 
+{
+    if (obj.currentAnimation != -1){
+        obj.animations[obj.currentAnimation].step(deltaTime);
+    }
     if (obj.dynamic && !obj.grounded)
     {
         obj.velocity += glm::vec2(0, 500) * deltaTime;
     }
 
 
+    float currentDirection{0};
 
     if(obj.type == ObjectType::player)
     {
-        float currentDirection{0};
 
         if(state.keys[SDL_SCANCODE_A])
         {
@@ -460,10 +554,6 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
             currentDirection += 1;
         }
 
-        if (currentDirection)
-        {
-            obj.direction = currentDirection;
-        }
 
         Timer &weaponTimer = obj.data.player.weaponTimer;
         weaponTimer.step(deltaTime);
@@ -472,6 +562,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                 SDL_Texture *tex, SDL_Texture *shootTex, int animIndex, 
                 int shootAnimIndex)
         {
+
             if (state.keys[SDL_SCANCODE_J])
             {
 
@@ -480,6 +571,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                 if (weaponTimer.isTimeout()){
                     weaponTimer.reset();
                     GameObject bullet;
+                    bullet.data.bullet = BulletData();
                     bullet.type = ObjectType::bullet;
                     bullet.direction = gs.player().direction;
                     bullet.texture = res.textBullet;
@@ -489,10 +581,14 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                         .w = static_cast<float>(res.textBullet->w),
                         .h = static_cast<float>(res.textBullet->h),
                     };
+
+                    const int yVariation{40};
+                    const float yVelocity = SDL_rand(yVariation) - yVariation/2.f;
                     bullet.velocity = glm::vec2(
                             obj.velocity.x + 600.f * obj.direction,
-                            0
+                            yVelocity 
                             );
+                    bullet.maxSpeedx = 1000.f;
                     bullet.animations = res.bulletAnims;
                     const float left{4};
                     const float right{24};
@@ -502,7 +598,22 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                             obj.position.x  + xOffset,
                             obj.position.y + TILE_SIZE/2.0f
                             );
-                    gs.bullets.push_back(bullet);
+                    bool foundInactive = false;
+
+                    for (int i = 0; i < gs.bullets.size() && !foundInactive; i++)
+                    {
+                        if (gs.bullets[i].data.bullet.state == BulletState::inactive)
+                        {
+                            foundInactive = true;
+                            gs.bullets[i] = bullet;
+                        }
+                    }
+                    if (!foundInactive)
+                    {
+                        gs.bullets.push_back(bullet);
+
+                    }
+                    MIX_PlayAudio(state.mixer, res.chuckShoot);
                 }
                 
             }
@@ -520,6 +631,7 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
                 {
                     
                     obj.data.player.state = PlayerState::running;
+
                 }
                 else 
                 {
@@ -569,15 +681,89 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
            }
         }
 
+    }
 
+    else if(obj.type == ObjectType::bullet)
+    {
+
+        switch(obj.data.bullet.state)
+        {
+            case BulletState::moving:
+                {
+
+                    if(obj.position.x - gs.mapViewport.x < 0 || obj.position.x - gs.mapViewport.x > state.logW || 
+                            obj.position.y - gs.mapViewport.y < 0 || obj.position.y - gs.mapViewport.y > state.logH)
+
+                    {
+                        obj.data.bullet.state = BulletState::inactive;
+                    }
+                    
+                    break;
+                }
+
+            case BulletState::colliding:
+                {
+                    if(obj.animations[obj.currentAnimation].isDone())
+                    {
+                        obj.data.bullet.state = BulletState::inactive;
+                    }
+                    break;
+                }
+        }
+    }
+    else if (obj.type == ObjectType::enemy)
+    {
+        EnemyData &d = obj.data.enemy;
+        switch(d.state)
+        {
+            case EnemyState::shambling:
+                {
+                    glm::vec2 playerDir = gs.player().position - obj.position;
+                    if (glm::length(playerDir) < 100)
+                    {
+                        currentDirection = playerDir.x < 0 ? -1 : 1;
+                        obj.acceleration = glm::vec2(30, 0);
+                    }
+                    else 
+                    {
+                        obj.acceleration = glm::vec2(0);
+                        obj.velocity.x = 0;
+                    }
+                    break;
+                }
+            case EnemyState::damage:
+                {
+                    if (obj.data.enemy.damagedTimer.step(deltaTime))
+                    {
+                        obj.data.enemy.state = EnemyState::shambling;
+                        obj.texture = res.textEnemy;
+                        obj.currentAnimation = res.ANIM_ENEMY;
+                    }
+                    break;
+                }
+            case EnemyState::dead:
+                {
+                    obj.velocity.x = 0;
+                    if (obj.currentAnimation != -1 && obj.animations[obj.currentAnimation].isDone())
+                    {
+                        
+                        obj.currentAnimation = -1;
+                        obj.spriteFrame = 18;
+                         
+                    }
+                    break;
+                }
+        }
+    }
+    if (currentDirection)
+    {
+        obj.direction = currentDirection;
+    }
     obj.velocity += currentDirection * obj.acceleration * deltaTime;
 
     if (std::abs(obj.velocity.x) > obj.maxSpeedx)
     {
         obj.velocity.x = currentDirection * deltaTime;
-    }
-
-
     }
     obj.position += obj.velocity * deltaTime;
 
@@ -594,31 +780,37 @@ void update(const SDLState & state, GameState &gs, Resources &res, GameObject &o
            
 
 
-                // grounded sensor
-                SDL_FRect sensor {
-                    .x = obj.position.x + obj.collider.x,
-                    .y = obj.position.y + obj.collider.y + obj.collider.h,
-                    .w = obj.collider.w,
-                    .h = 1 
-                };
-                SDL_FRect rectB{
-                    .x = objB.position.x + objB.collider.x,
-                    .y = objB.position.y + objB.collider.y,
-                    .w = objB.collider.w,
-                    .h = objB.collider.h 
-                };
-
-                if(SDL_HasRectIntersectionFloat(&sensor, &rectB))
+                if (objB.type == ObjectType::level)
                 {
-                    foundGround = true;
-                }
+                // grounded sensor
+                    SDL_FRect sensor {
+                        .x = obj.position.x + obj.collider.x,
+                        .y = obj.position.y + obj.collider.y + obj.collider.h,
+                        .w = obj.collider.w,
+                        .h = 1 
+                    };
+                    SDL_FRect rectB{
+                        .x = objB.position.x + objB.collider.x,
+                        .y = objB.position.y + objB.collider.y,
+                        .w = objB.collider.w,
+                        .h = objB.collider.h 
+                    };
 
+                    SDL_FRect rectC {
+                        0
+                    };
+                    if(SDL_GetRectIntersectionFloat(&sensor, &rectB, &rectC))
+                    {
+                        foundGround = true;
+                    }
+
+
+                }
 
             
             }
             
         }
-        std::cout << foundGround << "\n" ;
 
     }
     if(obj.grounded != foundGround)
@@ -639,49 +831,123 @@ void collistionResponse(const SDLState &state, GameState &gs, Resources &res,
 
 {
     
+
+    const auto genericResponse = [&]()
+    {
+        if(rectC.w < rectC.h)
+        {
+            if (objA.velocity.x > 0)
+            {
+                objA.position.x -= rectC.w;
+            }
+            else if(objA.velocity.x < 0)
+            {
+                objA.position.x += rectC.w;
+
+            
+            }
+
+            objA.velocity.x = 0;
+
+        }
+        else 
+        {
+
+            if (objA.velocity.y > 0)
+            {
+                objA.position.y -= rectC.h;
+            }
+            else if(objA.velocity.y < 0)
+            {
+                objA.position.y += rectC.h;
+            }
+
+            objA.velocity.y = 0;
+
+        }
+
+    };
     if(objA.type == ObjectType::player)
     {
         switch(objB.type)
         {
             case ObjectType::level:
                 {
-                    if(rectC.w < rectC.h)
+                    genericResponse();
+                    break;
+                }
+            case ObjectType::enemy:
+                {
+                    if (objB.data.enemy.state != EnemyState::dead)
                     {
-                        if (objA.velocity.x > 0)
-                        {
-                            objA.position.x -= rectC.w;
-                        }
-                        else if(objA.velocity.x < 0)
-                        {
-                            objA.position.x += rectC.w;
-
-                        
-                        }
-
-                        objA.velocity.x = 0;
-
-                    }
-                    else 
-                    {
-
-                        if (objA.velocity.y > 0)
-                        {
-                            objA.position.y -= rectC.h;
-                        }
-                        else if(objA.velocity.y < 0)
-                        {
-                            objA.position.y += rectC.h;
-                        }
-
-                        objA.velocity.y = 0;
-
+                        objA.velocity = glm::vec2(100, 0) * -objA.direction;
                     }
                     break;
                 }
             
-
         }
 
+    }
+    else if (objA.type == ObjectType::bullet)
+    {
+        bool passThrough{false};
+        switch (objA.data.bullet.state) {
+            case BulletState::moving:
+                {
+                    switch(objB.type){
+                        case ObjectType::level:
+                            {
+                                MIX_PlayAudio(state.mixer, res.chuckShootHit);
+                                break;
+                            }
+                        case ObjectType::enemy:
+                            {
+                                EnemyData &d = objB.data.enemy;
+                                if (d.state != EnemyState::dead)
+                                {
+                                    objB.direction = -objA.direction;
+                                    objB.shouldFlash = true;
+                                    objB.flashTimer.reset();
+                                    objB.texture = res.textEnemyHit;
+                                    objB.currentAnimation = res.ANIM_ENEMY_HIT;
+                                    d.state = EnemyState::damage;
+                                    d.healthPoints -= 10;
+                                    if (d.healthPoints <= 0)
+                                    {
+                                        d.state = EnemyState::dead;
+                                        objB.texture = res.textEnemyDie;
+                                        objB.currentAnimation = res.ANIM_ENEMY_DIE;
+                                    }
+                                    MIX_PlayAudio(state.mixer, res.chuckEnemyHit);
+
+                                }
+                                else {
+
+                                    passThrough = true;
+                                
+                                }
+                                break;
+
+
+                            }
+                    }
+                    if (!passThrough)
+                    {
+                        genericResponse();
+                        objA.velocity *= 0;
+                        objA.data.bullet.state = BulletState::colliding;
+                        objA.texture = res.textBulletHit;
+                        objA.currentAnimation = res.ANIM_BULLET_HIT;
+
+                    }
+                    break;
+
+                }
+        }
+    }
+    else if (objA.type == ObjectType::enemy)
+    {
+        genericResponse();
     }
 }
 void checkCollision(const SDLState &state, GameState &gs, Resources &res, GameObject &a 
@@ -721,9 +987,9 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
 {
     short map[MAP_ROWS][MAP_COLS] = {
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        0,0,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-        0,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,4,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,2,0,0,0,0,0,0,3,2,2,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,2,2,0,0,0,0,3,2,2,2,2,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     };
     short foreground[MAP_ROWS][MAP_COLS] = {
@@ -772,6 +1038,20 @@ void createTile(const SDLState &state, GameState &gs, const Resources &res)
                             break;
                         }
 
+                    case 3:
+                            {
+                                GameObject o = createObject(r, c, res.textEnemy, ObjectType::enemy);
+                                o.data.enemy = EnemyData();
+                                o.currentAnimation = res.ANIM_ENEMY;
+                                o.animations = res.enemyAnims;
+                                o.maxSpeedx = 15;
+                                o.dynamic = true;
+                                o.collider = SDL_FRect{
+                                    .x = 10, .y = 4, .w =12, .h =28
+                                };
+                                gs.layers[LAYER_IDX_CHARACTERS].push_back(o);
+                                break;
+                            }
                     case 4:
                         {
                             GameObject player = createObject(r, c,res.textIdle,  ObjectType::player);

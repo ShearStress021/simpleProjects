@@ -78,7 +78,8 @@ CMakeFiles/res.dir/main.cpp.o: \
  /usr/local/include/SDL3/SDL_timer.h /usr/local/include/SDL3/SDL_tray.h \
  /usr/local/include/SDL3/SDL_version.h \
  /usr/local/include/SDL3/SDL_oldnames.h \
- /usr/local/include/SDL3_image/SDL_image.h /usr/include/c++/14/cstdio \
+ /usr/local/include/SDL3_image/SDL_image.h \
+ /usr/local/include/SDL3_mixer/SDL_mixer.h /usr/include/c++/14/cstdio \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \

@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/res.dir/link.d CMakeFiles/res.dir/main.cpp.o -o res  -lSDL3 -lSDL3_image
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/res.dir/link.d CMakeFiles/res.dir/main.cpp.o -o res  -Wl,-rpath,/usr/local/lib /usr/local/lib/libSDL3_image.so.0.3.0 /usr/local/lib/libSDL3_mixer.so.0.1.0 /usr/local/lib/libSDL3.so.0.5.0

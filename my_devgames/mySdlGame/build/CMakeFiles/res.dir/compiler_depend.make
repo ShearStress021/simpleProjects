@@ -451,7 +451,8 @@ CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/m
   /usr/local/include/SDL3/SDL_tray.h \
   /usr/local/include/SDL3/SDL_version.h \
   /usr/local/include/SDL3/SDL_video.h \
-  /usr/local/include/SDL3_image/SDL_image.h
+  /usr/local/include/SDL3_image/SDL_image.h \
+  /usr/local/include/SDL3_mixer/SDL_mixer.h
 
 res: /lib/x86_64-linux-gnu/libc.so.6 \
   /lib/x86_64-linux-gnu/libm.so.6 \
@@ -469,14 +470,13 @@ res: /lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
-  /usr/local/lib/libSDL3.so \
-  /usr/local/lib/libSDL3_image.so \
+  /usr/local/lib/libSDL3.so.0.5.0 \
+  /usr/local/lib/libSDL3_image.so.0.3.0 \
+  /usr/local/lib/libSDL3_mixer.so.0.1.0 \
   CMakeFiles/res.dir/main.cpp.o
 
 
-/usr/local/lib/libSDL3_image.so:
-
-/usr/local/lib/libSDL3.so:
+/usr/local/lib/libSDL3.so.0.5.0:
 
 /usr/lib/x86_64-linux-gnu/libc_nonshared.a:
 
@@ -515,6 +515,8 @@ res: /lib/x86_64-linux-gnu/libc.so.6 \
 /usr/local/include/SDL3/SDL_keycode.h:
 
 /usr/local/include/SDL3/SDL_keyboard.h:
+
+/usr/local/include/SDL3_mixer/SDL_mixer.h:
 
 /usr/local/include/SDL3/SDL_joystick.h:
 
@@ -1140,6 +1142,8 @@ CMakeFiles/res.dir/main.cpp.o:
 
 /usr/include/glm/detail/type_half.inl:
 
+/usr/local/lib/libSDL3_image.so.0.3.0:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/14/tr1/gamma.tcc:
@@ -1345,6 +1349,8 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/include/glm/ext/matrix_double3x4.hpp:
 
 /usr/include/glm/ext/matrix_double4x2.hpp:
+
+/usr/local/lib/libSDL3_mixer.so.0.1.0:
 
 /usr/include/c++/14/streambuf:
 

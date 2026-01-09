@@ -96,6 +96,9 @@ res_EXTERNAL_OBJECTS =
 res: CMakeFiles/res.dir/main.cpp.o
 res: CMakeFiles/res.dir/build.make
 res: CMakeFiles/res.dir/compiler_depend.ts
+res: /usr/local/lib/libSDL3_image.so.0.3.0
+res: /usr/local/lib/libSDL3_mixer.so.0.1.0
+res: /usr/local/lib/libSDL3.so.0.5.0
 res: CMakeFiles/res.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/mySdlGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable res"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/res.dir/link.txt --verbose=$(VERBOSE)
