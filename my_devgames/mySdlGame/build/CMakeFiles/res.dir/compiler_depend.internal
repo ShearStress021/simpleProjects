@@ -453,6 +453,7 @@ CMakeFiles/res.dir/main.cpp.o
  /usr/local/include/SDL3/SDL_version.h
  /usr/local/include/SDL3/SDL_video.h
  /usr/local/include/SDL3_image/SDL_image.h
+ /usr/local/include/SDL3_mixer/SDL_mixer.h
 
 res
  /lib/x86_64-linux-gnu/libc.so.6
@@ -471,7 +472,8 @@ res
  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so
  /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so
  /usr/lib/x86_64-linux-gnu/libc_nonshared.a
- /usr/local/lib/libSDL3.so
- /usr/local/lib/libSDL3_image.so
+ /usr/local/lib/libSDL3.so.0.5.0
+ /usr/local/lib/libSDL3_image.so.0.3.0
+ /usr/local/lib/libSDL3_mixer.so.0.1.0
  /home/kanja/projects/simpleProjects/my_devgames/mySdlGame/build/CMakeFiles/res.dir/main.cpp.o
 

@@ -3,8 +3,9 @@ res: \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/res.dir/main.cpp.o \
-  /usr/local/lib/libSDL3.so \
-  /usr/local/lib/libSDL3_image.so \
+  /usr/local/lib/libSDL3_image.so.0.3.0 \
+  /usr/local/lib/libSDL3_mixer.so.0.1.0 \
+  /usr/local/lib/libSDL3.so.0.5.0 \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -31,7 +32,6 @@ res: \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
-  /lib/x86_64-linux-gnu/libm.so.6 \
   /lib64/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o:
@@ -42,9 +42,11 @@ res: \
 
 CMakeFiles/res.dir/main.cpp.o:
 
-/usr/local/lib/libSDL3.so:
+/usr/local/lib/libSDL3_image.so.0.3.0:
 
-/usr/local/lib/libSDL3_image.so:
+/usr/local/lib/libSDL3_mixer.so.0.1.0:
+
+/usr/local/lib/libSDL3.so.0.5.0:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so:
 
@@ -97,7 +99,5 @@ CMakeFiles/res.dir/main.cpp.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
-
-/lib/x86_64-linux-gnu/libm.so.6:
 
 /lib64/ld-linux-x86-64.so.2:

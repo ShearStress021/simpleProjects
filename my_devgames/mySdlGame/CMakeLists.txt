@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(SDL3 REQUIRED)
 find_package(SDL3_image REQUIRED)
 find_package(glm REQUIRED)
+find_package(SDL3_mixer REQUIRED)
 
 # 1. Find the Raylib package
 # This works because you installed it to /usr/local
@@ -22,8 +23,9 @@ add_executable(res
 # 3. Link libraries
 # This automatically handles include paths and linking
 target_link_libraries(res PRIVATE 
-    SDL3
-    SDL3_image
+    SDL3::SDL3
+    SDL3_image::SDL3_image
+    SDL3_mixer::SDL3_mixer
     glm::glm)
 
 # 4. Optional: Add standard Linux system libraries if needed
