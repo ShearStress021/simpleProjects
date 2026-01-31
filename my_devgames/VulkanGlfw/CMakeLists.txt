@@ -8,11 +8,9 @@ find_package(glfw3 REQUIRED)
 find_package(Vulkan REQUIRED)
 find_package(Threads REQUIRED)
 
-add_executable(res
-    main.cpp
-	first_app.cpp
-	lve_window.cpp
-)
+file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
+add_executable(res ${SOURCES})
+
 
 target_link_libraries(res PRIVATE
     glfw

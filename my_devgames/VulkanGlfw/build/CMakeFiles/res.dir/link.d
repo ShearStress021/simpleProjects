@@ -2,13 +2,13 @@ res: \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
-  CMakeFiles/res.dir/main.cpp.o \
-  CMakeFiles/res.dir/first_app.cpp.o \
-  CMakeFiles/res.dir/lve_window.cpp.o \
-  /usr/local/lib/libglfw3.a \
+  CMakeFiles/res.dir/src/first_app.cpp.o \
+  CMakeFiles/res.dir/src/lve_device.cpp.o \
+  CMakeFiles/res.dir/src/lve_pipeline.cpp.o \
+  CMakeFiles/res.dir/src/lve_window.cpp.o \
+  CMakeFiles/res.dir/src/main.cpp.o \
+  /usr/lib/x86_64-linux-gnu/libglfw.so.3.4 \
   /usr/lib/x86_64-linux-gnu/libvulkan.so \
-  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libdl.a \
-  /usr/lib/x86_64-linux-gnu/librt.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libdl.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -36,6 +36,7 @@ res: \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
+  /lib/x86_64-linux-gnu/libm.so.6 \
   /lib64/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o:
@@ -44,19 +45,19 @@ res: \
 
 /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
-CMakeFiles/res.dir/main.cpp.o:
+CMakeFiles/res.dir/src/first_app.cpp.o:
 
-CMakeFiles/res.dir/first_app.cpp.o:
+CMakeFiles/res.dir/src/lve_device.cpp.o:
 
-CMakeFiles/res.dir/lve_window.cpp.o:
+CMakeFiles/res.dir/src/lve_pipeline.cpp.o:
 
-/usr/local/lib/libglfw3.a:
+CMakeFiles/res.dir/src/lve_window.cpp.o:
+
+CMakeFiles/res.dir/src/main.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/libglfw.so.3.4:
 
 /usr/lib/x86_64-linux-gnu/libvulkan.so:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libdl.a:
-
-/usr/lib/x86_64-linux-gnu/librt.a:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libdl.a:
 
@@ -111,5 +112,7 @@ CMakeFiles/res.dir/lve_window.cpp.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
+
+/lib/x86_64-linux-gnu/libm.so.6:
 
 /lib64/ld-linux-x86-64.so.2:

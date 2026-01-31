@@ -1,8 +1,8 @@
-CMakeFiles/res.dir/lve_window.cpp.o: \
- /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp \
+CMakeFiles/res.dir/src/lve_window.cpp.o: \
+ /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.hpp \
- /usr/local/include/GLFW/glfw3.h \
+ /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.hpp \
+ /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -137,4 +137,8 @@ CMakeFiles/res.dir/lve_window.cpp.o: \
  /usr/include/c++/14/bits/basic_string.tcc \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
- /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple
+ /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/exception \
+ /usr/include/c++/14/bits/exception_ptr.h \
+ /usr/include/c++/14/bits/cxxabi_init_exception.h \
+ /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/nested_exception.h

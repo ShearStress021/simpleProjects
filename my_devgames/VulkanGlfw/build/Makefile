@@ -129,77 +129,125 @@ res/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/build
 .PHONY : res/fast
 
-first_app.o: first_app.cpp.o
-.PHONY : first_app.o
+src/first_app.o: src/first_app.cpp.o
+.PHONY : src/first_app.o
 
 # target to build an object file
-first_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.o
-.PHONY : first_app.cpp.o
+src/first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/first_app.cpp.o
+.PHONY : src/first_app.cpp.o
 
-first_app.i: first_app.cpp.i
-.PHONY : first_app.i
+src/first_app.i: src/first_app.cpp.i
+.PHONY : src/first_app.i
 
 # target to preprocess a source file
-first_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.i
-.PHONY : first_app.cpp.i
+src/first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/first_app.cpp.i
+.PHONY : src/first_app.cpp.i
 
-first_app.s: first_app.cpp.s
-.PHONY : first_app.s
+src/first_app.s: src/first_app.cpp.s
+.PHONY : src/first_app.s
 
 # target to generate assembly for a file
-first_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/first_app.cpp.s
-.PHONY : first_app.cpp.s
+src/first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/first_app.cpp.s
+.PHONY : src/first_app.cpp.s
 
-lve_window.o: lve_window.cpp.o
-.PHONY : lve_window.o
+src/lve_device.o: src/lve_device.cpp.o
+.PHONY : src/lve_device.o
 
 # target to build an object file
-lve_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.o
-.PHONY : lve_window.cpp.o
+src/lve_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_device.cpp.o
+.PHONY : src/lve_device.cpp.o
 
-lve_window.i: lve_window.cpp.i
-.PHONY : lve_window.i
+src/lve_device.i: src/lve_device.cpp.i
+.PHONY : src/lve_device.i
 
 # target to preprocess a source file
-lve_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.i
-.PHONY : lve_window.cpp.i
+src/lve_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_device.cpp.i
+.PHONY : src/lve_device.cpp.i
 
-lve_window.s: lve_window.cpp.s
-.PHONY : lve_window.s
+src/lve_device.s: src/lve_device.cpp.s
+.PHONY : src/lve_device.s
 
 # target to generate assembly for a file
-lve_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/lve_window.cpp.s
-.PHONY : lve_window.cpp.s
+src/lve_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_device.cpp.s
+.PHONY : src/lve_device.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/lve_pipeline.o: src/lve_pipeline.cpp.o
+.PHONY : src/lve_pipeline.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/lve_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_pipeline.cpp.o
+.PHONY : src/lve_pipeline.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/lve_pipeline.i: src/lve_pipeline.cpp.i
+.PHONY : src/lve_pipeline.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/lve_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_pipeline.cpp.i
+.PHONY : src/lve_pipeline.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/lve_pipeline.s: src/lve_pipeline.cpp.s
+.PHONY : src/lve_pipeline.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/lve_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_pipeline.cpp.s
+.PHONY : src/lve_pipeline.cpp.s
+
+src/lve_window.o: src/lve_window.cpp.o
+.PHONY : src/lve_window.o
+
+# target to build an object file
+src/lve_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.o
+.PHONY : src/lve_window.cpp.o
+
+src/lve_window.i: src/lve_window.cpp.i
+.PHONY : src/lve_window.i
+
+# target to preprocess a source file
+src/lve_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.i
+.PHONY : src/lve_window.cpp.i
+
+src/lve_window.s: src/lve_window.cpp.s
+.PHONY : src/lve_window.s
+
+# target to generate assembly for a file
+src/lve_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.s
+.PHONY : src/lve_window.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -210,15 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... res"
-	@echo "... first_app.o"
-	@echo "... first_app.i"
-	@echo "... first_app.s"
-	@echo "... lve_window.o"
-	@echo "... lve_window.i"
-	@echo "... lve_window.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/first_app.o"
+	@echo "... src/first_app.i"
+	@echo "... src/first_app.s"
+	@echo "... src/lve_device.o"
+	@echo "... src/lve_device.i"
+	@echo "... src/lve_device.s"
+	@echo "... src/lve_pipeline.o"
+	@echo "... src/lve_pipeline.i"
+	@echo "... src/lve_pipeline.s"
+	@echo "... src/lve_window.o"
+	@echo "... src/lve_window.i"
+	@echo "... src/lve_window.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

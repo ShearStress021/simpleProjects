@@ -72,68 +72,98 @@ include CMakeFiles/res.dir/flags.make
 CMakeFiles/res.dir/codegen:
 .PHONY : CMakeFiles/res.dir/codegen
 
-CMakeFiles/res.dir/main.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/main.cpp
-CMakeFiles/res.dir/main.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/main.cpp.o -MF CMakeFiles/res.dir/main.cpp.o.d -o CMakeFiles/res.dir/main.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/main.cpp
+CMakeFiles/res.dir/src/first_app.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/first_app.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/first_app.cpp
+CMakeFiles/res.dir/src/first_app.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/src/first_app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/first_app.cpp.o -MF CMakeFiles/res.dir/src/first_app.cpp.o.d -o CMakeFiles/res.dir/src/first_app.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/first_app.cpp
 
-CMakeFiles/res.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/main.cpp > CMakeFiles/res.dir/main.cpp.i
+CMakeFiles/res.dir/src/first_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/first_app.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/first_app.cpp > CMakeFiles/res.dir/src/first_app.cpp.i
 
-CMakeFiles/res.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/main.cpp -o CMakeFiles/res.dir/main.cpp.s
+CMakeFiles/res.dir/src/first_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/first_app.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/first_app.cpp -o CMakeFiles/res.dir/src/first_app.cpp.s
 
-CMakeFiles/res.dir/first_app.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/first_app.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/first_app.cpp
-CMakeFiles/res.dir/first_app.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/res.dir/first_app.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/first_app.cpp.o -MF CMakeFiles/res.dir/first_app.cpp.o.d -o CMakeFiles/res.dir/first_app.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/first_app.cpp
+CMakeFiles/res.dir/src/lve_device.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/lve_device.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_device.cpp
+CMakeFiles/res.dir/src/lve_device.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/res.dir/src/lve_device.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/lve_device.cpp.o -MF CMakeFiles/res.dir/src/lve_device.cpp.o.d -o CMakeFiles/res.dir/src/lve_device.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_device.cpp
 
-CMakeFiles/res.dir/first_app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/first_app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/first_app.cpp > CMakeFiles/res.dir/first_app.cpp.i
+CMakeFiles/res.dir/src/lve_device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/lve_device.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_device.cpp > CMakeFiles/res.dir/src/lve_device.cpp.i
 
-CMakeFiles/res.dir/first_app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/first_app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/first_app.cpp -o CMakeFiles/res.dir/first_app.cpp.s
+CMakeFiles/res.dir/src/lve_device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/lve_device.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_device.cpp -o CMakeFiles/res.dir/src/lve_device.cpp.s
 
-CMakeFiles/res.dir/lve_window.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/lve_window.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp
-CMakeFiles/res.dir/lve_window.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/res.dir/lve_window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/lve_window.cpp.o -MF CMakeFiles/res.dir/lve_window.cpp.o.d -o CMakeFiles/res.dir/lve_window.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp
+CMakeFiles/res.dir/src/lve_pipeline.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/lve_pipeline.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_pipeline.cpp
+CMakeFiles/res.dir/src/lve_pipeline.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/res.dir/src/lve_pipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/lve_pipeline.cpp.o -MF CMakeFiles/res.dir/src/lve_pipeline.cpp.o.d -o CMakeFiles/res.dir/src/lve_pipeline.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_pipeline.cpp
 
-CMakeFiles/res.dir/lve_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/lve_window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp > CMakeFiles/res.dir/lve_window.cpp.i
+CMakeFiles/res.dir/src/lve_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/lve_pipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_pipeline.cpp > CMakeFiles/res.dir/src/lve_pipeline.cpp.i
 
-CMakeFiles/res.dir/lve_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/lve_window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/lve_window.cpp -o CMakeFiles/res.dir/lve_window.cpp.s
+CMakeFiles/res.dir/src/lve_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/lve_pipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_pipeline.cpp -o CMakeFiles/res.dir/src/lve_pipeline.cpp.s
+
+CMakeFiles/res.dir/src/lve_window.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/lve_window.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.cpp
+CMakeFiles/res.dir/src/lve_window.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/res.dir/src/lve_window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/lve_window.cpp.o -MF CMakeFiles/res.dir/src/lve_window.cpp.o.d -o CMakeFiles/res.dir/src/lve_window.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.cpp
+
+CMakeFiles/res.dir/src/lve_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/lve_window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.cpp > CMakeFiles/res.dir/src/lve_window.cpp.i
+
+CMakeFiles/res.dir/src/lve_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/lve_window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/lve_window.cpp -o CMakeFiles/res.dir/src/lve_window.cpp.s
+
+CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/main.cpp
+CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/res.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/main.cpp.o -MF CMakeFiles/res.dir/src/main.cpp.o.d -o CMakeFiles/res.dir/src/main.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/main.cpp
+
+CMakeFiles/res.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/main.cpp > CMakeFiles/res.dir/src/main.cpp.i
+
+CMakeFiles/res.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/src/main.cpp -o CMakeFiles/res.dir/src/main.cpp.s
 
 # Object files for target res
 res_OBJECTS = \
-"CMakeFiles/res.dir/main.cpp.o" \
-"CMakeFiles/res.dir/first_app.cpp.o" \
-"CMakeFiles/res.dir/lve_window.cpp.o"
+"CMakeFiles/res.dir/src/first_app.cpp.o" \
+"CMakeFiles/res.dir/src/lve_device.cpp.o" \
+"CMakeFiles/res.dir/src/lve_pipeline.cpp.o" \
+"CMakeFiles/res.dir/src/lve_window.cpp.o" \
+"CMakeFiles/res.dir/src/main.cpp.o"
 
 # External object files for target res
 res_EXTERNAL_OBJECTS =
 
-res: CMakeFiles/res.dir/main.cpp.o
-res: CMakeFiles/res.dir/first_app.cpp.o
-res: CMakeFiles/res.dir/lve_window.cpp.o
+res: CMakeFiles/res.dir/src/first_app.cpp.o
+res: CMakeFiles/res.dir/src/lve_device.cpp.o
+res: CMakeFiles/res.dir/src/lve_pipeline.cpp.o
+res: CMakeFiles/res.dir/src/lve_window.cpp.o
+res: CMakeFiles/res.dir/src/main.cpp.o
 res: CMakeFiles/res.dir/build.make
 res: CMakeFiles/res.dir/compiler_depend.ts
-res: /usr/local/lib/libglfw3.a
+res: /usr/lib/x86_64-linux-gnu/libglfw.so.3.4
 res: /usr/lib/x86_64-linux-gnu/libvulkan.so
-res: /usr/lib/x86_64-linux-gnu/librt.a
-res: /usr/lib/x86_64-linux-gnu/libm.so
 res: CMakeFiles/res.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable res"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/VulkanGlfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable res"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/res.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
