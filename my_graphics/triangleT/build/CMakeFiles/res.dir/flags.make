@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/kanja/projects/simpleProjects/my_graphics/triangleT/build/_deps/glfw-src/include
 
 CXX_FLAGS = -std=gnu++17
 

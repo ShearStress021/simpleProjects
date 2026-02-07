@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanja/projects/simpleProjects/my_graphics/triangleT/src/triangle.cpp" "CMakeFiles/res.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/res.dir/src/triangle.cpp.o.d"
+  "/home/kanja/projects/simpleProjects/my_graphics/triangleT/src/main.cpp" "CMakeFiles/res.dir/src/main.cpp.o" "gcc" "CMakeFiles/res.dir/src/main.cpp.o.d"
   "" "res" "gcc" "CMakeFiles/res.dir/link.d"
   )
 

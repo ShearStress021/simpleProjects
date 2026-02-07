@@ -72,32 +72,35 @@ include CMakeFiles/res.dir/flags.make
 CMakeFiles/res.dir/codegen:
 .PHONY : CMakeFiles/res.dir/codegen
 
-CMakeFiles/res.dir/src/triangle.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/src/triangle.cpp.o: /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/triangle.cpp
-CMakeFiles/res.dir/src/triangle.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_graphics/triangleT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/src/triangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/triangle.cpp.o -MF CMakeFiles/res.dir/src/triangle.cpp.o.d -o CMakeFiles/res.dir/src/triangle.cpp.o -c /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/triangle.cpp
+CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/main.cpp.o: /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/main.cpp
+CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_graphics/triangleT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/main.cpp.o -MF CMakeFiles/res.dir/src/main.cpp.o.d -o CMakeFiles/res.dir/src/main.cpp.o -c /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/main.cpp
 
-CMakeFiles/res.dir/src/triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/triangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/triangle.cpp > CMakeFiles/res.dir/src/triangle.cpp.i
+CMakeFiles/res.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/main.cpp > CMakeFiles/res.dir/src/main.cpp.i
 
-CMakeFiles/res.dir/src/triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/triangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/triangle.cpp -o CMakeFiles/res.dir/src/triangle.cpp.s
+CMakeFiles/res.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_graphics/triangleT/src/main.cpp -o CMakeFiles/res.dir/src/main.cpp.s
 
 # Object files for target res
 res_OBJECTS = \
-"CMakeFiles/res.dir/src/triangle.cpp.o"
+"CMakeFiles/res.dir/src/main.cpp.o"
 
 # External object files for target res
 res_EXTERNAL_OBJECTS =
 
-res: CMakeFiles/res.dir/src/triangle.cpp.o
+res: CMakeFiles/res.dir/src/main.cpp.o
 res: CMakeFiles/res.dir/build.make
 res: CMakeFiles/res.dir/compiler_depend.ts
-res: /usr/lib/x86_64-linux-gnu/libglfw.so.3.4
+res: _deps/glfw-build/src/libglfw3.a
 res: /usr/lib/x86_64-linux-gnu/libvulkan.so
+res: /usr/lib/x86_64-linux-gnu/librt.a
+res: /usr/lib/x86_64-linux-gnu/libm.so
+res: /usr/lib/x86_64-linux-gnu/libX11.so
 res: CMakeFiles/res.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/simpleProjects/my_graphics/triangleT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable res"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/res.dir/link.txt --verbose=$(VERBOSE)
