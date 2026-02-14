@@ -1,0 +1,3 @@
+/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate.dir
+/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/edit_cache.dir
+/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/rebuild_cache.dir
