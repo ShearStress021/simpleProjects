@@ -1,5 +1,15 @@
 #!/bin/bash -
 
+FILE="shaders/shader.frag.spv"
+
+
+if [ -f "$FILE" ] ; then
+	echo "shaders complied already"
+else
+	glslc shaders/shader.vert -o shaders/shader.vert.spv
+	glslc shaders/shader.frag -o shaders/shader.frag.spv
+fi
+
 BUILD="build"
 
 if [ -d "$BUILD" ]; then
@@ -9,3 +19,7 @@ else
 fi
 
 ./build/res
+
+rm -rf shaders/shader.frag.spv
+rm -rf shaders/shader.vert.spv
+
