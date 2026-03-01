@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src
+# Install script for directory: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/bin/libbox2d.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/bin/libbox2d.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig.cmake"
-         "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
+         "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig-*.cmake")
       if(_cmake_old_config_files)
@@ -63,19 +63,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/box2dConfigVersion.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/box2dConfigVersion.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/install_local_manifest.txt"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

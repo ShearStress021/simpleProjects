@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Scarfy.dir/depend.make
@@ -73,284 +73,284 @@ CMakeFiles/Scarfy.dir/codegen:
 .PHONY : CMakeFiles/Scarfy.dir/codegen
 
 CMakeFiles/Scarfy.dir/Main.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/Main.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp
+CMakeFiles/Scarfy.dir/Main.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp
 CMakeFiles/Scarfy.dir/Main.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scarfy.dir/Main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Main.cpp.o -MF CMakeFiles/Scarfy.dir/Main.cpp.o.d -o CMakeFiles/Scarfy.dir/Main.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scarfy.dir/Main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Main.cpp.o -MF CMakeFiles/Scarfy.dir/Main.cpp.o.d -o CMakeFiles/Scarfy.dir/Main.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp
 
 CMakeFiles/Scarfy.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp > CMakeFiles/Scarfy.dir/Main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp > CMakeFiles/Scarfy.dir/Main.cpp.i
 
 CMakeFiles/Scarfy.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp -o CMakeFiles/Scarfy.dir/Main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp -o CMakeFiles/Scarfy.dir/Main.cpp.s
 
 CMakeFiles/Scarfy.dir/Actor.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/Actor.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp
+CMakeFiles/Scarfy.dir/Actor.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp
 CMakeFiles/Scarfy.dir/Actor.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Scarfy.dir/Actor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Actor.cpp.o -MF CMakeFiles/Scarfy.dir/Actor.cpp.o.d -o CMakeFiles/Scarfy.dir/Actor.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Scarfy.dir/Actor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Actor.cpp.o -MF CMakeFiles/Scarfy.dir/Actor.cpp.o.d -o CMakeFiles/Scarfy.dir/Actor.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp
 
 CMakeFiles/Scarfy.dir/Actor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/Actor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp > CMakeFiles/Scarfy.dir/Actor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp > CMakeFiles/Scarfy.dir/Actor.cpp.i
 
 CMakeFiles/Scarfy.dir/Actor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/Actor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp -o CMakeFiles/Scarfy.dir/Actor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp -o CMakeFiles/Scarfy.dir/Actor.cpp.s
 
 CMakeFiles/Scarfy.dir/Collectable.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/Collectable.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp
+CMakeFiles/Scarfy.dir/Collectable.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp
 CMakeFiles/Scarfy.dir/Collectable.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scarfy.dir/Collectable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Collectable.cpp.o -MF CMakeFiles/Scarfy.dir/Collectable.cpp.o.d -o CMakeFiles/Scarfy.dir/Collectable.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scarfy.dir/Collectable.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Collectable.cpp.o -MF CMakeFiles/Scarfy.dir/Collectable.cpp.o.d -o CMakeFiles/Scarfy.dir/Collectable.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp
 
 CMakeFiles/Scarfy.dir/Collectable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/Collectable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp > CMakeFiles/Scarfy.dir/Collectable.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp > CMakeFiles/Scarfy.dir/Collectable.cpp.i
 
 CMakeFiles/Scarfy.dir/Collectable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/Collectable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp -o CMakeFiles/Scarfy.dir/Collectable.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp -o CMakeFiles/Scarfy.dir/Collectable.cpp.s
 
 CMakeFiles/Scarfy.dir/CharacterActor.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/CharacterActor.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp
+CMakeFiles/Scarfy.dir/CharacterActor.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp
 CMakeFiles/Scarfy.dir/CharacterActor.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scarfy.dir/CharacterActor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -MF CMakeFiles/Scarfy.dir/CharacterActor.cpp.o.d -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scarfy.dir/CharacterActor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -MF CMakeFiles/Scarfy.dir/CharacterActor.cpp.o.d -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp
 
 CMakeFiles/Scarfy.dir/CharacterActor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/CharacterActor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp > CMakeFiles/Scarfy.dir/CharacterActor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp > CMakeFiles/Scarfy.dir/CharacterActor.cpp.i
 
 CMakeFiles/Scarfy.dir/CharacterActor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/CharacterActor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.s
 
 CMakeFiles/Scarfy.dir/CommandListener.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/CommandListener.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp
+CMakeFiles/Scarfy.dir/CommandListener.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp
 CMakeFiles/Scarfy.dir/CommandListener.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scarfy.dir/CommandListener.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/CommandListener.cpp.o -MF CMakeFiles/Scarfy.dir/CommandListener.cpp.o.d -o CMakeFiles/Scarfy.dir/CommandListener.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scarfy.dir/CommandListener.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/CommandListener.cpp.o -MF CMakeFiles/Scarfy.dir/CommandListener.cpp.o.d -o CMakeFiles/Scarfy.dir/CommandListener.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp
 
 CMakeFiles/Scarfy.dir/CommandListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/CommandListener.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp > CMakeFiles/Scarfy.dir/CommandListener.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp > CMakeFiles/Scarfy.dir/CommandListener.cpp.i
 
 CMakeFiles/Scarfy.dir/CommandListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/CommandListener.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp -o CMakeFiles/Scarfy.dir/CommandListener.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp -o CMakeFiles/Scarfy.dir/CommandListener.cpp.s
 
 CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp
+CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp
 CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -MF CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o.d -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -MF CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o.d -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp
 
 CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp > CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp > CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.i
 
 CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.s
 
 CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp
+CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp
 CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -MF CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o.d -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -MF CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o.d -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp
 
 CMakeFiles/Scarfy.dir/DrawPhysics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/DrawPhysics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp > CMakeFiles/Scarfy.dir/DrawPhysics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp > CMakeFiles/Scarfy.dir/DrawPhysics.cpp.i
 
 CMakeFiles/Scarfy.dir/DrawPhysics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/DrawPhysics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.s
 
 CMakeFiles/Scarfy.dir/GameOverlay.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/GameOverlay.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp
+CMakeFiles/Scarfy.dir/GameOverlay.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp
 CMakeFiles/Scarfy.dir/GameOverlay.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scarfy.dir/GameOverlay.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -MF CMakeFiles/Scarfy.dir/GameOverlay.cpp.o.d -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scarfy.dir/GameOverlay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -MF CMakeFiles/Scarfy.dir/GameOverlay.cpp.o.d -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp
 
 CMakeFiles/Scarfy.dir/GameOverlay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/GameOverlay.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp > CMakeFiles/Scarfy.dir/GameOverlay.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp > CMakeFiles/Scarfy.dir/GameOverlay.cpp.i
 
 CMakeFiles/Scarfy.dir/GameOverlay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/GameOverlay.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.s
 
 CMakeFiles/Scarfy.dir/InputHandler.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/InputHandler.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp
+CMakeFiles/Scarfy.dir/InputHandler.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp
 CMakeFiles/Scarfy.dir/InputHandler.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scarfy.dir/InputHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/InputHandler.cpp.o -MF CMakeFiles/Scarfy.dir/InputHandler.cpp.o.d -o CMakeFiles/Scarfy.dir/InputHandler.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scarfy.dir/InputHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/InputHandler.cpp.o -MF CMakeFiles/Scarfy.dir/InputHandler.cpp.o.d -o CMakeFiles/Scarfy.dir/InputHandler.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp
 
 CMakeFiles/Scarfy.dir/InputHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/InputHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp > CMakeFiles/Scarfy.dir/InputHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp > CMakeFiles/Scarfy.dir/InputHandler.cpp.i
 
 CMakeFiles/Scarfy.dir/InputHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/InputHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp -o CMakeFiles/Scarfy.dir/InputHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp -o CMakeFiles/Scarfy.dir/InputHandler.cpp.s
 
 CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp
+CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp
 CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -MF CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o.d -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -MF CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o.d -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp
 
 CMakeFiles/Scarfy.dir/MainMenuScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/MainMenuScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp > CMakeFiles/Scarfy.dir/MainMenuScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp > CMakeFiles/Scarfy.dir/MainMenuScene.cpp.i
 
 CMakeFiles/Scarfy.dir/MainMenuScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/MainMenuScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.s
 
 CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp
+CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp
 CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -MF CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o.d -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -MF CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o.d -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp
 
 CMakeFiles/Scarfy.dir/PhysicsObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/PhysicsObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp > CMakeFiles/Scarfy.dir/PhysicsObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp > CMakeFiles/Scarfy.dir/PhysicsObject.cpp.i
 
 CMakeFiles/Scarfy.dir/PhysicsObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/PhysicsObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.s
 
 CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp
+CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp
 CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -MF CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o.d -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -MF CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o.d -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp
 
 CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp > CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp > CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.i
 
 CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.s
 
 CMakeFiles/Scarfy.dir/Scarfy.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/Scarfy.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp
+CMakeFiles/Scarfy.dir/Scarfy.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp
 CMakeFiles/Scarfy.dir/Scarfy.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scarfy.dir/Scarfy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Scarfy.cpp.o -MF CMakeFiles/Scarfy.dir/Scarfy.cpp.o.d -o CMakeFiles/Scarfy.dir/Scarfy.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scarfy.dir/Scarfy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Scarfy.cpp.o -MF CMakeFiles/Scarfy.dir/Scarfy.cpp.o.d -o CMakeFiles/Scarfy.dir/Scarfy.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp
 
 CMakeFiles/Scarfy.dir/Scarfy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/Scarfy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp > CMakeFiles/Scarfy.dir/Scarfy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp > CMakeFiles/Scarfy.dir/Scarfy.cpp.i
 
 CMakeFiles/Scarfy.dir/Scarfy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/Scarfy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp -o CMakeFiles/Scarfy.dir/Scarfy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp -o CMakeFiles/Scarfy.dir/Scarfy.cpp.s
 
 CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp
+CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp
 CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -MF CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o.d -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -MF CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o.d -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp
 
 CMakeFiles/Scarfy.dir/ScarfyScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/ScarfyScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp > CMakeFiles/Scarfy.dir/ScarfyScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp > CMakeFiles/Scarfy.dir/ScarfyScene.cpp.i
 
 CMakeFiles/Scarfy.dir/ScarfyScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/ScarfyScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.s
 
 CMakeFiles/Scarfy.dir/Scene.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/Scene.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp
+CMakeFiles/Scarfy.dir/Scene.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp
 CMakeFiles/Scarfy.dir/Scene.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Scarfy.dir/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Scene.cpp.o -MF CMakeFiles/Scarfy.dir/Scene.cpp.o.d -o CMakeFiles/Scarfy.dir/Scene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Scarfy.dir/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/Scene.cpp.o -MF CMakeFiles/Scarfy.dir/Scene.cpp.o.d -o CMakeFiles/Scarfy.dir/Scene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp
 
 CMakeFiles/Scarfy.dir/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp > CMakeFiles/Scarfy.dir/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp > CMakeFiles/Scarfy.dir/Scene.cpp.i
 
 CMakeFiles/Scarfy.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp -o CMakeFiles/Scarfy.dir/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp -o CMakeFiles/Scarfy.dir/Scene.cpp.s
 
 CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp
+CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp
 CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -MF CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o.d -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -MF CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o.d -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp
 
 CMakeFiles/Scarfy.dir/TextureAtlas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/TextureAtlas.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp > CMakeFiles/Scarfy.dir/TextureAtlas.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp > CMakeFiles/Scarfy.dir/TextureAtlas.cpp.i
 
 CMakeFiles/Scarfy.dir/TextureAtlas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/TextureAtlas.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.s
 
 CMakeFiles/Scarfy.dir/TileMap2D.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/TileMap2D.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp
+CMakeFiles/Scarfy.dir/TileMap2D.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp
 CMakeFiles/Scarfy.dir/TileMap2D.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2D.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2D.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2D.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp
 
 CMakeFiles/Scarfy.dir/TileMap2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/TileMap2D.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp > CMakeFiles/Scarfy.dir/TileMap2D.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp > CMakeFiles/Scarfy.dir/TileMap2D.cpp.i
 
 CMakeFiles/Scarfy.dir/TileMap2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/TileMap2D.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.s
 
 CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp
+CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp
 CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp
 
 CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp > CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp > CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.i
 
 CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.s
 
 CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp
+CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp
 CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -MF CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o.d -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp
 
 CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp > CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp > CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.i
 
 CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.s
 
 CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o: CMakeFiles/Scarfy.dir/flags.make
-CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o: /home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp
+CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp
 CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o: CMakeFiles/Scarfy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -MF CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o.d -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -MF CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o.d -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp
 
 CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp > CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp > CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.i
 
 CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.s
 
 # Object files for target Scarfy
 Scarfy_OBJECTS = \
@@ -408,7 +408,7 @@ Scarfy: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 Scarfy: /usr/lib/x86_64-linux-gnu/librt.a
 Scarfy: /usr/lib/x86_64-linux-gnu/libm.so
 Scarfy: CMakeFiles/Scarfy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Scarfy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Scarfy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scarfy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -420,6 +420,6 @@ CMakeFiles/Scarfy.dir/clean:
 .PHONY : CMakeFiles/Scarfy.dir/clean
 
 CMakeFiles/Scarfy.dir/depend:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanja/Downloads/raylib-2d-challenge-part-12 /home/kanja/Downloads/raylib-2d-challenge-part-12 /home/kanja/Downloads/raylib-2d-challenge-part-12/build /home/kanja/Downloads/raylib-2d-challenge-part-12/build /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles/Scarfy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12 /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12 /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles/Scarfy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Scarfy.dir/depend
 

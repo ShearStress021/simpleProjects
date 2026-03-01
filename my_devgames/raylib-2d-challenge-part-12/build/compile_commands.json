@@ -1,530 +1,530 @@
 [
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Main.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/Main.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Main.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Main.cpp",
   "output": "CMakeFiles/Scarfy.dir/Main.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Actor.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/Actor.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Actor.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Actor.cpp",
   "output": "CMakeFiles/Scarfy.dir/Actor.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Collectable.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/Collectable.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Collectable.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Collectable.cpp",
   "output": "CMakeFiles/Scarfy.dir/Collectable.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/CharacterActor.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/CharacterActor.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CharacterActor.cpp",
   "output": "CMakeFiles/Scarfy.dir/CharacterActor.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/CommandListener.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/CommandListener.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/CommandListener.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/CommandListener.cpp",
   "output": "CMakeFiles/Scarfy.dir/CommandListener.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/DisplayOverlay.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DisplayOverlay.cpp",
   "output": "CMakeFiles/Scarfy.dir/DisplayOverlay.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp",
   "output": "CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/GameOverlay.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/GameOverlay.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/GameOverlay.cpp",
   "output": "CMakeFiles/Scarfy.dir/GameOverlay.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/InputHandler.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/InputHandler.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/InputHandler.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/InputHandler.cpp",
   "output": "CMakeFiles/Scarfy.dir/InputHandler.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/MainMenuScene.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/MainMenuScene.cpp",
   "output": "CMakeFiles/Scarfy.dir/MainMenuScene.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsObject.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsObject.cpp",
   "output": "CMakeFiles/Scarfy.dir/PhysicsObject.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/PhysicsContactHandler.cpp",
   "output": "CMakeFiles/Scarfy.dir/PhysicsContactHandler.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Scarfy.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/Scarfy.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Scarfy.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scarfy.cpp",
   "output": "CMakeFiles/Scarfy.dir/Scarfy.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ScarfyScene.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ScarfyScene.cpp",
   "output": "CMakeFiles/Scarfy.dir/ScarfyScene.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Scene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/Scene.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/Scene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Scene.cpp",
   "output": "CMakeFiles/Scarfy.dir/Scene.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/TextureAtlas.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TextureAtlas.cpp",
   "output": "CMakeFiles/Scarfy.dir/TextureAtlas.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2D.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2D.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2D.cpp",
   "output": "CMakeFiles/Scarfy.dir/TileMap2D.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DLoader.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DLoader.cpp",
   "output": "CMakeFiles/Scarfy.dir/TileMap2DLoader.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/TileMap2DScene.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TileMap2DScene.cpp",
   "output": "CMakeFiles/Scarfy.dir/TileMap2DScene.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/. -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/TrackingCamera2D.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/. -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/tileson/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/pocketlzma -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -std=gnu++20 -o CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/TrackingCamera2D.cpp",
   "output": "CMakeFiles/Scarfy.dir/TrackingCamera2D.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rcore.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rcore.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rcore.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rcore.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rcore.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rcore.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rmodels.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rmodels.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rmodels.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rmodels.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rmodels.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rmodels.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rshapes.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rshapes.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rshapes.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rshapes.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rshapes.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rshapes.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtext.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtext.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtextures.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtextures.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtextures.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtextures.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtextures.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtextures.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/utils.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/utils.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/raudio.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src -isystem /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/raudio.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c",
   "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/context.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/context.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/context.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/context.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/init.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/init.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/init.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/init.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/input.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/input.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/input.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/input.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/window.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/window.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/window.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/window.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
-  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_chain_shape.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_chain_shape.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_chain_shape.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_chain_shape.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_circle_shape.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_circle_shape.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_circle_shape.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_circle_shape.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_circle.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_circle.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_circle.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_circle.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_edge.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_edge.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_edge.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_edge.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_polygon.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_polygon.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_polygon.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collide_polygon.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collision.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collision.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collision.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_collision.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collision.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_collision.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_distance.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_distance.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_distance.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_distance.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_distance.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_distance.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_dynamic_tree.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_dynamic_tree.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_dynamic_tree.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_dynamic_tree.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_edge_shape.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_edge_shape.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_edge_shape.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_edge_shape.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_polygon_shape.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_polygon_shape.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_polygon_shape.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_polygon_shape.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_time_of_impact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_time_of_impact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_time_of_impact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_time_of_impact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_block_allocator.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_block_allocator.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_block_allocator.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_block_allocator.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_draw.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_draw.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_draw.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_draw.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_draw.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_draw.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_math.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_math.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_math.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_math.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_math.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_math.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_settings.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_settings.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_timer.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_timer.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_timer.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/common/b2_timer.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_timer.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_timer.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_body.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_body.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_body.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_body.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_body.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_body.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_circle_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_circle_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_circle_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_circle_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_polygon_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_polygon_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_polygon_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_chain_polygon_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_circle_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_circle_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_circle_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_circle_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_manager.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_manager.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_manager.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_manager.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_solver.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_solver.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_solver.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_contact_solver.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_distance_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_distance_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_distance_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_distance_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_circle_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_circle_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_circle_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_circle_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_polygon_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_polygon_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_polygon_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_edge_polygon_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_fixture.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_fixture.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_fixture.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_fixture.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_friction_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_friction_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_friction_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_friction_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_gear_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_gear_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_gear_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_gear_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_island.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_island.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_island.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_island.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_island.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_island.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_motor_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_motor_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_motor_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_motor_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_mouse_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_mouse_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_mouse_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_mouse_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_circle_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_circle_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_circle_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_circle_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_contact.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_contact.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_contact.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_polygon_contact.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_prismatic_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_prismatic_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_prismatic_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_prismatic_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_pulley_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_pulley_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_pulley_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_pulley_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_revolute_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_revolute_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_revolute_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_revolute_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_weld_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_weld_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_weld_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_weld_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_wheel_joint.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_wheel_joint.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_wheel_joint.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_wheel_joint.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_world.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_world.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world_callbacks.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world_callbacks.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world_callbacks.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/dynamics/b2_world_callbacks.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.o"
 },
 {
-  "directory": "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
-  "command": "/usr/bin/c++  -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/rope/b2_rope.cpp.o -c /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp",
-  "file": "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp",
+  "directory": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src",
+  "command": "/usr/bin/c++  -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/box2d.dir/rope/b2_rope.cpp.o -c /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp",
+  "file": "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp",
   "output": "ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.o"
 }
 ]

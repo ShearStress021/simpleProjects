@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -237,14 +237,14 @@ CMakeFiles/Scarfy.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFile
 CMakeFiles/Scarfy.dir/all: ThirdParty/box2d/src/CMakeFiles/box2d.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scarfy.dir/build.make CMakeFiles/Scarfy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scarfy.dir/build.make CMakeFiles/Scarfy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Scarfy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Scarfy"
 .PHONY : CMakeFiles/Scarfy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Scarfy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 92
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Scarfy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : CMakeFiles/Scarfy.dir/rule
 
 # Convenience name for target.
@@ -254,7 +254,7 @@ Scarfy: CMakeFiles/Scarfy.dir/rule
 # codegen rule for target.
 CMakeFiles/Scarfy.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scarfy.dir/build.make CMakeFiles/Scarfy.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target Scarfy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target Scarfy"
 .PHONY : CMakeFiles/Scarfy.dir/codegen
 
 # clean rule for target.
@@ -269,14 +269,14 @@ CMakeFiles/Scarfy.dir/clean:
 CMakeFiles/link_to_data.dir/all: CMakeFiles/Scarfy.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_to_data.dir/build.make CMakeFiles/link_to_data.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_to_data.dir/build.make CMakeFiles/link_to_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num= "Built target link_to_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num= "Built target link_to_data"
 .PHONY : CMakeFiles/link_to_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/link_to_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 92
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/link_to_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : CMakeFiles/link_to_data.dir/rule
 
 # Convenience name for target.
@@ -286,7 +286,7 @@ link_to_data: CMakeFiles/link_to_data.dir/rule
 # codegen rule for target.
 CMakeFiles/link_to_data.dir/codegen: CMakeFiles/Scarfy.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_to_data.dir/build.make CMakeFiles/link_to_data.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num= "Finished codegen for target link_to_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num= "Finished codegen for target link_to_data"
 .PHONY : CMakeFiles/link_to_data.dir/codegen
 
 # clean rule for target.
@@ -301,14 +301,14 @@ CMakeFiles/link_to_data.dir/clean:
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=85,86,87,88,89,90,91,92 "Built target raylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=85,86,87,88,89,90,91,92 "Built target raylib"
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 
 # Convenience name for target.
@@ -318,7 +318,7 @@ raylib: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 # codegen rule for target.
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=85,86,87,88,89,90,91,92 "Finished codegen for target raylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=85,86,87,88,89,90,91,92 "Finished codegen for target raylib"
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen
 
 # clean rule for target.
@@ -333,14 +333,14 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/clean:
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target glfw"
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -350,7 +350,7 @@ glfw: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Finished codegen for target glfw"
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -365,14 +365,14 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/clean:
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/all:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target box2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target box2d"
 .PHONY : ThirdParty/box2d/src/CMakeFiles/box2d.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/CMakeFiles/box2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
 
 # Convenience name for target.
@@ -382,7 +382,7 @@ box2d: ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
 # codegen rule for target.
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Finished codegen for target box2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Finished codegen for target box2d"
 .PHONY : ThirdParty/box2d/src/CMakeFiles/box2d.dir/codegen
 
 # clean rule for target.

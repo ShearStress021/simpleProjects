@@ -1,11 +1,11 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.c \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/3.2.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src" ABSOLUTE)
+get_filename_component(filename "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/3.2.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

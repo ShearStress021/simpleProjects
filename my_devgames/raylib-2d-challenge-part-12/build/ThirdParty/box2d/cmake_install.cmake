@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d
+# Install script for directory: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,18 +43,18 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/cmake_install.cmake")
+  include("/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/install_local_manifest.txt"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

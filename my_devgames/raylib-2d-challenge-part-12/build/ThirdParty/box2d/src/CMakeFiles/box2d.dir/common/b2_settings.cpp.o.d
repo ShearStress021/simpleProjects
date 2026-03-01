@@ -1,9 +1,9 @@
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_settings.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -21,8 +21,8 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

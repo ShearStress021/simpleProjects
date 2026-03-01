@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate-complete.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/CMakeFiles/raygui-populate-complete.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-build.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-build.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-configure.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-configure.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-download.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-download.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-install.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-install.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-mkdir.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-patch.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-patch.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-test.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-test.rule"
 		},
 		{
-			"file" : "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-update.rule"
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/raygui-populate-update.rule"
 		}
 	],
 	"target" : 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src
+# Install script for directory: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src/install_local_manifest.txt"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

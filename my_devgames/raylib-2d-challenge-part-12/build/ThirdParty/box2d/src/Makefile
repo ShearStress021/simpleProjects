@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CPackSourceConfig.cmake
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles /home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src//CMakeFiles/progress.marks
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles 0
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/src//CMakeFiles/progress.marks
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/clean
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/preinstall
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/preinstall
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
 .PHONY : ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ box2d: ThirdParty/box2d/src/CMakeFiles/box2d.dir/rule
 
 # fast build rule for target.
 box2d/fast:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/build
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/build
 .PHONY : box2d/fast
 
 collision/b2_broad_phase.o: collision/b2_broad_phase.cpp.o
@@ -200,7 +200,7 @@ collision/b2_broad_phase.o: collision/b2_broad_phase.cpp.o
 
 # target to build an object file
 collision/b2_broad_phase.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o
 .PHONY : collision/b2_broad_phase.cpp.o
 
 collision/b2_broad_phase.i: collision/b2_broad_phase.cpp.i
@@ -208,7 +208,7 @@ collision/b2_broad_phase.i: collision/b2_broad_phase.cpp.i
 
 # target to preprocess a source file
 collision/b2_broad_phase.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.i
 .PHONY : collision/b2_broad_phase.cpp.i
 
 collision/b2_broad_phase.s: collision/b2_broad_phase.cpp.s
@@ -216,7 +216,7 @@ collision/b2_broad_phase.s: collision/b2_broad_phase.cpp.s
 
 # target to generate assembly for a file
 collision/b2_broad_phase.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.s
 .PHONY : collision/b2_broad_phase.cpp.s
 
 collision/b2_chain_shape.o: collision/b2_chain_shape.cpp.o
@@ -224,7 +224,7 @@ collision/b2_chain_shape.o: collision/b2_chain_shape.cpp.o
 
 # target to build an object file
 collision/b2_chain_shape.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.o
 .PHONY : collision/b2_chain_shape.cpp.o
 
 collision/b2_chain_shape.i: collision/b2_chain_shape.cpp.i
@@ -232,7 +232,7 @@ collision/b2_chain_shape.i: collision/b2_chain_shape.cpp.i
 
 # target to preprocess a source file
 collision/b2_chain_shape.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.i
 .PHONY : collision/b2_chain_shape.cpp.i
 
 collision/b2_chain_shape.s: collision/b2_chain_shape.cpp.s
@@ -240,7 +240,7 @@ collision/b2_chain_shape.s: collision/b2_chain_shape.cpp.s
 
 # target to generate assembly for a file
 collision/b2_chain_shape.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.s
 .PHONY : collision/b2_chain_shape.cpp.s
 
 collision/b2_circle_shape.o: collision/b2_circle_shape.cpp.o
@@ -248,7 +248,7 @@ collision/b2_circle_shape.o: collision/b2_circle_shape.cpp.o
 
 # target to build an object file
 collision/b2_circle_shape.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.o
 .PHONY : collision/b2_circle_shape.cpp.o
 
 collision/b2_circle_shape.i: collision/b2_circle_shape.cpp.i
@@ -256,7 +256,7 @@ collision/b2_circle_shape.i: collision/b2_circle_shape.cpp.i
 
 # target to preprocess a source file
 collision/b2_circle_shape.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.i
 .PHONY : collision/b2_circle_shape.cpp.i
 
 collision/b2_circle_shape.s: collision/b2_circle_shape.cpp.s
@@ -264,7 +264,7 @@ collision/b2_circle_shape.s: collision/b2_circle_shape.cpp.s
 
 # target to generate assembly for a file
 collision/b2_circle_shape.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.s
 .PHONY : collision/b2_circle_shape.cpp.s
 
 collision/b2_collide_circle.o: collision/b2_collide_circle.cpp.o
@@ -272,7 +272,7 @@ collision/b2_collide_circle.o: collision/b2_collide_circle.cpp.o
 
 # target to build an object file
 collision/b2_collide_circle.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.o
 .PHONY : collision/b2_collide_circle.cpp.o
 
 collision/b2_collide_circle.i: collision/b2_collide_circle.cpp.i
@@ -280,7 +280,7 @@ collision/b2_collide_circle.i: collision/b2_collide_circle.cpp.i
 
 # target to preprocess a source file
 collision/b2_collide_circle.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.i
 .PHONY : collision/b2_collide_circle.cpp.i
 
 collision/b2_collide_circle.s: collision/b2_collide_circle.cpp.s
@@ -288,7 +288,7 @@ collision/b2_collide_circle.s: collision/b2_collide_circle.cpp.s
 
 # target to generate assembly for a file
 collision/b2_collide_circle.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.s
 .PHONY : collision/b2_collide_circle.cpp.s
 
 collision/b2_collide_edge.o: collision/b2_collide_edge.cpp.o
@@ -296,7 +296,7 @@ collision/b2_collide_edge.o: collision/b2_collide_edge.cpp.o
 
 # target to build an object file
 collision/b2_collide_edge.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.o
 .PHONY : collision/b2_collide_edge.cpp.o
 
 collision/b2_collide_edge.i: collision/b2_collide_edge.cpp.i
@@ -304,7 +304,7 @@ collision/b2_collide_edge.i: collision/b2_collide_edge.cpp.i
 
 # target to preprocess a source file
 collision/b2_collide_edge.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.i
 .PHONY : collision/b2_collide_edge.cpp.i
 
 collision/b2_collide_edge.s: collision/b2_collide_edge.cpp.s
@@ -312,7 +312,7 @@ collision/b2_collide_edge.s: collision/b2_collide_edge.cpp.s
 
 # target to generate assembly for a file
 collision/b2_collide_edge.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.s
 .PHONY : collision/b2_collide_edge.cpp.s
 
 collision/b2_collide_polygon.o: collision/b2_collide_polygon.cpp.o
@@ -320,7 +320,7 @@ collision/b2_collide_polygon.o: collision/b2_collide_polygon.cpp.o
 
 # target to build an object file
 collision/b2_collide_polygon.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.o
 .PHONY : collision/b2_collide_polygon.cpp.o
 
 collision/b2_collide_polygon.i: collision/b2_collide_polygon.cpp.i
@@ -328,7 +328,7 @@ collision/b2_collide_polygon.i: collision/b2_collide_polygon.cpp.i
 
 # target to preprocess a source file
 collision/b2_collide_polygon.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.i
 .PHONY : collision/b2_collide_polygon.cpp.i
 
 collision/b2_collide_polygon.s: collision/b2_collide_polygon.cpp.s
@@ -336,7 +336,7 @@ collision/b2_collide_polygon.s: collision/b2_collide_polygon.cpp.s
 
 # target to generate assembly for a file
 collision/b2_collide_polygon.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.s
 .PHONY : collision/b2_collide_polygon.cpp.s
 
 collision/b2_collision.o: collision/b2_collision.cpp.o
@@ -344,7 +344,7 @@ collision/b2_collision.o: collision/b2_collision.cpp.o
 
 # target to build an object file
 collision/b2_collision.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.o
 .PHONY : collision/b2_collision.cpp.o
 
 collision/b2_collision.i: collision/b2_collision.cpp.i
@@ -352,7 +352,7 @@ collision/b2_collision.i: collision/b2_collision.cpp.i
 
 # target to preprocess a source file
 collision/b2_collision.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.i
 .PHONY : collision/b2_collision.cpp.i
 
 collision/b2_collision.s: collision/b2_collision.cpp.s
@@ -360,7 +360,7 @@ collision/b2_collision.s: collision/b2_collision.cpp.s
 
 # target to generate assembly for a file
 collision/b2_collision.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.s
 .PHONY : collision/b2_collision.cpp.s
 
 collision/b2_distance.o: collision/b2_distance.cpp.o
@@ -368,7 +368,7 @@ collision/b2_distance.o: collision/b2_distance.cpp.o
 
 # target to build an object file
 collision/b2_distance.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.o
 .PHONY : collision/b2_distance.cpp.o
 
 collision/b2_distance.i: collision/b2_distance.cpp.i
@@ -376,7 +376,7 @@ collision/b2_distance.i: collision/b2_distance.cpp.i
 
 # target to preprocess a source file
 collision/b2_distance.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.i
 .PHONY : collision/b2_distance.cpp.i
 
 collision/b2_distance.s: collision/b2_distance.cpp.s
@@ -384,7 +384,7 @@ collision/b2_distance.s: collision/b2_distance.cpp.s
 
 # target to generate assembly for a file
 collision/b2_distance.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.s
 .PHONY : collision/b2_distance.cpp.s
 
 collision/b2_dynamic_tree.o: collision/b2_dynamic_tree.cpp.o
@@ -392,7 +392,7 @@ collision/b2_dynamic_tree.o: collision/b2_dynamic_tree.cpp.o
 
 # target to build an object file
 collision/b2_dynamic_tree.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.o
 .PHONY : collision/b2_dynamic_tree.cpp.o
 
 collision/b2_dynamic_tree.i: collision/b2_dynamic_tree.cpp.i
@@ -400,7 +400,7 @@ collision/b2_dynamic_tree.i: collision/b2_dynamic_tree.cpp.i
 
 # target to preprocess a source file
 collision/b2_dynamic_tree.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.i
 .PHONY : collision/b2_dynamic_tree.cpp.i
 
 collision/b2_dynamic_tree.s: collision/b2_dynamic_tree.cpp.s
@@ -408,7 +408,7 @@ collision/b2_dynamic_tree.s: collision/b2_dynamic_tree.cpp.s
 
 # target to generate assembly for a file
 collision/b2_dynamic_tree.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.s
 .PHONY : collision/b2_dynamic_tree.cpp.s
 
 collision/b2_edge_shape.o: collision/b2_edge_shape.cpp.o
@@ -416,7 +416,7 @@ collision/b2_edge_shape.o: collision/b2_edge_shape.cpp.o
 
 # target to build an object file
 collision/b2_edge_shape.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.o
 .PHONY : collision/b2_edge_shape.cpp.o
 
 collision/b2_edge_shape.i: collision/b2_edge_shape.cpp.i
@@ -424,7 +424,7 @@ collision/b2_edge_shape.i: collision/b2_edge_shape.cpp.i
 
 # target to preprocess a source file
 collision/b2_edge_shape.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.i
 .PHONY : collision/b2_edge_shape.cpp.i
 
 collision/b2_edge_shape.s: collision/b2_edge_shape.cpp.s
@@ -432,7 +432,7 @@ collision/b2_edge_shape.s: collision/b2_edge_shape.cpp.s
 
 # target to generate assembly for a file
 collision/b2_edge_shape.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.s
 .PHONY : collision/b2_edge_shape.cpp.s
 
 collision/b2_polygon_shape.o: collision/b2_polygon_shape.cpp.o
@@ -440,7 +440,7 @@ collision/b2_polygon_shape.o: collision/b2_polygon_shape.cpp.o
 
 # target to build an object file
 collision/b2_polygon_shape.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.o
 .PHONY : collision/b2_polygon_shape.cpp.o
 
 collision/b2_polygon_shape.i: collision/b2_polygon_shape.cpp.i
@@ -448,7 +448,7 @@ collision/b2_polygon_shape.i: collision/b2_polygon_shape.cpp.i
 
 # target to preprocess a source file
 collision/b2_polygon_shape.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.i
 .PHONY : collision/b2_polygon_shape.cpp.i
 
 collision/b2_polygon_shape.s: collision/b2_polygon_shape.cpp.s
@@ -456,7 +456,7 @@ collision/b2_polygon_shape.s: collision/b2_polygon_shape.cpp.s
 
 # target to generate assembly for a file
 collision/b2_polygon_shape.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.s
 .PHONY : collision/b2_polygon_shape.cpp.s
 
 collision/b2_time_of_impact.o: collision/b2_time_of_impact.cpp.o
@@ -464,7 +464,7 @@ collision/b2_time_of_impact.o: collision/b2_time_of_impact.cpp.o
 
 # target to build an object file
 collision/b2_time_of_impact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.o
 .PHONY : collision/b2_time_of_impact.cpp.o
 
 collision/b2_time_of_impact.i: collision/b2_time_of_impact.cpp.i
@@ -472,7 +472,7 @@ collision/b2_time_of_impact.i: collision/b2_time_of_impact.cpp.i
 
 # target to preprocess a source file
 collision/b2_time_of_impact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.i
 .PHONY : collision/b2_time_of_impact.cpp.i
 
 collision/b2_time_of_impact.s: collision/b2_time_of_impact.cpp.s
@@ -480,7 +480,7 @@ collision/b2_time_of_impact.s: collision/b2_time_of_impact.cpp.s
 
 # target to generate assembly for a file
 collision/b2_time_of_impact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.s
 .PHONY : collision/b2_time_of_impact.cpp.s
 
 common/b2_block_allocator.o: common/b2_block_allocator.cpp.o
@@ -488,7 +488,7 @@ common/b2_block_allocator.o: common/b2_block_allocator.cpp.o
 
 # target to build an object file
 common/b2_block_allocator.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.o
 .PHONY : common/b2_block_allocator.cpp.o
 
 common/b2_block_allocator.i: common/b2_block_allocator.cpp.i
@@ -496,7 +496,7 @@ common/b2_block_allocator.i: common/b2_block_allocator.cpp.i
 
 # target to preprocess a source file
 common/b2_block_allocator.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.i
 .PHONY : common/b2_block_allocator.cpp.i
 
 common/b2_block_allocator.s: common/b2_block_allocator.cpp.s
@@ -504,7 +504,7 @@ common/b2_block_allocator.s: common/b2_block_allocator.cpp.s
 
 # target to generate assembly for a file
 common/b2_block_allocator.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.s
 .PHONY : common/b2_block_allocator.cpp.s
 
 common/b2_draw.o: common/b2_draw.cpp.o
@@ -512,7 +512,7 @@ common/b2_draw.o: common/b2_draw.cpp.o
 
 # target to build an object file
 common/b2_draw.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.o
 .PHONY : common/b2_draw.cpp.o
 
 common/b2_draw.i: common/b2_draw.cpp.i
@@ -520,7 +520,7 @@ common/b2_draw.i: common/b2_draw.cpp.i
 
 # target to preprocess a source file
 common/b2_draw.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.i
 .PHONY : common/b2_draw.cpp.i
 
 common/b2_draw.s: common/b2_draw.cpp.s
@@ -528,7 +528,7 @@ common/b2_draw.s: common/b2_draw.cpp.s
 
 # target to generate assembly for a file
 common/b2_draw.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.s
 .PHONY : common/b2_draw.cpp.s
 
 common/b2_math.o: common/b2_math.cpp.o
@@ -536,7 +536,7 @@ common/b2_math.o: common/b2_math.cpp.o
 
 # target to build an object file
 common/b2_math.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.o
 .PHONY : common/b2_math.cpp.o
 
 common/b2_math.i: common/b2_math.cpp.i
@@ -544,7 +544,7 @@ common/b2_math.i: common/b2_math.cpp.i
 
 # target to preprocess a source file
 common/b2_math.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.i
 .PHONY : common/b2_math.cpp.i
 
 common/b2_math.s: common/b2_math.cpp.s
@@ -552,7 +552,7 @@ common/b2_math.s: common/b2_math.cpp.s
 
 # target to generate assembly for a file
 common/b2_math.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_math.cpp.s
 .PHONY : common/b2_math.cpp.s
 
 common/b2_settings.o: common/b2_settings.cpp.o
@@ -560,7 +560,7 @@ common/b2_settings.o: common/b2_settings.cpp.o
 
 # target to build an object file
 common/b2_settings.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.o
 .PHONY : common/b2_settings.cpp.o
 
 common/b2_settings.i: common/b2_settings.cpp.i
@@ -568,7 +568,7 @@ common/b2_settings.i: common/b2_settings.cpp.i
 
 # target to preprocess a source file
 common/b2_settings.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.i
 .PHONY : common/b2_settings.cpp.i
 
 common/b2_settings.s: common/b2_settings.cpp.s
@@ -576,7 +576,7 @@ common/b2_settings.s: common/b2_settings.cpp.s
 
 # target to generate assembly for a file
 common/b2_settings.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.s
 .PHONY : common/b2_settings.cpp.s
 
 common/b2_stack_allocator.o: common/b2_stack_allocator.cpp.o
@@ -584,7 +584,7 @@ common/b2_stack_allocator.o: common/b2_stack_allocator.cpp.o
 
 # target to build an object file
 common/b2_stack_allocator.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o
 .PHONY : common/b2_stack_allocator.cpp.o
 
 common/b2_stack_allocator.i: common/b2_stack_allocator.cpp.i
@@ -592,7 +592,7 @@ common/b2_stack_allocator.i: common/b2_stack_allocator.cpp.i
 
 # target to preprocess a source file
 common/b2_stack_allocator.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.i
 .PHONY : common/b2_stack_allocator.cpp.i
 
 common/b2_stack_allocator.s: common/b2_stack_allocator.cpp.s
@@ -600,7 +600,7 @@ common/b2_stack_allocator.s: common/b2_stack_allocator.cpp.s
 
 # target to generate assembly for a file
 common/b2_stack_allocator.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.s
 .PHONY : common/b2_stack_allocator.cpp.s
 
 common/b2_timer.o: common/b2_timer.cpp.o
@@ -608,7 +608,7 @@ common/b2_timer.o: common/b2_timer.cpp.o
 
 # target to build an object file
 common/b2_timer.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.o
 .PHONY : common/b2_timer.cpp.o
 
 common/b2_timer.i: common/b2_timer.cpp.i
@@ -616,7 +616,7 @@ common/b2_timer.i: common/b2_timer.cpp.i
 
 # target to preprocess a source file
 common/b2_timer.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.i
 .PHONY : common/b2_timer.cpp.i
 
 common/b2_timer.s: common/b2_timer.cpp.s
@@ -624,7 +624,7 @@ common/b2_timer.s: common/b2_timer.cpp.s
 
 # target to generate assembly for a file
 common/b2_timer.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.s
 .PHONY : common/b2_timer.cpp.s
 
 dynamics/b2_body.o: dynamics/b2_body.cpp.o
@@ -632,7 +632,7 @@ dynamics/b2_body.o: dynamics/b2_body.cpp.o
 
 # target to build an object file
 dynamics/b2_body.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.o
 .PHONY : dynamics/b2_body.cpp.o
 
 dynamics/b2_body.i: dynamics/b2_body.cpp.i
@@ -640,7 +640,7 @@ dynamics/b2_body.i: dynamics/b2_body.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_body.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.i
 .PHONY : dynamics/b2_body.cpp.i
 
 dynamics/b2_body.s: dynamics/b2_body.cpp.s
@@ -648,7 +648,7 @@ dynamics/b2_body.s: dynamics/b2_body.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_body.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.s
 .PHONY : dynamics/b2_body.cpp.s
 
 dynamics/b2_chain_circle_contact.o: dynamics/b2_chain_circle_contact.cpp.o
@@ -656,7 +656,7 @@ dynamics/b2_chain_circle_contact.o: dynamics/b2_chain_circle_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_chain_circle_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.o
 .PHONY : dynamics/b2_chain_circle_contact.cpp.o
 
 dynamics/b2_chain_circle_contact.i: dynamics/b2_chain_circle_contact.cpp.i
@@ -664,7 +664,7 @@ dynamics/b2_chain_circle_contact.i: dynamics/b2_chain_circle_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_chain_circle_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.i
 .PHONY : dynamics/b2_chain_circle_contact.cpp.i
 
 dynamics/b2_chain_circle_contact.s: dynamics/b2_chain_circle_contact.cpp.s
@@ -672,7 +672,7 @@ dynamics/b2_chain_circle_contact.s: dynamics/b2_chain_circle_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_chain_circle_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.s
 .PHONY : dynamics/b2_chain_circle_contact.cpp.s
 
 dynamics/b2_chain_polygon_contact.o: dynamics/b2_chain_polygon_contact.cpp.o
@@ -680,7 +680,7 @@ dynamics/b2_chain_polygon_contact.o: dynamics/b2_chain_polygon_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_chain_polygon_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.o
 .PHONY : dynamics/b2_chain_polygon_contact.cpp.o
 
 dynamics/b2_chain_polygon_contact.i: dynamics/b2_chain_polygon_contact.cpp.i
@@ -688,7 +688,7 @@ dynamics/b2_chain_polygon_contact.i: dynamics/b2_chain_polygon_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_chain_polygon_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.i
 .PHONY : dynamics/b2_chain_polygon_contact.cpp.i
 
 dynamics/b2_chain_polygon_contact.s: dynamics/b2_chain_polygon_contact.cpp.s
@@ -696,7 +696,7 @@ dynamics/b2_chain_polygon_contact.s: dynamics/b2_chain_polygon_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_chain_polygon_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.s
 .PHONY : dynamics/b2_chain_polygon_contact.cpp.s
 
 dynamics/b2_circle_contact.o: dynamics/b2_circle_contact.cpp.o
@@ -704,7 +704,7 @@ dynamics/b2_circle_contact.o: dynamics/b2_circle_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_circle_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.o
 .PHONY : dynamics/b2_circle_contact.cpp.o
 
 dynamics/b2_circle_contact.i: dynamics/b2_circle_contact.cpp.i
@@ -712,7 +712,7 @@ dynamics/b2_circle_contact.i: dynamics/b2_circle_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_circle_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.i
 .PHONY : dynamics/b2_circle_contact.cpp.i
 
 dynamics/b2_circle_contact.s: dynamics/b2_circle_contact.cpp.s
@@ -720,7 +720,7 @@ dynamics/b2_circle_contact.s: dynamics/b2_circle_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_circle_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.s
 .PHONY : dynamics/b2_circle_contact.cpp.s
 
 dynamics/b2_contact.o: dynamics/b2_contact.cpp.o
@@ -728,7 +728,7 @@ dynamics/b2_contact.o: dynamics/b2_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.o
 .PHONY : dynamics/b2_contact.cpp.o
 
 dynamics/b2_contact.i: dynamics/b2_contact.cpp.i
@@ -736,7 +736,7 @@ dynamics/b2_contact.i: dynamics/b2_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.i
 .PHONY : dynamics/b2_contact.cpp.i
 
 dynamics/b2_contact.s: dynamics/b2_contact.cpp.s
@@ -744,7 +744,7 @@ dynamics/b2_contact.s: dynamics/b2_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.s
 .PHONY : dynamics/b2_contact.cpp.s
 
 dynamics/b2_contact_manager.o: dynamics/b2_contact_manager.cpp.o
@@ -752,7 +752,7 @@ dynamics/b2_contact_manager.o: dynamics/b2_contact_manager.cpp.o
 
 # target to build an object file
 dynamics/b2_contact_manager.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.o
 .PHONY : dynamics/b2_contact_manager.cpp.o
 
 dynamics/b2_contact_manager.i: dynamics/b2_contact_manager.cpp.i
@@ -760,7 +760,7 @@ dynamics/b2_contact_manager.i: dynamics/b2_contact_manager.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_contact_manager.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.i
 .PHONY : dynamics/b2_contact_manager.cpp.i
 
 dynamics/b2_contact_manager.s: dynamics/b2_contact_manager.cpp.s
@@ -768,7 +768,7 @@ dynamics/b2_contact_manager.s: dynamics/b2_contact_manager.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_contact_manager.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.s
 .PHONY : dynamics/b2_contact_manager.cpp.s
 
 dynamics/b2_contact_solver.o: dynamics/b2_contact_solver.cpp.o
@@ -776,7 +776,7 @@ dynamics/b2_contact_solver.o: dynamics/b2_contact_solver.cpp.o
 
 # target to build an object file
 dynamics/b2_contact_solver.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.o
 .PHONY : dynamics/b2_contact_solver.cpp.o
 
 dynamics/b2_contact_solver.i: dynamics/b2_contact_solver.cpp.i
@@ -784,7 +784,7 @@ dynamics/b2_contact_solver.i: dynamics/b2_contact_solver.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_contact_solver.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.i
 .PHONY : dynamics/b2_contact_solver.cpp.i
 
 dynamics/b2_contact_solver.s: dynamics/b2_contact_solver.cpp.s
@@ -792,7 +792,7 @@ dynamics/b2_contact_solver.s: dynamics/b2_contact_solver.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_contact_solver.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.s
 .PHONY : dynamics/b2_contact_solver.cpp.s
 
 dynamics/b2_distance_joint.o: dynamics/b2_distance_joint.cpp.o
@@ -800,7 +800,7 @@ dynamics/b2_distance_joint.o: dynamics/b2_distance_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_distance_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.o
 .PHONY : dynamics/b2_distance_joint.cpp.o
 
 dynamics/b2_distance_joint.i: dynamics/b2_distance_joint.cpp.i
@@ -808,7 +808,7 @@ dynamics/b2_distance_joint.i: dynamics/b2_distance_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_distance_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.i
 .PHONY : dynamics/b2_distance_joint.cpp.i
 
 dynamics/b2_distance_joint.s: dynamics/b2_distance_joint.cpp.s
@@ -816,7 +816,7 @@ dynamics/b2_distance_joint.s: dynamics/b2_distance_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_distance_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.s
 .PHONY : dynamics/b2_distance_joint.cpp.s
 
 dynamics/b2_edge_circle_contact.o: dynamics/b2_edge_circle_contact.cpp.o
@@ -824,7 +824,7 @@ dynamics/b2_edge_circle_contact.o: dynamics/b2_edge_circle_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_edge_circle_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.o
 .PHONY : dynamics/b2_edge_circle_contact.cpp.o
 
 dynamics/b2_edge_circle_contact.i: dynamics/b2_edge_circle_contact.cpp.i
@@ -832,7 +832,7 @@ dynamics/b2_edge_circle_contact.i: dynamics/b2_edge_circle_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_edge_circle_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.i
 .PHONY : dynamics/b2_edge_circle_contact.cpp.i
 
 dynamics/b2_edge_circle_contact.s: dynamics/b2_edge_circle_contact.cpp.s
@@ -840,7 +840,7 @@ dynamics/b2_edge_circle_contact.s: dynamics/b2_edge_circle_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_edge_circle_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.s
 .PHONY : dynamics/b2_edge_circle_contact.cpp.s
 
 dynamics/b2_edge_polygon_contact.o: dynamics/b2_edge_polygon_contact.cpp.o
@@ -848,7 +848,7 @@ dynamics/b2_edge_polygon_contact.o: dynamics/b2_edge_polygon_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_edge_polygon_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.o
 .PHONY : dynamics/b2_edge_polygon_contact.cpp.o
 
 dynamics/b2_edge_polygon_contact.i: dynamics/b2_edge_polygon_contact.cpp.i
@@ -856,7 +856,7 @@ dynamics/b2_edge_polygon_contact.i: dynamics/b2_edge_polygon_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_edge_polygon_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.i
 .PHONY : dynamics/b2_edge_polygon_contact.cpp.i
 
 dynamics/b2_edge_polygon_contact.s: dynamics/b2_edge_polygon_contact.cpp.s
@@ -864,7 +864,7 @@ dynamics/b2_edge_polygon_contact.s: dynamics/b2_edge_polygon_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_edge_polygon_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.s
 .PHONY : dynamics/b2_edge_polygon_contact.cpp.s
 
 dynamics/b2_fixture.o: dynamics/b2_fixture.cpp.o
@@ -872,7 +872,7 @@ dynamics/b2_fixture.o: dynamics/b2_fixture.cpp.o
 
 # target to build an object file
 dynamics/b2_fixture.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.o
 .PHONY : dynamics/b2_fixture.cpp.o
 
 dynamics/b2_fixture.i: dynamics/b2_fixture.cpp.i
@@ -880,7 +880,7 @@ dynamics/b2_fixture.i: dynamics/b2_fixture.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_fixture.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.i
 .PHONY : dynamics/b2_fixture.cpp.i
 
 dynamics/b2_fixture.s: dynamics/b2_fixture.cpp.s
@@ -888,7 +888,7 @@ dynamics/b2_fixture.s: dynamics/b2_fixture.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_fixture.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.s
 .PHONY : dynamics/b2_fixture.cpp.s
 
 dynamics/b2_friction_joint.o: dynamics/b2_friction_joint.cpp.o
@@ -896,7 +896,7 @@ dynamics/b2_friction_joint.o: dynamics/b2_friction_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_friction_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.o
 .PHONY : dynamics/b2_friction_joint.cpp.o
 
 dynamics/b2_friction_joint.i: dynamics/b2_friction_joint.cpp.i
@@ -904,7 +904,7 @@ dynamics/b2_friction_joint.i: dynamics/b2_friction_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_friction_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.i
 .PHONY : dynamics/b2_friction_joint.cpp.i
 
 dynamics/b2_friction_joint.s: dynamics/b2_friction_joint.cpp.s
@@ -912,7 +912,7 @@ dynamics/b2_friction_joint.s: dynamics/b2_friction_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_friction_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.s
 .PHONY : dynamics/b2_friction_joint.cpp.s
 
 dynamics/b2_gear_joint.o: dynamics/b2_gear_joint.cpp.o
@@ -920,7 +920,7 @@ dynamics/b2_gear_joint.o: dynamics/b2_gear_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_gear_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.o
 .PHONY : dynamics/b2_gear_joint.cpp.o
 
 dynamics/b2_gear_joint.i: dynamics/b2_gear_joint.cpp.i
@@ -928,7 +928,7 @@ dynamics/b2_gear_joint.i: dynamics/b2_gear_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_gear_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.i
 .PHONY : dynamics/b2_gear_joint.cpp.i
 
 dynamics/b2_gear_joint.s: dynamics/b2_gear_joint.cpp.s
@@ -936,7 +936,7 @@ dynamics/b2_gear_joint.s: dynamics/b2_gear_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_gear_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.s
 .PHONY : dynamics/b2_gear_joint.cpp.s
 
 dynamics/b2_island.o: dynamics/b2_island.cpp.o
@@ -944,7 +944,7 @@ dynamics/b2_island.o: dynamics/b2_island.cpp.o
 
 # target to build an object file
 dynamics/b2_island.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.o
 .PHONY : dynamics/b2_island.cpp.o
 
 dynamics/b2_island.i: dynamics/b2_island.cpp.i
@@ -952,7 +952,7 @@ dynamics/b2_island.i: dynamics/b2_island.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_island.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.i
 .PHONY : dynamics/b2_island.cpp.i
 
 dynamics/b2_island.s: dynamics/b2_island.cpp.s
@@ -960,7 +960,7 @@ dynamics/b2_island.s: dynamics/b2_island.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_island.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.s
 .PHONY : dynamics/b2_island.cpp.s
 
 dynamics/b2_joint.o: dynamics/b2_joint.cpp.o
@@ -968,7 +968,7 @@ dynamics/b2_joint.o: dynamics/b2_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.o
 .PHONY : dynamics/b2_joint.cpp.o
 
 dynamics/b2_joint.i: dynamics/b2_joint.cpp.i
@@ -976,7 +976,7 @@ dynamics/b2_joint.i: dynamics/b2_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.i
 .PHONY : dynamics/b2_joint.cpp.i
 
 dynamics/b2_joint.s: dynamics/b2_joint.cpp.s
@@ -984,7 +984,7 @@ dynamics/b2_joint.s: dynamics/b2_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.s
 .PHONY : dynamics/b2_joint.cpp.s
 
 dynamics/b2_motor_joint.o: dynamics/b2_motor_joint.cpp.o
@@ -992,7 +992,7 @@ dynamics/b2_motor_joint.o: dynamics/b2_motor_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_motor_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.o
 .PHONY : dynamics/b2_motor_joint.cpp.o
 
 dynamics/b2_motor_joint.i: dynamics/b2_motor_joint.cpp.i
@@ -1000,7 +1000,7 @@ dynamics/b2_motor_joint.i: dynamics/b2_motor_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_motor_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.i
 .PHONY : dynamics/b2_motor_joint.cpp.i
 
 dynamics/b2_motor_joint.s: dynamics/b2_motor_joint.cpp.s
@@ -1008,7 +1008,7 @@ dynamics/b2_motor_joint.s: dynamics/b2_motor_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_motor_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.s
 .PHONY : dynamics/b2_motor_joint.cpp.s
 
 dynamics/b2_mouse_joint.o: dynamics/b2_mouse_joint.cpp.o
@@ -1016,7 +1016,7 @@ dynamics/b2_mouse_joint.o: dynamics/b2_mouse_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_mouse_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.o
 .PHONY : dynamics/b2_mouse_joint.cpp.o
 
 dynamics/b2_mouse_joint.i: dynamics/b2_mouse_joint.cpp.i
@@ -1024,7 +1024,7 @@ dynamics/b2_mouse_joint.i: dynamics/b2_mouse_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_mouse_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.i
 .PHONY : dynamics/b2_mouse_joint.cpp.i
 
 dynamics/b2_mouse_joint.s: dynamics/b2_mouse_joint.cpp.s
@@ -1032,7 +1032,7 @@ dynamics/b2_mouse_joint.s: dynamics/b2_mouse_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_mouse_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.s
 .PHONY : dynamics/b2_mouse_joint.cpp.s
 
 dynamics/b2_polygon_circle_contact.o: dynamics/b2_polygon_circle_contact.cpp.o
@@ -1040,7 +1040,7 @@ dynamics/b2_polygon_circle_contact.o: dynamics/b2_polygon_circle_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_polygon_circle_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.o
 .PHONY : dynamics/b2_polygon_circle_contact.cpp.o
 
 dynamics/b2_polygon_circle_contact.i: dynamics/b2_polygon_circle_contact.cpp.i
@@ -1048,7 +1048,7 @@ dynamics/b2_polygon_circle_contact.i: dynamics/b2_polygon_circle_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_polygon_circle_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.i
 .PHONY : dynamics/b2_polygon_circle_contact.cpp.i
 
 dynamics/b2_polygon_circle_contact.s: dynamics/b2_polygon_circle_contact.cpp.s
@@ -1056,7 +1056,7 @@ dynamics/b2_polygon_circle_contact.s: dynamics/b2_polygon_circle_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_polygon_circle_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.s
 .PHONY : dynamics/b2_polygon_circle_contact.cpp.s
 
 dynamics/b2_polygon_contact.o: dynamics/b2_polygon_contact.cpp.o
@@ -1064,7 +1064,7 @@ dynamics/b2_polygon_contact.o: dynamics/b2_polygon_contact.cpp.o
 
 # target to build an object file
 dynamics/b2_polygon_contact.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.o
 .PHONY : dynamics/b2_polygon_contact.cpp.o
 
 dynamics/b2_polygon_contact.i: dynamics/b2_polygon_contact.cpp.i
@@ -1072,7 +1072,7 @@ dynamics/b2_polygon_contact.i: dynamics/b2_polygon_contact.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_polygon_contact.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.i
 .PHONY : dynamics/b2_polygon_contact.cpp.i
 
 dynamics/b2_polygon_contact.s: dynamics/b2_polygon_contact.cpp.s
@@ -1080,7 +1080,7 @@ dynamics/b2_polygon_contact.s: dynamics/b2_polygon_contact.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_polygon_contact.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.s
 .PHONY : dynamics/b2_polygon_contact.cpp.s
 
 dynamics/b2_prismatic_joint.o: dynamics/b2_prismatic_joint.cpp.o
@@ -1088,7 +1088,7 @@ dynamics/b2_prismatic_joint.o: dynamics/b2_prismatic_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_prismatic_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.o
 .PHONY : dynamics/b2_prismatic_joint.cpp.o
 
 dynamics/b2_prismatic_joint.i: dynamics/b2_prismatic_joint.cpp.i
@@ -1096,7 +1096,7 @@ dynamics/b2_prismatic_joint.i: dynamics/b2_prismatic_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_prismatic_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.i
 .PHONY : dynamics/b2_prismatic_joint.cpp.i
 
 dynamics/b2_prismatic_joint.s: dynamics/b2_prismatic_joint.cpp.s
@@ -1104,7 +1104,7 @@ dynamics/b2_prismatic_joint.s: dynamics/b2_prismatic_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_prismatic_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.s
 .PHONY : dynamics/b2_prismatic_joint.cpp.s
 
 dynamics/b2_pulley_joint.o: dynamics/b2_pulley_joint.cpp.o
@@ -1112,7 +1112,7 @@ dynamics/b2_pulley_joint.o: dynamics/b2_pulley_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_pulley_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.o
 .PHONY : dynamics/b2_pulley_joint.cpp.o
 
 dynamics/b2_pulley_joint.i: dynamics/b2_pulley_joint.cpp.i
@@ -1120,7 +1120,7 @@ dynamics/b2_pulley_joint.i: dynamics/b2_pulley_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_pulley_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.i
 .PHONY : dynamics/b2_pulley_joint.cpp.i
 
 dynamics/b2_pulley_joint.s: dynamics/b2_pulley_joint.cpp.s
@@ -1128,7 +1128,7 @@ dynamics/b2_pulley_joint.s: dynamics/b2_pulley_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_pulley_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.s
 .PHONY : dynamics/b2_pulley_joint.cpp.s
 
 dynamics/b2_revolute_joint.o: dynamics/b2_revolute_joint.cpp.o
@@ -1136,7 +1136,7 @@ dynamics/b2_revolute_joint.o: dynamics/b2_revolute_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_revolute_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.o
 .PHONY : dynamics/b2_revolute_joint.cpp.o
 
 dynamics/b2_revolute_joint.i: dynamics/b2_revolute_joint.cpp.i
@@ -1144,7 +1144,7 @@ dynamics/b2_revolute_joint.i: dynamics/b2_revolute_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_revolute_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.i
 .PHONY : dynamics/b2_revolute_joint.cpp.i
 
 dynamics/b2_revolute_joint.s: dynamics/b2_revolute_joint.cpp.s
@@ -1152,7 +1152,7 @@ dynamics/b2_revolute_joint.s: dynamics/b2_revolute_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_revolute_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.s
 .PHONY : dynamics/b2_revolute_joint.cpp.s
 
 dynamics/b2_weld_joint.o: dynamics/b2_weld_joint.cpp.o
@@ -1160,7 +1160,7 @@ dynamics/b2_weld_joint.o: dynamics/b2_weld_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_weld_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.o
 .PHONY : dynamics/b2_weld_joint.cpp.o
 
 dynamics/b2_weld_joint.i: dynamics/b2_weld_joint.cpp.i
@@ -1168,7 +1168,7 @@ dynamics/b2_weld_joint.i: dynamics/b2_weld_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_weld_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.i
 .PHONY : dynamics/b2_weld_joint.cpp.i
 
 dynamics/b2_weld_joint.s: dynamics/b2_weld_joint.cpp.s
@@ -1176,7 +1176,7 @@ dynamics/b2_weld_joint.s: dynamics/b2_weld_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_weld_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.s
 .PHONY : dynamics/b2_weld_joint.cpp.s
 
 dynamics/b2_wheel_joint.o: dynamics/b2_wheel_joint.cpp.o
@@ -1184,7 +1184,7 @@ dynamics/b2_wheel_joint.o: dynamics/b2_wheel_joint.cpp.o
 
 # target to build an object file
 dynamics/b2_wheel_joint.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.o
 .PHONY : dynamics/b2_wheel_joint.cpp.o
 
 dynamics/b2_wheel_joint.i: dynamics/b2_wheel_joint.cpp.i
@@ -1192,7 +1192,7 @@ dynamics/b2_wheel_joint.i: dynamics/b2_wheel_joint.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_wheel_joint.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.i
 .PHONY : dynamics/b2_wheel_joint.cpp.i
 
 dynamics/b2_wheel_joint.s: dynamics/b2_wheel_joint.cpp.s
@@ -1200,7 +1200,7 @@ dynamics/b2_wheel_joint.s: dynamics/b2_wheel_joint.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_wheel_joint.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.s
 .PHONY : dynamics/b2_wheel_joint.cpp.s
 
 dynamics/b2_world.o: dynamics/b2_world.cpp.o
@@ -1208,7 +1208,7 @@ dynamics/b2_world.o: dynamics/b2_world.cpp.o
 
 # target to build an object file
 dynamics/b2_world.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.o
 .PHONY : dynamics/b2_world.cpp.o
 
 dynamics/b2_world.i: dynamics/b2_world.cpp.i
@@ -1216,7 +1216,7 @@ dynamics/b2_world.i: dynamics/b2_world.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_world.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.i
 .PHONY : dynamics/b2_world.cpp.i
 
 dynamics/b2_world.s: dynamics/b2_world.cpp.s
@@ -1224,7 +1224,7 @@ dynamics/b2_world.s: dynamics/b2_world.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_world.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.s
 .PHONY : dynamics/b2_world.cpp.s
 
 dynamics/b2_world_callbacks.o: dynamics/b2_world_callbacks.cpp.o
@@ -1232,7 +1232,7 @@ dynamics/b2_world_callbacks.o: dynamics/b2_world_callbacks.cpp.o
 
 # target to build an object file
 dynamics/b2_world_callbacks.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.o
 .PHONY : dynamics/b2_world_callbacks.cpp.o
 
 dynamics/b2_world_callbacks.i: dynamics/b2_world_callbacks.cpp.i
@@ -1240,7 +1240,7 @@ dynamics/b2_world_callbacks.i: dynamics/b2_world_callbacks.cpp.i
 
 # target to preprocess a source file
 dynamics/b2_world_callbacks.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.i
 .PHONY : dynamics/b2_world_callbacks.cpp.i
 
 dynamics/b2_world_callbacks.s: dynamics/b2_world_callbacks.cpp.s
@@ -1248,7 +1248,7 @@ dynamics/b2_world_callbacks.s: dynamics/b2_world_callbacks.cpp.s
 
 # target to generate assembly for a file
 dynamics/b2_world_callbacks.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.s
 .PHONY : dynamics/b2_world_callbacks.cpp.s
 
 rope/b2_rope.o: rope/b2_rope.cpp.o
@@ -1256,7 +1256,7 @@ rope/b2_rope.o: rope/b2_rope.cpp.o
 
 # target to build an object file
 rope/b2_rope.cpp.o:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.o
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.o
 .PHONY : rope/b2_rope.cpp.o
 
 rope/b2_rope.i: rope/b2_rope.cpp.i
@@ -1264,7 +1264,7 @@ rope/b2_rope.i: rope/b2_rope.cpp.i
 
 # target to preprocess a source file
 rope/b2_rope.cpp.i:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.i
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.i
 .PHONY : rope/b2_rope.cpp.i
 
 rope/b2_rope.s: rope/b2_rope.cpp.s
@@ -1272,7 +1272,7 @@ rope/b2_rope.s: rope/b2_rope.cpp.s
 
 # target to generate assembly for a file
 rope/b2_rope.cpp.s:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.s
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(MAKE) $(MAKESILENT) -f ThirdParty/box2d/src/CMakeFiles/box2d.dir/build.make ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.s
 .PHONY : rope/b2_rope.cpp.s
 
 # Help Target
@@ -1436,6 +1436,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

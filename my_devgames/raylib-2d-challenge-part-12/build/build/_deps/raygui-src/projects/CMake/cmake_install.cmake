@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake
+# Install script for directory: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,12 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src/raygui.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src/projects/CMake/../../src/raygui.h")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/build/_deps/raygui-src/projects/CMake/install_local_manifest.txt"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/build/_deps/raygui-src/projects/CMake/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

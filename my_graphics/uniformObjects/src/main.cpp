@@ -865,18 +865,6 @@ private:
 
             vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
 
-
-            vkCmdBindDescriptorSets(
-            commandBuffer,
-            VK_PIPELINE_BIND_POINT_GRAPHICS,
-            pipelineLayout,     // The layout you used to create the pipeline
-            0,                  // First set index (matches 'set = 0' in shader)
-            1,                  // Number of sets
-            &descriptorSetLayout[currentFrame], // The actual descriptor set for this frame
-            0,
-            nullptr
-            );
-
             VkViewport viewport{};
             viewport.x = 0.0f;
             viewport.y = 0.0f;

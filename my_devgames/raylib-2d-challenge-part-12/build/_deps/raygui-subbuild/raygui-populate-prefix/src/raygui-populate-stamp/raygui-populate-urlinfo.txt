@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/download-raygui-populate.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/verify-raygui-populate.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/extract-raygui-populate.cmake
-source_dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src
-work_dir=/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps
+command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/download-raygui-populate.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/verify-raygui-populate.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/extract-raygui-populate.cmake
+source_dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src
+work_dir=/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps
 url(s)=https://github.com/raysan5/raygui/archive/refs/tags/3.2.tar.gz
 hash=
       no_extract=

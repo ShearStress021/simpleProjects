@@ -1,0 +1,2 @@
+The video & summary for this part can be found at:
+https://keasigmadelta.com/blog/raylib-2d-challenge-part-3-switching-to-c-and-structuring-the-code-right/

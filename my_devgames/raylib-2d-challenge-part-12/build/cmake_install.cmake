@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanja/Downloads/raylib-2d-challenge-part-12
+# Install script for directory: /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,23 +44,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/cmake_install.cmake")
+  include("/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kanja/Downloads/raylib-2d-challenge-part-12/build/build/_deps/raygui-src/projects/CMake/cmake_install.cmake")
+  include("/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/build/_deps/raygui-src/projects/CMake/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kanja/Downloads/raylib-2d-challenge-part-12/build/ThirdParty/box2d/cmake_install.cmake")
+  include("/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/ThirdParty/box2d/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/install_local_manifest.txt"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -76,6 +76,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

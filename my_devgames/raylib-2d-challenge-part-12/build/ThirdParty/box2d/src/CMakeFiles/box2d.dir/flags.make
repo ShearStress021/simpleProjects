@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src
+CXX_INCLUDES = -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src
 
 CXX_FLAGS = -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden
 

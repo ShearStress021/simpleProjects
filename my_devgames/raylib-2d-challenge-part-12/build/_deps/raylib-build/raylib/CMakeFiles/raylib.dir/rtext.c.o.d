@@ -1,12 +1,12 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rtext.c \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rlgl.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rlgl.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -58,9 +58,9 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/ctype.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_rect_pack.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_rect_pack.h \
  /usr/include/assert.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_truetype.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_truetype.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \

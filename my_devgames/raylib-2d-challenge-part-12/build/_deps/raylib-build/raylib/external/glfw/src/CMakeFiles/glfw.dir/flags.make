@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src
+C_INCLUDES = -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/include -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src -I/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src
 
 C_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
 

@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src")
-  file(MAKE_DIRECTORY "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-src")
+if(NOT EXISTS "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src")
+  file(MAKE_DIRECTORY "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-src")
 endif()
 file(MAKE_DIRECTORY
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-build"
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix"
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/tmp"
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp"
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src"
-  "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-build"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/tmp"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src"
+  "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raygui-subbuild/raygui-populate-prefix/src/raygui-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

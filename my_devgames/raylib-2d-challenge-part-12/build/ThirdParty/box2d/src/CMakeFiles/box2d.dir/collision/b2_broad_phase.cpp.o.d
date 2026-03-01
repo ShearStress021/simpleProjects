@@ -1,10 +1,10 @@
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/collision/b2_broad_phase.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_broad_phase.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_broad_phase.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -22,10 +22,10 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_collision.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_collision.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -35,7 +35,7 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
  /usr/include/c++/14/math.h /usr/include/c++/14/cmath \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -82,6 +82,6 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_dynamic_tree.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_growable_stack.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_dynamic_tree.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_growable_stack.h \
  /usr/include/string.h /usr/include/strings.h

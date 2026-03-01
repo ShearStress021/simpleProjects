@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12
+CMAKE_SOURCE_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanja/Downloads/raylib-2d-challenge-part-12/build
+CMAKE_BINARY_DIR = /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build
 
 # Utility rule file for link_to_data.
 
@@ -67,7 +67,7 @@ include CMakeFiles/link_to_data.dir/compiler_depend.make
 include CMakeFiles/link_to_data.dir/progress.make
 
 CMakeFiles/link_to_data: Scarfy
-	/usr/bin/cmake -E create_symlink /home/kanja/Downloads/raylib-2d-challenge-part-12/Data/ /home/kanja/Downloads/raylib-2d-challenge-part-12/build/Data/
+	/usr/bin/cmake -E create_symlink /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/Data/ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/Data/
 
 CMakeFiles/link_to_data.dir/codegen:
 .PHONY : CMakeFiles/link_to_data.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/link_to_data.dir/clean:
 .PHONY : CMakeFiles/link_to_data.dir/clean
 
 CMakeFiles/link_to_data.dir/depend:
-	cd /home/kanja/Downloads/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanja/Downloads/raylib-2d-challenge-part-12 /home/kanja/Downloads/raylib-2d-challenge-part-12 /home/kanja/Downloads/raylib-2d-challenge-part-12/build /home/kanja/Downloads/raylib-2d-challenge-part-12/build /home/kanja/Downloads/raylib-2d-challenge-part-12/build/CMakeFiles/link_to_data.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12 /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12 /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/CMakeFiles/link_to_data.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/link_to_data.dir/depend
 

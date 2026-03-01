@@ -1,12 +1,12 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raudio.c \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/miniaudio.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/config.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/utils.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/miniaudio.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -110,8 +110,8 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_vorbis.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/jar_xm.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/jar_mod.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/dr_wav.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/dr_mp3.h
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/stb_vorbis.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/jar_xm.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/jar_mod.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/dr_wav.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/dr_mp3.h

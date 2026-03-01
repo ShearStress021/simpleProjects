@@ -1,10 +1,10 @@
 CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/DrawPhysics.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_draw.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_api.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_math.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/DrawPhysics.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_draw.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_api.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_math.h \
  /usr/include/c++/14/math.h /usr/include/c++/14/cmath \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -98,21 +98,21 @@ CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_settings.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_types.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_common.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/include/box2d/b2_common.h \
  /usr/include/assert.h /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/raylib-cpp.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./AudioDevice.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raylib.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raylib-cpp-utils.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././RaylibException.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/raylib-cpp.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./AudioDevice.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raylib.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raylib.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raylib-cpp-utils.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././RaylibException.hpp \
  /usr/include/c++/14/stdexcept /usr/include/c++/14/exception \
  /usr/include/c++/14/bits/exception_ptr.h \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
@@ -167,56 +167,56 @@ CMakeFiles/Scarfy.dir/DrawPhysics.cpp.o: \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
  /usr/include/c++/14/bits/ranges_util.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raylib.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./AudioStream.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./BoundingBox.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Camera2D.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector2.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raymath.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raymath.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raylib-cpp-utils.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Camera3D.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector3.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Color.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector4.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raylib.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./AudioStream.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./BoundingBox.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Camera2D.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector2.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raymath.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/raymath.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././raylib-cpp-utils.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Camera3D.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector3.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Color.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Vector4.hpp \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Font.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Functions.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Font.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Functions.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Gamepad.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Image.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Material.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Matrix.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raymath.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Mesh.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././BoundingBox.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Model.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././Mesh.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././RaylibException.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Model.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./ModelAnimation.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Mesh.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Mouse.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Music.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Ray.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././RayCollision.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RaylibException.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RayCollision.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Rectangle.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RenderTexture.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Shader.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Texture.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Material.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Sound.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Text.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Texture.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector2.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector3.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector4.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./VrStereoConfig.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Wave.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Window.hpp \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rlgl.h
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Gamepad.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Image.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Material.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Matrix.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././raymath.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Mesh.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././BoundingBox.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Model.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././Mesh.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./././RaylibException.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Model.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./ModelAnimation.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Mesh.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Mouse.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Music.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Ray.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././RayCollision.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RaylibException.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RayCollision.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Rectangle.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./RenderTexture.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Shader.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Texture.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/././Material.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Sound.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Text.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Texture.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector2.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector3.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Vector4.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./VrStereoConfig.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Wave.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/raylib-cpp/include/./Window.hpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/rlgl.h

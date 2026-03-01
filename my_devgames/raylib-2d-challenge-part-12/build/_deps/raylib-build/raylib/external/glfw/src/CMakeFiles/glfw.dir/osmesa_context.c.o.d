@@ -1,5 +1,5 @@
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -14,9 +14,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/assert.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/internal.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src/glfw_config.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/../include/GLFW/glfw3.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/internal.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-build/raylib/external/glfw/src/glfw_config.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/../include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -25,7 +25,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_platform.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/x11_platform.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h /usr/include/signal.h \
@@ -60,7 +60,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/X11/extensions/xfixeswire.h \
  /usr/include/X11/extensions/shape.h \
  /usr/include/X11/extensions/shapeconst.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_thread.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -80,10 +80,10 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/posix_time.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/glx_context.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.h \
  /usr/include/linux/input.h /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -105,5 +105,5 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
  /usr/include/regex.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.h
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/egl_context.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.h

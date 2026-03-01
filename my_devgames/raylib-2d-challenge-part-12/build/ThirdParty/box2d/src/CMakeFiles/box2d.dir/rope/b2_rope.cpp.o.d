@@ -1,9 +1,9 @@
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/rope/b2_rope.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_draw.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_draw.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
  /usr/include/c++/14/math.h /usr/include/c++/14/cmath \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -64,16 +64,16 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
  /usr/include/assert.h /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_rope.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_rope.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \

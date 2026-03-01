@@ -1,10 +1,10 @@
 ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o: \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/common/b2_stack_allocator.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_stack_allocator.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_stack_allocator.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_api.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_settings.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -22,10 +22,10 @@ ThirdParty/box2d/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_common.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
- /home/kanja/Downloads/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
+ /home/kanja/projects/simpleProjects/my_devgames/raylib-2d-challenge-part-12/ThirdParty/box2d/src/../include/box2d/b2_math.h \
  /usr/include/c++/14/math.h /usr/include/c++/14/cmath \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
