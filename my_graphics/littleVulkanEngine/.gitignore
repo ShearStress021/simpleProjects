@@ -1,0 +1,10 @@
+**/a.out
+build/**
+.vscode
+**/.env
+*.spv
+littleVulkanEngine/sandbox/**
+*.a
+textures_
+models/viking_room.obj
+imgui.ini
