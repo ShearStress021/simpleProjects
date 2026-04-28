@@ -68,18 +68,40 @@ PrintOptions createPrintOptions(std::span<char*> arguments){
 
 }
 
-struct Printablefile {
+struct File{
 	fs::path path;
 };
 
-struct PrintableDirectory{
+struct Directory{
 	fs::path path;
 };
 struct Root{
 	fs::path path;
 };
-using PrintableFileObject  = std::variant<>;
+using PrintableFileObject  = std::variant<File,Directory, Root>;
 
+
+class FileObjectPrinter {
+
+	public:
+		void operator()(const File &file){
+
+		}
+
+		void operator()(const Directory &directory){
+
+		}
+
+		void operator()(const Root &root){
+
+		}
+	private:
+
+
+
+
+
+};
 
 int main(int argc, char **argv){
 
