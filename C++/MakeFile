@@ -1,0 +1,6 @@
+all: *.cpp 
+  g++ $< -o main
+
+
+
+
