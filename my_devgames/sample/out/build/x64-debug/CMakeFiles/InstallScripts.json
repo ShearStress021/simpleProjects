@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/cmake_install.cmake",
+		"E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/cmake_install.cmake",
+		"E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/SDL_Sample/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

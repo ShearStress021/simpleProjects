@@ -1,0 +1,10 @@
+^E:\PROJECTS\SIMPLEPROJECTS\MY_DEVGAMES\SDL_SAMPLE\OUT\BUILD\X64-DEBUG\_DEPS\SDL2-SUBBUILD\CMAKEFILES\8D0EA981721D7CD24EE5A0F2C45669BF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild -BE:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/sdl2-populate.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

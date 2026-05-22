@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="52fe4a35-a132-3a79-a6f2-765b0678f755" DefaultStartup="true">
+		<BuildDependency Project="_deps/sdl2-build/SDL2.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/SDL2-static.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/SDL2_test.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/SDL2main.vcxproj"/>
+		<BuildDependency Project="SDL_Sample/SDL_Sample.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="_deps/sdl2-build/SDL2.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="46a7f2be-515c-3425-a843-1331253678e3">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="_deps/sdl2-build/SDL2-static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="18a8c55f-5bc9-3263-8ed7-f2cf1d7904f3">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="_deps/sdl2-build/SDL2_test.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b81e29cc-c03b-3389-b5eb-b1d11a7aa572">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="_deps/sdl2-build/SDL2main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ef65d86e-b836-30fd-b94e-c30a733fb707">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="SDL_Sample/SDL_Sample.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bf4166fa-52db-309e-be79-ba7a85523317">
+		<BuildDependency Project="_deps/sdl2-build/SDL2.vcxproj"/>
+		<BuildDependency Project="_deps/sdl2-build/SDL2main.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cc477ef7-8cec-3b46-878b-44ac347b772c"/>
+	<Project Path="_deps/sdl2-build/sdl_headers_copy.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="85d94aea-f517-32fd-93ee-a0e7586e8ab1">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="_deps/sdl2-build/uninstall.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="28e32388-6597-309f-ab43-4cf927bc6f8e">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+</Solution>

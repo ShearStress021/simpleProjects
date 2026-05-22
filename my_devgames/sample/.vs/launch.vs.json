@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SDL_Sample.exe (out/build/x64-debug/SDL_Sample/Debug/SDL_Sample.exe)",
+      "name": "SDL_Sample (x64-debug)",
+      "args": [],
+      "env": {},
+      "currentDir": "${projectDir}"
+    }
+  ]
+}

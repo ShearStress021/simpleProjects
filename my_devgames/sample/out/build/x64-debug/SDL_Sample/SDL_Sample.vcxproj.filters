@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\projects\simpleProjects\my_devgames\SDL_Sample\SDL_Sample\SDL_Sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\projects\simpleProjects\my_devgames\SDL_Sample\SDL_Sample\SDL_Sample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\projects\simpleProjects\my_devgames\SDL_Sample\SDL_Sample\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F1D14D17-C2BB-36C9-9244-91C8A7B252B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C98FA6A1-2B5A-30A2-A57B-3216FABB1625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

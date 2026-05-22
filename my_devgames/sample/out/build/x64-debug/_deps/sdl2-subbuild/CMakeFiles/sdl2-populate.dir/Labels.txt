@@ -1,0 +1,14 @@
+# Target labels
+ sdl2-populate
+# Source files and their labels
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/8d0ea981721d7cd24ee5a0f2c45669bf/sdl2-populate.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/028256fa55e2d0a8a23a2e2ecf5cfd29/sdl2-populate-complete.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-build.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-configure.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-download.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-install.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-mkdir.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-patch.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-test.rule
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-subbuild/CMakeFiles/72ffc36b95e380cef3a97c9d01d03ba5/sdl2-populate-update.rule
