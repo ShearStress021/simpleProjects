@@ -2,4 +2,4 @@
 
 set_property(TARGET SDL_Sample PROPERTY CXX_STANDARD 20)
 
-target_link_libraries(SDL_Sample PRIVATE SDL2::SDL2 SDL2::SDL2main)
+target_link_libraries(SDL_Sample PRIVATE SDL3::SDL3)

@@ -1,13 +1,10 @@
-﻿// SDL_Sample.cpp : Defines the entry point for the application.
-//
-
-#include "SDL_Sample.h"
+﻿#include "SDL_Sample.h"
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	if (!SDL_Init(SDL_INIT_VIDEO))
 	{
 		cerr << "SDL_Init failed: " << SDL_GetError() << endl;
 		return 1;
@@ -15,9 +12,8 @@ int main(int argc, char* argv[])
 
 	SDL_Window* window = SDL_CreateWindow(
 		"SDL Sample",
-		SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 		800, 600,
-		SDL_WINDOW_SHOWN
+		SDL_WINDOW_RESIZABLE
 	);
 
 	if (!window)
@@ -34,7 +30,7 @@ int main(int argc, char* argv[])
 	{
 		while (SDL_PollEvent(&e))
 		{
-			if (e.type == SDL_QUIT)
+			if (e.type == SDL_EVENT_QUIT)
 				running = false;
 		}
 	}
