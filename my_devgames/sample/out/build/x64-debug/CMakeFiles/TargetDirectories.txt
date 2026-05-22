@@ -1,0 +1,10 @@
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/CMakeFiles/ALL_BUILD.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/CMakeFiles/ZERO_CHECK.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/SDL2main.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/SDL2.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/SDL2-static.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/SDL2_test.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/uninstall.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/_deps/sdl2-build/CMakeFiles/ALL_BUILD.dir
+E:/projects/simpleProjects/my_devgames/SDL_Sample/out/build/x64-debug/SDL_Sample/CMakeFiles/SDL_Sample.dir

@@ -1,0 +1,28 @@
+# Build output
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+*.sln.ide/
+
+# CMake generated
+CMakeUserPresets.json
+CMakeFiles/
+cmake_install.cmake
+*.cmake.orig
+*.cmake.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

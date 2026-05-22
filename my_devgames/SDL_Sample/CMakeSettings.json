@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "win-x64-debug",
+      "generator": "Visual Studio 18 2026",
+      "configurationType": "Debug",
+      "architecture": "x64",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "inheritEnvironments": [ "msvc_x64_x64" ]
+    },
+    {
+      "name": "win-x64-release",
+      "generator": "Visual Studio 18 2026",
+      "configurationType": "Release",
+      "architecture": "x64",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "inheritEnvironments": [ "msvc_x64_x64" ]
+    }
+  ]
+}
