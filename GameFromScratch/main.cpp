@@ -1,6 +1,5 @@
 #include <windows.h>
 
-
 LRESULT CALLBACK mainWindowCallBack(
 		  HWND    window,
 		  UINT    message,
