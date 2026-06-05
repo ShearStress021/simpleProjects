@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\616761676f755f7a7d448057d830ba1b\raylib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\425e6d29bfe985bb7c2d083af80c112d\raylib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\cd489ddba90d0b51471791e064386769\raylib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-subbuild\CMakeFiles\raylib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3922F658-F7E0-31FB-A92D-F930807EDF2B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

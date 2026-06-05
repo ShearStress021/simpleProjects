@@ -1,0 +1,150 @@
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/tmp/raylib-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/tmp/raylib-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-UPDATE.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-src
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/tmp/raylib-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-CONFIGURE.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-BUILD.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-INSTALL.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\616761676F755F7A7D448057D830BA1B\RAYLIB-POPULATE-TEST.RULE
+setlocal
+cd E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\_deps\raylib-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\425E6D29BFE985BB7C2D083AF80C112D\RAYLIB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/Debug/raylib-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/Debug/raylib-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKEFILES\CD489DDBA90D0B51471791E064386769\RAYLIB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\PROJECTS\SIMPLEPROJECTS\PHYSICSPLAY\PARTICLESIMULATOR\BUILD\_DEPS\RAYLIB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild -BE:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild --check-stamp-file E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\projects\simpleProjects\PhysicsPlay\particleSimulator\build\CMakeFiles\247a20f1b73b6c5532c0b70d577c8ad1\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{457C4442-9912-37FD-961F-77ACED01C994}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

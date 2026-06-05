@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/cd489ddba90d0b51471791e064386769/raylib-populate.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/425e6d29bfe985bb7c2d083af80c112d/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-build.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-download.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-install.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-test.rule"
+		},
+		{
+			"file" : "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/CMakeFiles/616761676f755f7a7d448057d830ba1b/raylib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}
