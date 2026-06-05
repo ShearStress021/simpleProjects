@@ -1,4 +1,10 @@
 #include <windows.h>
+#define static local_persist
+#define static global_variable
+
+
+global_variable bool running;
+
 
 LRESULT CALLBACK mainWindowCallBack(
 		  HWND    window,
@@ -18,11 +24,12 @@ LRESULT CALLBACK mainWindowCallBack(
 			}
 		case WM_DESTROY:
 			{
+				running = false;
 				break;
 			}
 		case WM_CLOSE:
 		{
-
+			running = false;
 			break;
 		}
 		case WM_ACTIVATEAPP:
@@ -38,7 +45,7 @@ LRESULT CALLBACK mainWindowCallBack(
 			int Y = paint.rcPaint.top;
 			int Height = paint.rcPaint.bottom - paint.rcPaint.top;
 			int Width = paint.rcPaint.right - paint.rcPaint.left;
-			static DWORD Operation = WHITENESS;
+			local_persist DWORD Operation = WHITENESS;
 			PatBlt(DeviceContext, X, Y, Width, Height, Operation);
 			if(Operation == WHITENESS) {
 				Operation = BLACKNESS;
@@ -87,7 +94,7 @@ int CALLBACK WinMain(HINSTANCE instance, HINSTANCE previousInstance, PSTR cmdlin
 
 		if(windowHandle){
 			MSG message;
-			for(;;){
+			while(running){
 				BOOL MessageResult = GetMessage(&message, 0,0,0);
 				if(MessageResult > 0){
 
