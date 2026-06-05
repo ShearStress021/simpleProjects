@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
