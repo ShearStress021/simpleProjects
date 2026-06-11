@@ -4,1822 +4,830 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Windows - 10.0.26200 - AMD64
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
+      The system is: Linux - 6.12.90+deb13.1-amd64 - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler:  
+      Compiler: /usr/bin/cc 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 2026-06-05 11:34:24 AM.
-      
-      Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
-      PrepareForBuild:
-        Creating directory "Debug\\".
-        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-        Creating directory "Debug\\CompilerIdC.tlog\\".
-      InitializeBuildStatus:
-        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
-      ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
-        CMakeCCompilerId.c
-      Link:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.exe
-      PostBuildEvent:
-        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
-        :VCEnd
-        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe
-      FinalizeBuildStatus:
-        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
-        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
-      
-      Build succeeded.
-          0 Warning(s)
-          0 Error(s)
-      
-      Time Elapsed 00:00:00.60
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      The C compiler identification is GNU, found in:
+        /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/3.31.6/CompilerIdC/a.out
       
-      The C compiler identification is MSVC, found in:
-        E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/4.2.1/CompilerIdC/CompilerIdC.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lld-link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link"
-      - "C:/Program Files/Python313/Scripts/lld-link.com"
-      - "C:/Program Files/Python313/Scripts/lld-link.exe"
-      - "C:/Program Files/Python313/Scripts/lld-link"
-      - "C:/Program Files/Python313/lld-link.com"
-      - "C:/Program Files/Python313/lld-link.exe"
-      - "C:/Program Files/Python313/lld-link"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link"
-      - "C:/Windows/System32/lld-link.com"
-      - "C:/Windows/System32/lld-link.exe"
-      - "C:/Windows/System32/lld-link"
-      - "C:/Windows/lld-link.com"
-      - "C:/Windows/lld-link.exe"
-      - "C:/Windows/lld-link"
-      - "C:/Windows/System32/wbem/lld-link.com"
-      - "C:/Windows/System32/wbem/lld-link.exe"
-      - "C:/Windows/System32/wbem/lld-link"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Windows/System32/OpenSSH/lld-link"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link"
-      - "C:/Program Files/dotnet/lld-link.com"
-      - "C:/Program Files/dotnet/lld-link.exe"
-      - "C:/Program Files/dotnet/lld-link"
-      - "C:/Program Files/CMake/bin/lld-link.com"
-      - "C:/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Program Files/CMake/bin/lld-link"
-      - "C:/Program Files/Git/cmd/lld-link.com"
-      - "C:/Program Files/Git/cmd/lld-link.exe"
-      - "C:/Program Files/Git/cmd/lld-link"
-      - "C:/Program Files/starship/bin/lld-link.com"
-      - "C:/Program Files/starship/bin/lld-link.exe"
-      - "C:/Program Files/starship/bin/lld-link"
-      - "C:/Program Files/nodejs/lld-link.com"
-      - "C:/Program Files/nodejs/lld-link.exe"
-      - "C:/Program Files/nodejs/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/msys64/ucrt64/bin/lld-link.com"
-      - "C:/msys64/ucrt64/bin/lld-link.exe"
-      - "C:/msys64/ucrt64/bin/lld-link"
-      - "C:/Users/kanja/.local/bin/lld-link.com"
-      - "C:/Users/kanja/.local/bin/lld-link.exe"
-      - "C:/Users/kanja/.local/bin/lld-link"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link.com"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link.exe"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_LINKER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_MT"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "mt"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/mt.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/mt.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/mt"
-      - "C:/Program Files/Python313/Scripts/mt.com"
-      - "C:/Program Files/Python313/Scripts/mt.exe"
-      - "C:/Program Files/Python313/Scripts/mt"
-      - "C:/Program Files/Python313/mt.com"
-      - "C:/Program Files/Python313/mt.exe"
-      - "C:/Program Files/Python313/mt"
-      - "C:/VulkanSDK/1.4.335.0/Bin/mt.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/mt.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/mt"
-      - "C:/Windows/System32/mt.com"
-      - "C:/Windows/System32/mt.exe"
-      - "C:/Windows/System32/mt"
-      - "C:/Windows/mt.com"
-      - "C:/Windows/mt.exe"
-      - "C:/Windows/mt"
-      - "C:/Windows/System32/wbem/mt.com"
-      - "C:/Windows/System32/wbem/mt.exe"
-      - "C:/Windows/System32/wbem/mt"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
-      - "C:/Windows/System32/OpenSSH/mt.com"
-      - "C:/Windows/System32/OpenSSH/mt.exe"
-      - "C:/Windows/System32/OpenSSH/mt"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt"
-      - "C:/Program Files/dotnet/mt.com"
-      - "C:/Program Files/dotnet/mt.exe"
-      - "C:/Program Files/dotnet/mt"
-      - "C:/Program Files/CMake/bin/mt.com"
-      - "C:/Program Files/CMake/bin/mt.exe"
-      - "C:/Program Files/CMake/bin/mt"
-      - "C:/Program Files/Git/cmd/mt.com"
-      - "C:/Program Files/Git/cmd/mt.exe"
-      - "C:/Program Files/Git/cmd/mt"
-      - "C:/Program Files/starship/bin/mt.com"
-      - "C:/Program Files/starship/bin/mt.exe"
-      - "C:/Program Files/starship/bin/mt"
-      - "C:/Program Files/nodejs/mt.com"
-      - "C:/Program Files/nodejs/mt.exe"
-      - "C:/Program Files/nodejs/mt"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
-      - "C:/msys64/ucrt64/bin/mt.com"
-      - "C:/msys64/ucrt64/bin/mt.exe"
-      - "C:/msys64/ucrt64/bin/mt"
-      - "C:/Users/kanja/.local/bin/mt.com"
-      - "C:/Users/kanja/.local/bin/mt.exe"
-      - "C:/Users/kanja/.local/bin/mt"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/mt.com"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/mt.exe"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/mt"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/mt"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/mt.com"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/mt.exe"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/mt"
-      - "C:/Users/kanja/AppData/Roaming/npm/mt.com"
-      - "C:/Users/kanja/AppData/Roaming/npm/mt.exe"
-      - "C:/Users/kanja/AppData/Roaming/npm/mt"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_AR"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lib"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler:  
+      Compiler: /usr/bin/c++ 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 2026-06-05 11:34:25 AM.
-      
-      Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
-      PrepareForBuild:
-        Creating directory "Debug\\".
-        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-        Creating directory "Debug\\CompilerIdCXX.tlog\\".
-      InitializeBuildStatus:
-        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-      ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
-        CMakeCXXCompilerId.cpp
-      Link:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.exe
-      PostBuildEvent:
-        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
-        :VCEnd
-        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe
-      FinalizeBuildStatus:
-        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
-      
-      Build succeeded.
-          0 Warning(s)
-          0 Error(s)
-      
-      Time Elapsed 00:00:00.55
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      The CXX compiler identification is GNU, found in:
+        /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
       
-      The CXX compiler identification is MSVC, found in:
-        E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/4.2.1/CompilerIdCXX/CompilerIdCXX.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lld-link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/lld-link"
-      - "C:/Program Files/Python313/Scripts/lld-link.com"
-      - "C:/Program Files/Python313/Scripts/lld-link.exe"
-      - "C:/Program Files/Python313/Scripts/lld-link"
-      - "C:/Program Files/Python313/lld-link.com"
-      - "C:/Program Files/Python313/lld-link.exe"
-      - "C:/Program Files/Python313/lld-link"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/lld-link"
-      - "C:/Windows/System32/lld-link.com"
-      - "C:/Windows/System32/lld-link.exe"
-      - "C:/Windows/System32/lld-link"
-      - "C:/Windows/lld-link.com"
-      - "C:/Windows/lld-link.exe"
-      - "C:/Windows/lld-link"
-      - "C:/Windows/System32/wbem/lld-link.com"
-      - "C:/Windows/System32/wbem/lld-link.exe"
-      - "C:/Windows/System32/wbem/lld-link"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Windows/System32/OpenSSH/lld-link"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link"
-      - "C:/Program Files/dotnet/lld-link.com"
-      - "C:/Program Files/dotnet/lld-link.exe"
-      - "C:/Program Files/dotnet/lld-link"
-      - "C:/Program Files/CMake/bin/lld-link.com"
-      - "C:/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Program Files/CMake/bin/lld-link"
-      - "C:/Program Files/Git/cmd/lld-link.com"
-      - "C:/Program Files/Git/cmd/lld-link.exe"
-      - "C:/Program Files/Git/cmd/lld-link"
-      - "C:/Program Files/starship/bin/lld-link.com"
-      - "C:/Program Files/starship/bin/lld-link.exe"
-      - "C:/Program Files/starship/bin/lld-link"
-      - "C:/Program Files/nodejs/lld-link.com"
-      - "C:/Program Files/nodejs/lld-link.exe"
-      - "C:/Program Files/nodejs/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/msys64/ucrt64/bin/lld-link.com"
-      - "C:/msys64/ucrt64/bin/lld-link.exe"
-      - "C:/msys64/ucrt64/bin/lld-link"
-      - "C:/Users/kanja/.local/bin/lld-link.com"
-      - "C:/Users/kanja/.local/bin/lld-link.exe"
-      - "C:/Users/kanja/.local/bin/lld-link"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link.com"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link.exe"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/lld-link"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/kanja/AppData/Roaming/npm/lld-link"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:580 (enable_language)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_RC_COMPILER"
-    description: "RC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "rc"
-    candidate_directories:
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/particleSimulator/bin/"
-      - "C:/Program Files (x86)/particleSimulator/sbin/"
-      - "C:/Program Files (x86)/particleSimulator/"
-    searched_directories:
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/rc.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/rc.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/rc"
-      - "C:/Program Files/Python313/Scripts/rc.com"
-      - "C:/Program Files/Python313/Scripts/rc.exe"
-      - "C:/Program Files/Python313/Scripts/rc"
-      - "C:/Program Files/Python313/rc.com"
-      - "C:/Program Files/Python313/rc.exe"
-      - "C:/Program Files/Python313/rc"
-      - "C:/VulkanSDK/1.4.335.0/Bin/rc.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/rc.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/rc"
-      - "C:/Windows/System32/rc.com"
-      - "C:/Windows/System32/rc.exe"
-      - "C:/Windows/System32/rc"
-      - "C:/Windows/rc.com"
-      - "C:/Windows/rc.exe"
-      - "C:/Windows/rc"
-      - "C:/Windows/System32/wbem/rc.com"
-      - "C:/Windows/System32/wbem/rc.exe"
-      - "C:/Windows/System32/wbem/rc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
-      - "C:/Windows/System32/OpenSSH/rc.com"
-      - "C:/Windows/System32/OpenSSH/rc.exe"
-      - "C:/Windows/System32/OpenSSH/rc"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc"
-      - "C:/Program Files/dotnet/rc.com"
-      - "C:/Program Files/dotnet/rc.exe"
-      - "C:/Program Files/dotnet/rc"
-      - "C:/Program Files/CMake/bin/rc.com"
-      - "C:/Program Files/CMake/bin/rc.exe"
-      - "C:/Program Files/CMake/bin/rc"
-      - "C:/Program Files/Git/cmd/rc.com"
-      - "C:/Program Files/Git/cmd/rc.exe"
-      - "C:/Program Files/Git/cmd/rc"
-      - "C:/Program Files/starship/bin/rc.com"
-      - "C:/Program Files/starship/bin/rc.exe"
-      - "C:/Program Files/starship/bin/rc"
-      - "C:/Program Files/nodejs/rc.com"
-      - "C:/Program Files/nodejs/rc.exe"
-      - "C:/Program Files/nodejs/rc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
-      - "C:/msys64/ucrt64/bin/rc.com"
-      - "C:/msys64/ucrt64/bin/rc.exe"
-      - "C:/msys64/ucrt64/bin/rc"
-      - "C:/Users/kanja/.local/bin/rc.com"
-      - "C:/Users/kanja/.local/bin/rc.exe"
-      - "C:/Users/kanja/.local/bin/rc"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/rc.com"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/rc.exe"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/rc"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/rc"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/rc.com"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/rc.exe"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/rc"
-      - "C:/Users/kanja/AppData/Roaming/npm/rc.com"
-      - "C:/Users/kanja/AppData/Roaming/npm/rc.exe"
-      - "C:/Users/kanja/AppData/Roaming/npm/rc"
-      - "C:/Program Files/bin/rc.com"
-      - "C:/Program Files/bin/rc.exe"
-      - "C:/Program Files/bin/rc"
-      - "C:/Program Files/sbin/rc.com"
-      - "C:/Program Files/sbin/rc.exe"
-      - "C:/Program Files/sbin/rc"
-      - "C:/Program Files/rc.com"
-      - "C:/Program Files/rc.exe"
-      - "C:/Program Files/rc"
-      - "C:/Program Files (x86)/bin/rc.com"
-      - "C:/Program Files (x86)/bin/rc.exe"
-      - "C:/Program Files (x86)/bin/rc"
-      - "C:/Program Files (x86)/sbin/rc.com"
-      - "C:/Program Files (x86)/sbin/rc.exe"
-      - "C:/Program Files (x86)/sbin/rc"
-      - "C:/Program Files (x86)/rc.com"
-      - "C:/Program Files (x86)/rc.exe"
-      - "C:/Program Files (x86)/rc"
-      - "C:/Program Files/CMake/bin/rc.com"
-      - "C:/Program Files/CMake/bin/rc.exe"
-      - "C:/Program Files/CMake/bin/rc"
-      - "C:/Program Files/CMake/sbin/rc.com"
-      - "C:/Program Files/CMake/sbin/rc.exe"
-      - "C:/Program Files/CMake/sbin/rc"
-      - "C:/Program Files/CMake/rc.com"
-      - "C:/Program Files/CMake/rc.exe"
-      - "C:/Program Files/CMake/rc"
-      - "C:/Program Files (x86)/particleSimulator/bin/rc.com"
-      - "C:/Program Files (x86)/particleSimulator/bin/rc.exe"
-      - "C:/Program Files (x86)/particleSimulator/bin/rc"
-      - "C:/Program Files (x86)/particleSimulator/sbin/rc.com"
-      - "C:/Program Files (x86)/particleSimulator/sbin/rc.exe"
-      - "C:/Program Files (x86)/particleSimulator/sbin/rc"
-      - "C:/Program Files (x86)/particleSimulator/rc.com"
-      - "C:/Program Files (x86)/particleSimulator/rc.exe"
-      - "C:/Program Files (x86)/particleSimulator/rc"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/particleSimulator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/particleSimulator"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ygwltm"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ygwltm"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ygwltm'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4abd1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:26 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e92ed/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e92ed.dir/build.make CMakeFiles/cmTC_e92ed.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up'
+        Building C object CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e92ed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccXpNrQJ.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygwltm\\cmTC_4abd1.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygwltm\\Debug\\".
-          Creating directory "cmTC_4abd1.dir\\Debug\\cmTC_4abd1.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_4abd1.dir\\Debug\\cmTC_4abd1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_4abd1.dir\\Debug\\cmTC_4abd1.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4abd1.dir\\Debug\\\\" /Fd"cmTC_4abd1.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4abd1.dir\\Debug\\\\" /Fd"cmTC_4abd1.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
-          CMakeCCompilerABI.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygwltm\\Debug\\cmTC_4abd1.exe" /INCREMENTAL /ILK:"cmTC_4abd1.dir\\Debug\\cmTC_4abd1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ygwltm/Debug/cmTC_4abd1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ygwltm/Debug/cmTC_4abd1.lib" /MACHINE:X64  /machine:x64 cmTC_4abd1.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_4abd1.vcxproj -> E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygwltm\\Debug\\cmTC_4abd1.exe
-        FinalizeBuildStatus:
-          Deleting file "cmTC_4abd1.dir\\Debug\\cmTC_4abd1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_4abd1.dir\\Debug\\cmTC_4abd1.tlog\\cmTC_4abd1.lastbuildstate".
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygwltm\\cmTC_4abd1.vcxproj" (default targets).
-        
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
-        
-        Time Elapsed 00:00:00.53
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o /tmp/ccXpNrQJ.s
+        GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e92ed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e92ed.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e92ed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e92ed.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3WUY04.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e92ed /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3WUY04.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e92ed /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e92ed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e92ed.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -o cmTC_e92ed
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/14/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e92ed/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e92ed.dir/build.make CMakeFiles/cmTC_e92ed.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-BYz7up']
+        ignore line: [Building C object CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e92ed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccXpNrQJ.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o /tmp/ccXpNrQJ.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e92ed]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e92ed.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e92ed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e92ed.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3WUY04.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e92ed /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3WUY04.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e92ed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3WUY04.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e92ed /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e92ed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.51.36246.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-06e2d1"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-06e2d1"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-06e2d1'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a75c9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:26 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ad23/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7ad23.dir/build.make CMakeFiles/cmTC_7ad23.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd'
+        Building CXX object CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7ad23.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccbzqi5L.s
+        GNU C++17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06e2d1\\cmTC_a75c9.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06e2d1\\Debug\\".
-          Creating directory "cmTC_a75c9.dir\\Debug\\cmTC_a75c9.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_a75c9.dir\\Debug\\cmTC_a75c9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a75c9.dir\\Debug\\cmTC_a75c9.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a75c9.dir\\Debug\\\\" /Fd"cmTC_a75c9.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a75c9.dir\\Debug\\\\" /Fd"cmTC_a75c9.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
-          CMakeCXXCompilerABI.cpp
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06e2d1\\Debug\\cmTC_a75c9.exe" /INCREMENTAL /ILK:"cmTC_a75c9.dir\\Debug\\cmTC_a75c9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-06e2d1/Debug/cmTC_a75c9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-06e2d1/Debug/cmTC_a75c9.lib" /MACHINE:X64  /machine:x64 cmTC_a75c9.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_a75c9.vcxproj -> E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06e2d1\\Debug\\cmTC_a75c9.exe
-        FinalizeBuildStatus:
-          Deleting file "cmTC_a75c9.dir\\Debug\\cmTC_a75c9.tlog\\unsuccessfulbuild".
-          Touching "cmTC_a75c9.dir\\Debug\\cmTC_a75c9.tlog\\cmTC_a75c9.lastbuildstate".
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06e2d1\\cmTC_a75c9.vcxproj" (default targets).
-        
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
-        
-        Time Elapsed 00:00:00.63
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/14"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/14
+         /usr/include/x86_64-linux-gnu/c++/14
+         /usr/include/c++/14/backward
+         /usr/lib/gcc/x86_64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: a0e1d70a4b6c50c7ed1b3d36dfd3f9a4
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbzqi5L.s
+        GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7ad23
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ad23.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7ad23' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7ad23.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc79fSzg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7ad23 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc79fSzg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7ad23 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7ad23' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7ad23.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7ad23
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/14]
+          add: [/usr/include/x86_64-linux-gnu/c++/14]
+          add: [/usr/include/c++/14/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/gcc/x86_64-linux-gnu/14/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ad23/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7ad23.dir/build.make CMakeFiles/cmTC_7ad23.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-FO23yd']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7ad23.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccbzqi5L.s]
+        ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/14"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/14]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/include/c++/14/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: a0e1d70a4b6c50c7ed1b3d36dfd3f9a4]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbzqi5L.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7ad23]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ad23.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7ad23' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7ad23.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc79fSzg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7ad23 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc79fSzg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7ad23] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc79fSzg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7ad23 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_7ad23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.51.36246.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake:111 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:1884 (find_package)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:1619 (__FetchContent_populateSubbuild)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2155:EVAL:2 (__FetchContent_doPopulation)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2155 (cmake_language)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2394 (__FetchContent_Populate)"
-      - "CMakeLists.txt:14 (FetchContent_MakeAvailable)"
-    mode: "program"
-    variable: "GIT_EXECUTABLE"
-    description: "Git command line client"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "git.cmd"
-      - "git"
-    candidate_directories:
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/"
-      - "C:/Program Files/Python313/Scripts/"
-      - "C:/Program Files/Python313/"
-      - "C:/VulkanSDK/1.4.335.0/Bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/starship/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/kanja/.local/bin/"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/"
-      - "C:/Users/kanja/AppData/Roaming/npm/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/particleSimulator/bin/"
-      - "C:/Program Files (x86)/particleSimulator/sbin/"
-      - "C:/Program Files (x86)/particleSimulator/"
-      - "C:/Users/kanja/AppData/Local/Atlassian/SourceTree/git_local/bin/"
-    searched_directories:
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git.cmd.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git.cmd.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git.cmd"
-      - "C:/Program Files/Python313/Scripts/git.cmd.com"
-      - "C:/Program Files/Python313/Scripts/git.cmd.exe"
-      - "C:/Program Files/Python313/Scripts/git.cmd"
-      - "C:/Program Files/Python313/git.cmd.com"
-      - "C:/Program Files/Python313/git.cmd.exe"
-      - "C:/Program Files/Python313/git.cmd"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git.cmd.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git.cmd.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git.cmd"
-      - "C:/Windows/System32/git.cmd.com"
-      - "C:/Windows/System32/git.cmd.exe"
-      - "C:/Windows/System32/git.cmd"
-      - "C:/Windows/git.cmd.com"
-      - "C:/Windows/git.cmd.exe"
-      - "C:/Windows/git.cmd"
-      - "C:/Windows/System32/wbem/git.cmd.com"
-      - "C:/Windows/System32/wbem/git.cmd.exe"
-      - "C:/Windows/System32/wbem/git.cmd"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd"
-      - "C:/Windows/System32/OpenSSH/git.cmd.com"
-      - "C:/Windows/System32/OpenSSH/git.cmd.exe"
-      - "C:/Windows/System32/OpenSSH/git.cmd"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git.cmd.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git.cmd.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git.cmd"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git.cmd.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git.cmd.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git.cmd"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git.cmd.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git.cmd.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git.cmd"
-      - "C:/Program Files/dotnet/git.cmd.com"
-      - "C:/Program Files/dotnet/git.cmd.exe"
-      - "C:/Program Files/dotnet/git.cmd"
-      - "C:/Program Files/CMake/bin/git.cmd.com"
-      - "C:/Program Files/CMake/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/bin/git.cmd"
-      - "C:/Program Files/Git/cmd/git.cmd.com"
-      - "C:/Program Files/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/Git/cmd/git.cmd"
-      - "C:/Program Files/starship/bin/git.cmd.com"
-      - "C:/Program Files/starship/bin/git.cmd.exe"
-      - "C:/Program Files/starship/bin/git.cmd"
-      - "C:/Program Files/nodejs/git.cmd.com"
-      - "C:/Program Files/nodejs/git.cmd.exe"
-      - "C:/Program Files/nodejs/git.cmd"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd"
-      - "C:/msys64/ucrt64/bin/git.cmd.com"
-      - "C:/msys64/ucrt64/bin/git.cmd.exe"
-      - "C:/msys64/ucrt64/bin/git.cmd"
-      - "C:/Users/kanja/.local/bin/git.cmd.com"
-      - "C:/Users/kanja/.local/bin/git.cmd.exe"
-      - "C:/Users/kanja/.local/bin/git.cmd"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/git.cmd.com"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/git.cmd.exe"
-      - "C:/Users/kanja/AppData/Local/Microsoft/WindowsApps/git.cmd"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.com"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.exe"
-      - "C:/Users/kanja/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/git.cmd.com"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/git.cmd.exe"
-      - "C:/Users/kanja/AppData/Roaming/pypoetry/venv/Scripts/git.cmd"
-      - "C:/Users/kanja/AppData/Roaming/npm/git.cmd.com"
-      - "C:/Users/kanja/AppData/Roaming/npm/git.cmd.exe"
-      - "C:/Users/kanja/AppData/Roaming/npm/git.cmd"
-      - "C:/Program Files/bin/git.cmd.com"
-      - "C:/Program Files/bin/git.cmd.exe"
-      - "C:/Program Files/bin/git.cmd"
-      - "C:/Program Files/sbin/git.cmd.com"
-      - "C:/Program Files/sbin/git.cmd.exe"
-      - "C:/Program Files/sbin/git.cmd"
-      - "C:/Program Files/git.cmd.com"
-      - "C:/Program Files/git.cmd.exe"
-      - "C:/Program Files/git.cmd"
-      - "C:/Program Files (x86)/bin/git.cmd.com"
-      - "C:/Program Files (x86)/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/bin/git.cmd"
-      - "C:/Program Files (x86)/sbin/git.cmd.com"
-      - "C:/Program Files (x86)/sbin/git.cmd.exe"
-      - "C:/Program Files (x86)/sbin/git.cmd"
-      - "C:/Program Files (x86)/git.cmd.com"
-      - "C:/Program Files (x86)/git.cmd.exe"
-      - "C:/Program Files (x86)/git.cmd"
-      - "C:/Program Files/CMake/bin/git.cmd.com"
-      - "C:/Program Files/CMake/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/bin/git.cmd"
-      - "C:/Program Files/CMake/sbin/git.cmd.com"
-      - "C:/Program Files/CMake/sbin/git.cmd.exe"
-      - "C:/Program Files/CMake/sbin/git.cmd"
-      - "C:/Program Files/CMake/git.cmd.com"
-      - "C:/Program Files/CMake/git.cmd.exe"
-      - "C:/Program Files/CMake/git.cmd"
-      - "C:/Program Files (x86)/particleSimulator/bin/git.cmd.com"
-      - "C:/Program Files (x86)/particleSimulator/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/particleSimulator/bin/git.cmd"
-      - "C:/Program Files (x86)/particleSimulator/sbin/git.cmd.com"
-      - "C:/Program Files (x86)/particleSimulator/sbin/git.cmd.exe"
-      - "C:/Program Files (x86)/particleSimulator/sbin/git.cmd"
-      - "C:/Program Files (x86)/particleSimulator/git.cmd.com"
-      - "C:/Program Files (x86)/particleSimulator/git.cmd.exe"
-      - "C:/Program Files (x86)/particleSimulator/git.cmd"
-      - "C:/Users/kanja/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.com"
-      - "C:/Users/kanja/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.exe"
-      - "C:/Users/kanja/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git.com"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git.exe"
-      - "C:/Program Files/WindowsApps/Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe/git"
-      - "C:/Program Files/Python313/Scripts/git.com"
-      - "C:/Program Files/Python313/Scripts/git.exe"
-      - "C:/Program Files/Python313/Scripts/git"
-      - "C:/Program Files/Python313/git.com"
-      - "C:/Program Files/Python313/git.exe"
-      - "C:/Program Files/Python313/git"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git.com"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git.exe"
-      - "C:/VulkanSDK/1.4.335.0/Bin/git"
-      - "C:/Windows/System32/git.com"
-      - "C:/Windows/System32/git.exe"
-      - "C:/Windows/System32/git"
-      - "C:/Windows/git.com"
-      - "C:/Windows/git.exe"
-      - "C:/Windows/git"
-      - "C:/Windows/System32/wbem/git.com"
-      - "C:/Windows/System32/wbem/git.exe"
-      - "C:/Windows/System32/wbem/git"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/git"
-      - "C:/Windows/System32/OpenSSH/git.com"
-      - "C:/Windows/System32/OpenSSH/git.exe"
-      - "C:/Windows/System32/OpenSSH/git"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/git"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git.com"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git.exe"
-      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/git"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git.com"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git.exe"
-      - "C:/Program Files/HP/OMEN-Broadcast/Common/git"
-      - "C:/Program Files/dotnet/git.com"
-      - "C:/Program Files/dotnet/git.exe"
-      - "C:/Program Files/dotnet/git"
-      - "C:/Program Files/CMake/bin/git.com"
-      - "C:/Program Files/CMake/bin/git.exe"
-      - "C:/Program Files/CMake/bin/git"
-      - "C:/Program Files/Git/cmd/git.com"
-    found: "C:/Program Files/Git/cmd/git.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.2.0_x64__8wekyb3d8bbwe"
-        - "C:\\Program Files\\Python313\\Scripts\\"
-        - "C:\\Program Files\\Python313\\"
-        - "C:\\VulkanSDK\\1.4.335.0\\Bin"
-        - "C:\\windows\\system32"
-        - "C:\\windows"
-        - "C:\\windows\\System32\\Wbem"
-        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\starship\\bin\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\kanja\\.local\\bin"
-        - "C:\\Users\\kanja\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\kanja\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\pypoetry\\venv\\Scripts"
-        - "C:\\Users\\kanja\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/particleSimulator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/particleSimulator"
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
       - "build/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
       - "build/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
       - "build/_deps/raylib-src/CMakeLists.txt:34 (include)"
     checks:
       - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-4et2ka"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-4et2ka"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake"
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake"
     buildResult:
       variable: "COMPILER_HAS_THOSE_TOGGLES"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-4et2ka'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cb519.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:42 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eae42/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eae42.dir/build.make CMakeFiles/cmTC_eae42.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm'
+        Building C object CMakeFiles/cmTC_eae42.dir/src.c.o
+        /usr/bin/cc -DCOMPILER_HAS_THOSE_TOGGLES  -Werror=pointer-arith -o CMakeFiles/cmTC_eae42.dir/src.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm/src.c
+        Linking C executable cmTC_eae42
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eae42.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_eae42.dir/src.c.o -o cmTC_eae42
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Q5jaHm'
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\cmTC_cb519.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\Debug\\".
-          Creating directory "cmTC_cb519.dir\\Debug\\cmTC_cb519.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_cb519.dir\\Debug\\cmTC_cb519.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_cb519.dir\\Debug\\cmTC_cb519.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_cb519.dir\\Debug\\\\" /Fd"cmTC_cb519.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue  -Werror=pointer-arith "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_cb519.dir\\Debug\\\\" /Fd"cmTC_cb519.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue  -Werror=pointer-arith "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\src.c"
-        cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\cmTC_cb519.vcxproj]
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\cmTC_cb519.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\cmTC_cb519.vcxproj" (default target) (1) ->
-        (ClCompile target) -> 
-          cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4et2ka\\cmTC_cb519.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.23
-        
-      exitCode: 1
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
       - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-tqko3n"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-tqko3n"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-tqko3n'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_10e2a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:43 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_faa6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_faa6f.dir/build.make CMakeFiles/cmTC_faa6f.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav'
+        Building C object CMakeFiles/cmTC_faa6f.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -o CMakeFiles/cmTC_faa6f.dir/src.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav/src.c
+        Linking C executable cmTC_faa6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faa6f.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   CMakeFiles/cmTC_faa6f.dir/src.c.o -o cmTC_faa6f
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-wnLtav'
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\cmTC_10e2a.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\Debug\\".
-          Creating directory "cmTC_10e2a.dir\\Debug\\cmTC_10e2a.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_10e2a.dir\\Debug\\cmTC_10e2a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_10e2a.dir\\Debug\\cmTC_10e2a.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_10e2a.dir\\Debug\\\\" /Fd"cmTC_10e2a.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_10e2a.dir\\Debug\\\\" /Fd"cmTC_10e2a.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\src.c"
-          src.c
-        E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\cmTC_10e2a.vcxproj]
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\cmTC_10e2a.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\cmTC_10e2a.vcxproj" (default target) (1) ->
-        (ClCompile target) -> 
-          E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tqko3n\\cmTC_10e2a.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.25
-        
-      exitCode: 1
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
-      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+      - "/usr/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
     checks:
-      - "Looking for pthread_create in pthreads"
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-nl3vct"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-nl3vct"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
     buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-nl3vct'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_780ea.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:43 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_342a8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_342a8.dir/build.make CMakeFiles/cmTC_342a8.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3'
+        Building C object CMakeFiles/cmTC_342a8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -o CMakeFiles/cmTC_342a8.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3/CheckFunctionExists.c
+        Linking C executable cmTC_342a8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_342a8.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_342a8.dir/CheckFunctionExists.c.o -o cmTC_342a8  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-AaKBP3'
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\cmTC_780ea.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\Debug\\".
-          Creating directory "cmTC_780ea.dir\\Debug\\cmTC_780ea.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_780ea.dir\\Debug\\cmTC_780ea.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_780ea.dir\\Debug\\cmTC_780ea.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_780ea.dir\\Debug\\\\" /Fd"cmTC_780ea.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_780ea.dir\\Debug\\\\" /Fd"cmTC_780ea.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\CheckFunctionExists.c"
-          CheckFunctionExists.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\Debug\\cmTC_780ea.exe" /INCREMENTAL /ILK:"cmTC_780ea.dir\\Debug\\cmTC_780ea.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-nl3vct/Debug/cmTC_780ea.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-nl3vct/Debug/cmTC_780ea.lib" /MACHINE:X64  /machine:x64 cmTC_780ea.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\cmTC_780ea.vcxproj]
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\cmTC_780ea.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\cmTC_780ea.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl3vct\\cmTC_780ea.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.34
-        
-      exitCode: 1
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
-      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
     checks:
-      - "Looking for pthread_create in pthread"
+      - "Looking for gethostbyname"
     directories:
-      source: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-z6ur8a"
-      binary: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-z6ur8a"
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
     buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: 'E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-z6ur8a'
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_97915.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 2026-06-05 11:34:44 AM.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcf37/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcf37.dir/build.make CMakeFiles/cmTC_dcf37.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG'
+        Building C object CMakeFiles/cmTC_dcf37.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_dcf37.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG/CheckFunctionExists.c
+        Linking C executable cmTC_dcf37
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcf37.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_dcf37.dir/CheckFunctionExists.c.o -o cmTC_dcf37
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-jiMTdG'
         
-        Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\cmTC_97915.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\Debug\\".
-          Creating directory "cmTC_97915.dir\\Debug\\cmTC_97915.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_97915.dir\\Debug\\cmTC_97915.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_97915.dir\\Debug\\cmTC_97915.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_97915.dir\\Debug\\\\" /Fd"cmTC_97915.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_97915.dir\\Debug\\\\" /Fd"cmTC_97915.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\CheckFunctionExists.c"
-          CheckFunctionExists.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\Debug\\cmTC_97915.exe" /INCREMENTAL /ILK:"cmTC_97915.dir\\Debug\\cmTC_97915.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-z6ur8a/Debug/cmTC_97915.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-z6ur8a/Debug/cmTC_97915.lib" /MACHINE:X64  /machine:x64 cmTC_97915.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\cmTC_97915.vcxproj]
-        Done Building Project "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\cmTC_97915.vcxproj" (default targets) -- FAILED.
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer'
         
-        Build FAILED.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09add/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_09add.dir/build.make CMakeFiles/cmTC_09add.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer'
+        Building C object CMakeFiles/cmTC_09add.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_09add.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer/CheckFunctionExists.c
+        Linking C executable cmTC_09add
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09add.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_09add.dir/CheckFunctionExists.c.o -o cmTC_09add
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-NSnXer'
         
-        "E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\cmTC_97915.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\projects\\simpleProjects\\PhysicsPlay\\particleSimulator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z6ur8a\\cmTC_97915.vcxproj]
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW'
         
-            0 Warning(s)
-            1 Error(s)
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aae04/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aae04.dir/build.make CMakeFiles/cmTC_aae04.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW'
+        Building C object CMakeFiles/cmTC_aae04.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_aae04.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW/CheckFunctionExists.c
+        Linking C executable cmTC_aae04
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aae04.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_aae04.dir/CheckFunctionExists.c.o -o cmTC_aae04
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-guT9kW'
         
-        Time Elapsed 00:00:00.32
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR'
         
-      exitCode: 1
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_960a8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_960a8.dir/build.make CMakeFiles/cmTC_960a8.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR'
+        Building C object CMakeFiles/cmTC_960a8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_960a8.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR/CheckFunctionExists.c
+        Linking C executable cmTC_960a8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_960a8.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_960a8.dir/CheckFunctionExists.c.o -o cmTC_960a8
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-neYCpR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v"
+      binary: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/cmake;/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c817c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c817c.dir/build.make CMakeFiles/cmTC_c817c.dir/build
+        gmake[1]: Entering directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v'
+        Building C object CMakeFiles/cmTC_c817c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu99 -o CMakeFiles/cmTC_c817c.dir/CheckFunctionExists.c.o -c /home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v/CheckFunctionExists.c
+        Linking C executable cmTC_c817c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c817c.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_c817c.dir/CheckFunctionExists.c.o -o cmTC_c817c  -lICE
+        gmake[1]: Leaving directory '/home/kanja/projects/simpleProjects/PhysicsPlay/particleSimulator/build/CMakeFiles/CMakeScratch/TryCompile-3tkw0v'
+        
+      exitCode: 0
 ...
