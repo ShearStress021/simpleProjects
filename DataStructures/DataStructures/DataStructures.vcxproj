@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="llist.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="raiiLList.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="llist.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
