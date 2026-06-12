@@ -92,6 +92,10 @@ public:
 
 		return true;
 	}
+
+	void reversedList() {
+		
+	}
 	void print() {
 		Node<T>* current = head;
 		while (current) {

@@ -8,6 +8,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="llist.hpp" />
+    <ClInclude Include="binaryTree.hpp" />
+    <ClInclude Include="dlist.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
