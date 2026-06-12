@@ -7,8 +7,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="llist.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="llist.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="raiiLList.hpp" />
   </ItemGroup>
 </Project>
