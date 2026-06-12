@@ -143,6 +143,8 @@
     <ClCompile Include="raiiLList.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binaryTree.hpp" />
+    <ClInclude Include="dlist.hpp" />
     <ClInclude Include="llist.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

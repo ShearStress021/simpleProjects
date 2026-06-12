@@ -17,6 +17,8 @@ int main() {
 	rl.print();
 	rl.removeByValue(10);
 	rl.print();
+	rl.reverseLList();
+	rl.print();
 
 	std::cout << "Hello, World" << '\n';
 	return 0;

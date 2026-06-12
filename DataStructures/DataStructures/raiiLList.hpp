@@ -75,6 +75,21 @@ public:
 	}
 
 
+	void reverseLList() {
+		auto current = head;
+		std::shared_ptr<RNode<T>> prev = nullptr;
+
+		while (current) {
+			auto temp = current->next;
+			current->next = prev;
+			prev = current;
+			current = temp;
+		}
+		head = prev;
+	
+
+	}
+
 
 	void print() const {
 		auto current = head;
