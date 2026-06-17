@@ -1,6 +1,7 @@
 #include <iostream>
 #include <raylib.h>
 #include <vector>
+#include <random>
 
 
 
@@ -10,6 +11,12 @@ struct Particle {
     Vector2 velocity{};
     float radius{};
 };
+
+float random_range(float min, float max){
+    static std::mt19937 generator{std::random_device()()};
+    std::uniform_real_distribution<float> range {min, max};
+    return range(generator);
+}
 
 class ParticleSimulation{
 
