@@ -1,0 +1,3 @@
+/home/kanja/projects/simpleProjects/my_devgames/GlassRotation/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
+/home/kanja/projects/simpleProjects/my_devgames/GlassRotation/build/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
+/home/kanja/projects/simpleProjects/my_devgames/GlassRotation/build/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir
