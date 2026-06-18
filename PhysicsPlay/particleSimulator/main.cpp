@@ -9,6 +9,7 @@ constexpr float MAX_RADIUS {7.0f};
 constexpr float MIN_RADIUS {3.0f};
 constexpr float DRAG {0.99f};
 constexpr float GRAVITY {9.81f};
+constexpr float BOUNCE {0.8f};
 
 struct Particle {
     Vector2 position{};
@@ -51,7 +52,15 @@ class ParticleSimulation{
         }
 
         void update(float deltatime){
+
+            static Vector2 lastWindowPosition{GetWindowPosition()};
             for(auto& particle : m_particles){
+
+                float dx {lastWindowPosition.x - GetWindowPosition().x};
+                float dy {lastWindowPosition.y - GetWindowPosition().y};
+
+                particle.velocity.x += dx;
+                particle.velocity.y += dy;
 
                 particle.velocity.x *= DRAG;
                 particle.velocity.y *= DRAG;
@@ -69,24 +78,27 @@ class ParticleSimulation{
 
                 if(hitRight){
                     particle.position.x = GetScreenWidth() - particle.radius;
-                    particle.position.x *= -1;
+                    particle.velocity.x *= -BOUNCE;
                 }
 
                 if(hitLeft){
                     particle.position.x =  particle.radius;
-                    particle.position.x *= -1;
+                    particle.velocity.x *= -BOUNCE;
                 }
 
                 if(hitUp){
                     particle.position.y = particle.radius;
-                    particle.position.y *= -1;
+                    particle.velocity.y *= -BOUNCE;
                 }
                 if(hitDown){
                     particle.position.y = GetScreenHeight() - particle.radius;
-                    particle.position.y *= -1;
+                    particle.velocity.y *= -BOUNCE;
+
                 }
 
+
             }
+                lastWindowPosition = GetWindowPosition();
         }
 
     private:
