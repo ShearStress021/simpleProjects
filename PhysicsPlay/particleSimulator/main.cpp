@@ -83,7 +83,7 @@ class ParticleSimulation{
                 }
                 if(hitDown){
                     particle.position.y = GetScreenHeight() - particle.radius;
-                    particle.position.y *= -1;
+                    particle.position.y *= 1;
                 }
 
             }
