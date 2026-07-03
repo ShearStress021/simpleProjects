@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/doom.dir/link.d CMakeFiles/doom.dir/main.c.o -o doom  /usr/lib/x86_64-linux-gnu/libGL.so -lfreeglut::freeglut
