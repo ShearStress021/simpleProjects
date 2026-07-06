@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <thread>
 #include <chrono>
+#include <string>
 
 
 int main(){
@@ -18,8 +19,6 @@ int main(){
 	    return 1;
 	}
 	CONSOLE_SCREEN_BUFFER_INFO screenInfo{};
-
-
 	if (!GetConsoleScreenBufferInfo(hConsole, &screenInfo)) {
 	   std::cerr << "GetConsoleScreenBufferInfo failed\n";
 	   CloseHandle(hConsole);
@@ -30,38 +29,39 @@ int main(){
 	SHORT height = screenInfo.dwSize.Y;
 
 	COORD pos = { 0, 0  };
-//	std::string text = "A";
+	std::string text = "A";
+	std::string start = " ";
 	DWORD bytesWritten = 0;
-
-
-
-
-
-	const char* text{"A"} ;
-	const char* start{" "};
+	bool gameOver = false;
+	bool keys[5];
 
 	while(pos.X < width){
-		WriteConsoleOutputCharacter(hConsole,start,1,pos,&bytesWritten);
+		int currentX{};
+		int currentY{};
 
-		pos.X++;
+		for(uint8_t i{}; i < 4; i++){
+			keys[i] = (GetAsyncKeyState((unsigned char)("\x25\x26\x27\x28\x20"[i])) & 0x8000) != 0;
+			currentX += (keys[0]) ? -1 : 0;
+			currentY += (keys[1]) ? -1 : 0;
+			currentX += (keys[2]) ? 1 : 0;
+			currentY += (keys[3]) ? 1 : 0;
+		}
 
+		DWORD len = static_cast<DWORD>(text.size());
+		WriteConsoleOutputCharacter(hConsole,start.c_str(),1,pos,&bytesWritten);
 
-
+		pos.X += currentX;
+		pos.Y += currentY;
 
 		//Sleep(300);
-		WriteConsoleOutputCharacter(hConsole,text,1,pos,&bytesWritten);
+		WriteConsoleOutputCharacter(hConsole,text.c_str(),len,pos,&bytesWritten);
+		text += "-";
 		std::this_thread::sleep_for(std::chrono::milliseconds(200));
 
 
 	}
-
-
-
-
 	Sleep(2000);
-
 	CloseHandle(hConsole);
-	//std::cout << "Hello, World\n";
 
 	return 0;
 }
