@@ -1,0 +1,21 @@
+# ninja log v6
+1	340	8056745082964034	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	10c7c84994842a52
+1	340	8056745082964034	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	10c7c84994842a52
+340	15977	8056745239326407	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	e3631d325ebdb77f
+340	15977	8056745239326407	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	e3631d325ebdb77f
+15978	16281	8056745239396535	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	742ce5304bd2146d
+15978	16281	8056745239396535	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	742ce5304bd2146d
+16282	16581	8056745245364325	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	64179dbfc5eb228f
+16282	16581	8056745245364325	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	64179dbfc5eb228f
+16581	16897	8056745248527053	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	ca7c691be3fa6f3a
+16581	16897	8056745248527053	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	ca7c691be3fa6f3a
+16897	17205	8056745251606810	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	78b7b926ac29af06
+16897	17205	8056745251606810	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	78b7b926ac29af06
+17205	17593	8056745255482414	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	88404b84cb0c07ec
+17205	17593	8056745255482414	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	88404b84cb0c07ec
+17593	17923	8056745258777366	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	477488c41105867c
+17593	17923	8056745258777366	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	477488c41105867c
+17923	18402	8056745263577526	CMakeFiles/raylib-populate-complete	206e1afcb4f7c30b
+17923	18402	8056745263577526	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	206e1afcb4f7c30b
+17923	18402	8056745263577526	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	206e1afcb4f7c30b
+17923	18402	8056745263577526	D:/projects/simpleProjects/my_devgames/raylib_3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	206e1afcb4f7c30b
