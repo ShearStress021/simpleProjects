@@ -20,6 +20,24 @@ RAM = bytearray(0x0800)
 MEM = bytearray(0x10000)
 
 
+#PPU
+ppu_open_bus = 0x00
+
+def ppu_write(cpu_addr, val):
+    global ppu_open_bus, ppu_ctl,ppu_mask,oam_addr
+
+    ppu_open_bus = val
+
+    reg = 0x2000 + (cpu_addr % 8)
+
+    if reg == 0x2000:
+        ppu_ctl = val
+        return
+
+
+
+
+
 def cpu_write(addr, val):
     global MEM
     val &= 0xFF
@@ -27,6 +45,14 @@ def cpu_write(addr, val):
     if addr < 0x2000:
         global RAM
         RAM[addr % 0x8000] = val
+        return 
+
+    if addr < 0x4000:
+        ppu_write(addr, val)
+        return
+
+
+
 
 
 def stack_push(val):
