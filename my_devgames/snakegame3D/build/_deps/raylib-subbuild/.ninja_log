@@ -1,0 +1,21 @@
+# ninja log v6
+2	340	8067239247145564	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	c710177f3d765441
+2	340	8067239247145564	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	c710177f3d765441
+340	32142	8067239565241512	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	170673a94a16277c
+340	32142	8067239565241512	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	170673a94a16277c
+32142	32542	8067239565339236	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	b5b5b74c381fd091
+32142	32542	8067239565339236	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	b5b5b74c381fd091
+32542	32886	8067239572665788	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	6211978ebda004f0
+32542	32886	8067239572665788	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	6211978ebda004f0
+32886	33237	8067239576232981	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	953bf51898513a30
+32886	33237	8067239576232981	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	953bf51898513a30
+33238	33575	8067239579513008	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	a8f97711e110286e
+33238	33575	8067239579513008	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	a8f97711e110286e
+33575	33872	8067239582519918	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	9ffcd525ddc328a2
+33575	33872	8067239582519918	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	9ffcd525ddc328a2
+33872	34199	8067239585855005	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	987990947f7a7a7
+33872	34199	8067239585855005	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	987990947f7a7a7
+34199	34681	8067239590616983	CMakeFiles/raylib-populate-complete	89ed5d649c5a81c0
+34199	34681	8067239590616983	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	89ed5d649c5a81c0
+34199	34681	8067239590616983	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	89ed5d649c5a81c0
+34199	34681	8067239590616983	D:/projects/simpleProjects/my_devgames/snakegame3D/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	89ed5d649c5a81c0
