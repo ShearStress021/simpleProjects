@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/CMakeFiles/freeglut-populate"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/CMakeFiles/freeglut-populate.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/CMakeFiles/freeglut-populate-complete.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-build.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-configure.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-download.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-install.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-patch.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-test.rule"
+		},
+		{
+			"file" : "/home/kanja/projects/simpleProjects/my_devgames/3D_Doom/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"freeglut-populate"
+		],
+		"name" : "freeglut-populate"
+	}
+}
