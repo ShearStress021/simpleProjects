@@ -1,13 +1,12 @@
 #pragma once
 #include <string>
 #include <vector>
-#include <stdexcept>
 
 
 class Trade {
 
 	public:
-		Trade(std::string_view& timeStamp_, 
+		Trade(std::string& timeStamp_, 
 				float open_, 
 				float high_, 
 				float low_, 
@@ -15,7 +14,7 @@ class Trade {
 				long long volume_
 				);
 
-		std::string getTimeStamp() const ;
+		std::string getTimeStamp() const;
 		float getOpen() const ;
 		float getClose() const ;
 		float getHigh() const ;
@@ -31,9 +30,7 @@ class Trade {
 		float low{};
 		float close{};
 		long long volume{};
-		void validate() const;
-
-
+		[[nodiscard]] bool validate() const;
 };
 
 
@@ -42,7 +39,7 @@ class Market {
 		Market() = default;
 		void addTrade(const Trade& trade) ;
 		bool empty() const;
-		std::size_t size() const;
+		size_t tradesLength() const;
 		const Trade& getTrade(size_t index) const;
 	private:
 		std::vector<Trade> trades{};
