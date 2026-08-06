@@ -3,7 +3,7 @@ CC = g++
 PLATFORM ?= PLATFORM_DESKTOP
 
 
-SRC ?= main.cpp market.cpp
+SRC ?= main.cpp market.cpp CSVReader.cpp
 
 OBJS = $(patsubst %.cpp, %.o, $(SRC))
 
@@ -21,7 +21,7 @@ run: clean res
 
 
 clean:
-	rm -rf *.o res*
+	del -rf *.o res*
 
 
 .PHONY: all clean
