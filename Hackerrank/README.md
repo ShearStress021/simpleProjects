@@ -2,18 +2,6 @@
 
 My solutions to HackerRank programming challenges.
 
-## Structure
-
-Solutions are organized by challenge domain and language where applicable. Each file is named after its corresponding challenge.
-
-```text
-.
-├── algorithms/
-├── data-structures/
-├── mathematics/
-└── python/
-```
-
 ## Running a solution
 
 Use the runtime for the language of the selected solution. For example, to run a CPP solution:
