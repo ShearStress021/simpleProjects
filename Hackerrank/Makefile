@@ -1,14 +1,12 @@
-target="$1"
-
-
+target ?= main.cpp
 
 res: $(target)
 	g++ --std=c++23 $< -o $@
 
 
-run: res
+run: clean res
 	./res
 
 
 clean:
-	rm -rf res
+	del -rf res
