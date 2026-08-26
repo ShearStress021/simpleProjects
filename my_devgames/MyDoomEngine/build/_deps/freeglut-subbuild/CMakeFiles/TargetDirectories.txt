@@ -1,0 +1,3 @@
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/CMakeFiles/freeglut-populate.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/CMakeFiles/rebuild_cache.dir

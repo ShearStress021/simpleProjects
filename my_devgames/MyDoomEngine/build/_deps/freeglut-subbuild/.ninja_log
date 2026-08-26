@@ -1,0 +1,21 @@
+# ninja log v6
+1	322	8094376773887739	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-mkdir	c7bdb1c96227d0c1
+1	322	8094376773887739	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-mkdir	c7bdb1c96227d0c1
+322	3798	8094376808605274	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-download	b2dfe91778b18a1
+322	3798	8094376808605274	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-download	b2dfe91778b18a1
+3798	4123	8094376808684487	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-update	e7b990af5ec31c41
+3798	4123	8094376808684487	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-update	e7b990af5ec31c41
+4123	4421	8094376814853837	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-patch	c095337545d3536e
+4123	4421	8094376814853837	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-patch	c095337545d3536e
+4421	4726	8094376817927826	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-configure	c68b13aa6020a626
+4421	4726	8094376817927826	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-configure	c68b13aa6020a626
+4726	5044	8094376821110111	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-build	c4949cd3298c4e98
+4726	5044	8094376821110111	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-build	c4949cd3298c4e98
+5045	5346	8094376824115253	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-install	64c5d6fd60fd9474
+5045	5346	8094376824115253	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-install	64c5d6fd60fd9474
+5346	5661	8094376827187369	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-test	82f0ce8a5222f02
+5346	5661	8094376827187369	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-test	82f0ce8a5222f02
+5661	6118	8094376831847752	CMakeFiles/freeglut-populate-complete	bb959a38e64eb75
+5661	6118	8094376831847752	freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-done	bb959a38e64eb75
+5661	6118	8094376831847752	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/CMakeFiles/freeglut-populate-complete	bb959a38e64eb75
+5661	6118	8094376831847752	D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-subbuild/freeglut-populate-prefix/src/freeglut-populate-stamp/freeglut-populate-done	bb959a38e64eb75
