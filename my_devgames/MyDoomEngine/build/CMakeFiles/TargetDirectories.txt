@@ -1,0 +1,15 @@
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/MyDoomEngine.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/list_install_components.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/install.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/install/local.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/CMakeFiles/install/strip.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/freeglut.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/freeglut_static.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/list_install_components.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/install.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/install/local.dir
+D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/CMakeFiles/install/strip.dir

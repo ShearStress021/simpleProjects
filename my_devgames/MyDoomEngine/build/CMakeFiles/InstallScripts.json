@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/cmake_install.cmake",
+		"D:/projects/simpleProjects/my_devgames/MyDoomEngine/build/_deps/freeglut-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
