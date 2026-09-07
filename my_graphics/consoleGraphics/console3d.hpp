@@ -1,5 +1,5 @@
 #pragma once
-#define NOMINMAX
+#define NOMINMAX 1
 #include <windows.h>
 #include <cstdint>
 #include <iostream>
@@ -130,7 +130,7 @@ class Console3d {
 			if(y >= screenHeight) y = screenHeight;
 
 		}
-		void drawLineN(int x1, int y1, int x2, int y2, short c = 'o', short color = 0x0009){
+		void drawLine(int x1, int y1, int x2, int y2, short c = 'o', short color = 0x0009){
 			int dx = std::abs(x2 - x1);
 			int dy = std::abs(y2 - y1);
 
@@ -180,85 +180,11 @@ class Console3d {
 
 
 		}
-		void drawLine(int x1, int y1, int x2, int y2, short c = 0x2588, short color = 0x000F){
-			int dx = std::abs(x2 - x1);
-			int dy = std::abs(y2 - y1);
-
-			int sx = (x1 < x2) ? 1 : -1;
-			int sy = (y1 < y2) ? 1 : -1;
-
-			int error = dx - dy;
-
-			while(true){
-				draw(x1, y1, c, color);
-				
-				if(x1 == x2 && y1 == y2) break;
-				
-				int e2 = 2 * error;
-
-				if(e2 > -dy){
-					error -= dy;
-					x1 += sx;
-				}
-				if(e2 < dx){
-					error += dx;
-					y1 += sy;
-				}
-			}
-		}
 		void drawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, short chr = 'o', short color = 0x000f){
-			drawLineN(x1, y2, x2, y2);
-			drawLineN(x2, y2, x3, y3);
-			drawLineN(x3, y3, x1, y1);
+			drawLine(x1, y1, x2, y2,chr,color);
+			drawLine(x2, y2, x3, y3,chr,color);
+			drawLine(x1, y1, x3, y3,chr,color);
 		}
-
-		void drawline(int x1, int y1, int x2, int y2, short c=0x2588, short color=0x000F){
-			int x, y, dx, dy, dx1, dy1, px, py, xe, ye,i;
-			dx = x2 - x1; dy= y2 - y1;
-			dx1 = abs(dx); dy1 = abs(dy);
-			px = 2 * dy1 - dx1; py = 2 * dx1 - dy1;
-			if(dy1 <= dx1){
-				if(dx >= 0){
-					x = x1; y = y1; xe = x2;
-				}else {
-					x = x2; y = y2; xe = x1;
-				}
-				draw(x, y,c, color);
-
-				for(i = 0; x < xe; i++){
-					x += 1;
-					if(px < 0) px = px + 2 * dy1;
-					else {
-						if((dx < 0 && dy < 0 ) || (dx > 0 && dy > 0)) y+=1;
-						else y -= 1;
-						px = px + 2 * (dy1 - dx1);
-					}
-					draw(x, y, c, color);
-				}
-
-			} else {
-				if(dy >= 0){
-					x = x1; y = y1; ye = y2;
-				}else {
-					x = x2; y = y2; ye = y1;
-				}
-				draw(x,y,c,color);
-
-				for(i = 0; y < ye; i++){
-					y += 1;
-					if(py <= 0)
-						py = py + 2 * dy1;
-					else {
-						if((dx < 0 && dy < 0) || (dx > 0 && dy > 0)) x+=1; 
-						else x -= 1;
-						py = py + 2 * (dx1 - dy1);
-
-					}
-					draw(x, y, c, color);
-				}
-			}
-		}
-
 
 
 		void init(){
@@ -288,13 +214,10 @@ class Console3d {
 					screen[2* screenWidth + i].Char.UnicodeChar= '=';
 				}
 
-				drawLineN(30,20,50,20);
-				drawLineN(20,10,50,20);
-				drawLineN(20,10,30,20);
 //
 
 
-				//drawTriangle(20, 10,30,20,50,20);
+				drawTriangle(20,10,30,20,50,20);
 
 
 			
