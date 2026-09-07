@@ -1,4 +1,5 @@
 #pragma once
+#define NOMINMAX
 #include <windows.h>
 #include <cstdint>
 #include <iostream>
@@ -6,6 +7,8 @@
 #include <thread>
 #include <vector>
 #include <math.h>
+#include <algorithm>
+
 
 struct Vec3 {
 	float x,y, z;
@@ -127,6 +130,56 @@ class Console3d {
 			if(y >= screenHeight) y = screenHeight;
 
 		}
+		void drawLineN(int x1, int y1, int x2, int y2, short c = 'o', short color = 0x0009){
+			int dx = std::abs(x2 - x1);
+			int dy = std::abs(y2 - y1);
+
+			int x = std::min(x1, x2);
+			int y = std::min(y1, y2);
+			int xe = std::max(x1, x2);
+			int ye = std::max(y1, y2);
+	
+
+			draw(x,y,c,color);
+			
+			// slope (dy/dx) <= 1;
+			if(dx  >= dy){
+				// decision parameter
+				int P = ((2*dy) - dx);
+				while(x != xe){
+					if (P < 0){
+						x += 1;
+						draw(x, y, c, color);
+						P = P + 2 * dy;
+					} else {
+						x+=1; y+= 1;
+						draw(x, y, c, color);
+						P = P + 2 * dy - 2 * dx;
+					}
+
+				}
+			}else {    // slope (dy/dx) > 1;
+			    int P = ((2 *dx) - dy);
+				while(y != ye){
+					if(P < 0){
+						y += 1;
+						draw(x, y, c, color);
+						P = P + 2 * dx;
+					}
+					else {
+						x += 1, y += 1;
+						draw(x,y,c , color);
+						P = P + 2 * dx - 2 * dy;
+					}
+
+				}
+
+
+			}
+
+
+
+		}
 		void drawLine(int x1, int y1, int x2, int y2, short c = 0x2588, short color = 0x000F){
 			int dx = std::abs(x2 - x1);
 			int dy = std::abs(y2 - y1);
@@ -152,6 +205,11 @@ class Console3d {
 					y1 += sy;
 				}
 			}
+		}
+		void drawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, short chr = 'o', short color = 0x000f){
+			drawLineN(x1, y2, x2, y2);
+			drawLineN(x2, y2, x3, y3);
+			drawLineN(x3, y3, x1, y1);
 		}
 
 		void drawline(int x1, int y1, int x2, int y2, short c=0x2588, short color=0x000F){
@@ -230,9 +288,14 @@ class Console3d {
 					screen[2* screenWidth + i].Char.UnicodeChar= '=';
 				}
 
-				drawLine(10,20,50,35);
-				drawline(20,20,60,35);
-				drawLinee(30,20,70,35);
+				drawLineN(30,20,50,20);
+				drawLineN(20,10,50,20);
+				drawLineN(20,10,30,20);
+//
+
+
+				//drawTriangle(20, 10,30,20,50,20);
+
 
 			
 				WriteConsoleOutput(handleConsole, screen, 
