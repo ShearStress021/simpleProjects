@@ -1,27 +1,32 @@
 #pragma once
+#define NOMINMAX 1
 #include <windows.h>
 #include <cstdint>
 #include <iostream>
 #include <chrono>
 #include <thread>
 #include <vector>
-#include <math.h>
+#include <cmath>
+#include <algorithm>
+
 
 struct Vec3 {
 	float x,y, z;
 };
 
-struct triangle {
+struct Points{
 	Vec3 p[3];
 };
 
 struct Mesh {
-	std::vector<triangle> tris{};
+	std::vector<Points> triangle{};
 
 };
 
 struct Mat4 {
-	float m[4][4]{};
+	float mat[4][4]{};
+
+
 };
 
 	
@@ -85,6 +90,8 @@ class Console3d {
 
 		}
 
+
+
 		void draw(int x, int y, short c = 0x8000, short color = 0x000F){
 			if(x>= 0 && x < screenWidth && y >= 0 && y < screenHeight){
 				screen[y * screenWidth + x].Char.UnicodeChar = c;
@@ -127,80 +134,62 @@ class Console3d {
 			if(y >= screenHeight) y = screenHeight;
 
 		}
-		void drawLine(int x1, int y1, int x2, int y2, short c = 0x2588, short color = 0x000F){
+		void drawLine(int x1, int y1, int x2, int y2, short c = 'o', short color = 0x0009){
 			int dx = std::abs(x2 - x1);
 			int dy = std::abs(y2 - y1);
 
-			int sx = (x1 < x2) ? 1 : -1;
-			int sy = (y1 < y2) ? 1 : -1;
+			int x = x1;
+			int y = y1;
 
-			int error = dx - dy;
+			int cx = (x1 < x2) ? 1 : -1;
+			int cy = (y1 < y2) ? 1 : -1;
+	
 
-			while(true){
-				draw(x1, y1, c, color);
-				
-				if(x1 == x2 && y1 == y2) break;
-				
-				int e2 = 2 * error;
-
-				if(e2 > -dy){
-					error -= dy;
-					x1 += sx;
-				}
-				if(e2 < dx){
-					error += dx;
-					y1 += sy;
-				}
-			}
-		}
-
-		void drawline(int x1, int y1, int x2, int y2, short c=0x2588, short color=0x000F){
-			int x, y, dx, dy, dx1, dy1, px, py, xe, ye,i;
-			dx = x2 - x1; dy= y2 - y1;
-			dx1 = abs(dx); dy1 = abs(dy);
-			px = 2 * dy1 - dx1; py = 2 * dx1 - dy1;
-			if(dy1 <= dx1){
-				if(dx >= 0){
-					x = x1; y = y1; xe = x2;
-				}else {
-					x = x2; y = y2; xe = x1;
-				}
-				draw(x, y,c, color);
-
-				for(i = 0; x < xe; i++){
-					x += 1;
-					if(px < 0) px = px + 2 * dy1;
-					else {
-						if((dx < 0 && dy < 0 ) || (dx > 0 && dy > 0)) y+=1;
-						else y -= 1;
-						px = px + 2 * (dy1 - dx1);
+			draw(x,y,c,color);
+			
+			// slope (dy/dx) <= 1;
+			if(dx  >= dy){
+				// decision parameter
+				int P = ((2*dy) - dx);
+				while(x != x2){
+					if (P < 0){
+						x += cx;
+						draw(x, y, c, color);
+						P = P + 2 * dy;
+					} else {
+						x+=cx; y+= cy;
+						draw(x, y, c, color);
+						P = P + 2 * dy - 2 * dx;
 					}
-					draw(x, y, c, color);
+
 				}
-
-			} else {
-				if(dy >= 0){
-					x = x1; y = y1; ye = y2;
-				}else {
-					x = x2; y = y2; ye = y1;
-				}
-				draw(x,y,c,color);
-
-				for(i = 0; y < ye; i++){
-					y += 1;
-					if(py <= 0)
-						py = py + 2 * dy1;
-					else {
-						if((dx < 0 && dy < 0) || (dx > 0 && dy > 0)) x+=1; 
-						else x -= 1;
-						py = py + 2 * (dx1 - dy1);
-
+			}else {    // slope (dy/dx) > 1;
+			    int P = ((2 *dx) - dy);
+				while(y != y2){
+					if(P < 0){
+						y += cy;
+						draw(x, y, c, color);
+						P = P + 2 * dx;
 					}
-					draw(x, y, c, color);
-				}
-			}
-		}
+					else {
+						x += cx, y += cy;
+						draw(x,y,c , color);
+						P = P + 2 * dx - 2 * dy;
+					}
 
+				}
+
+
+			}
+
+
+
+		}
+		void drawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, short chr = 'o', short color = 0x000f){
+			drawLine(x1, y1, x2, y2,chr,color);
+			drawLine(x2, y2, x3, y3,chr,color);
+			drawLine(x1, y1, x3, y3,chr,color);
+		}
 
 
 		void init(){
@@ -230,9 +219,17 @@ class Console3d {
 					screen[2* screenWidth + i].Char.UnicodeChar= '=';
 				}
 
-				drawLine(10,20,50,35);
-				drawline(20,20,60,35);
-				drawLinee(30,20,70,35);
+				createPerspectiveMatrix();
+
+				drawCube();
+
+//
+
+
+				//drawTriangle(30,10,20,20,50,20);
+			//drawLine(30,10,10,20);
+				
+
 
 			
 				WriteConsoleOutput(handleConsole, screen, 
@@ -243,6 +240,96 @@ class Console3d {
 			}
 			
 		}
+		void multiplyMat4Vec3(const Vec3 &v, Vec3 &res, Mat4 &m) {
+			res.x = v.x * m.mat[0][0] + v.y * m.mat[1][0] + v.z * m.mat[2][0] + m.mat[3][0];
+			res.y = v.x * m.mat[0][1] + v.y * m.mat[1][1] + v.z * m.mat[2][1] + m.mat[3][1];
+			res.z = v.x * m.mat[0][2] + v.y * m.mat[1][2] + v.z * m.mat[2][2] + m.mat[3][2];
+			float w = v.x * m.mat[0][3] + v.y * m.mat[1][3] + v.z * m.mat[2][3] + m.mat[3][3];
+
+
+			if(w != 0.f){
+				res.x /= w;
+				res.y /= w;
+				res.z /= w;
+			}
+		}
+
+		void createPerspectiveMatrix(){
+			float nearPlane{0.1f};
+			float farPlane{100.f};
+			float aspectRatio {static_cast<float>(screenHeight)/static_cast<float>(screenWidth)};
+			float fieldOfView{90.f};
+			float fieldOfViewRad{1.0f/std::tanf(fieldOfView * 0.5 * 3.14159f / 180)};
+
+			matrixProj.mat[0][0] = aspectRatio * fieldOfView;
+			matrixProj.mat[1][1] = fieldOfViewRad;
+			matrixProj.mat[2][2] =  farPlane / (farPlane - nearPlane);
+			matrixProj.mat[3][2] = (-farPlane * nearPlane) / (farPlane - nearPlane);
+			matrixProj.mat[2][3] = 1.0f;
+			matrixProj.mat[3][3] = 0.0f;
+		}
+
+		void drawCube(){
+			vertex.triangle =  {
+				// SOUTH
+				{ 0.0f, 0.0f, 0.0f,    0.0f, 1.0f, 0.0f,    1.0f, 1.0f, 0.0f  },
+				{ 0.0f, 0.0f, 0.0f,    1.0f, 1.0f, 0.0f,    1.0f, 0.0f, 0.0f  },
+
+				// EAST                                                      
+				{ 1.0f, 0.0f, 0.0f,    1.0f, 1.0f, 0.0f,    1.0f, 1.0f, 1.0f  },
+				{ 1.0f, 0.0f, 0.0f,    1.0f, 1.0f, 1.0f,    1.0f, 0.0f, 1.0f  },
+				//
+				// NORTH                                                     
+				{ 1.0f, 0.0f, 1.0f,    1.0f, 1.0f, 1.0f,    0.0f, 1.0f, 1.0f  },
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 1.0f, 1.0f,    0.0f, 0.0f, 1.0f  },
+				//
+				// 						// WEST                                                      
+				{ 0.0f, 0.0f, 1.0f,    0.0f, 1.0f, 1.0f,    0.0f, 1.0f, 0.0f  },
+				{ 0.0f, 0.0f, 1.0f,    0.0f, 1.0f, 0.0f,    0.0f, 0.0f, 0.0f  },
+				//
+				// TOP                                                       
+				{ 0.0f, 1.0f, 0.0f,    0.0f, 1.0f, 1.0f,    1.0f, 1.0f, 1.0f  },
+				{ 0.0f, 1.0f, 0.0f,    1.0f, 1.0f, 1.0f,    1.0f, 1.0f, 0.0f  },
+				
+				//Bottom
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 0.0f, 1.0f,    0.0f, 0.0f, 0.0f  },
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 0.0f, 0.0f,    1.0f, 0.0f, 0.0f  },
+
+			};
+
+			for (auto tri : vertex.triangle) {
+				Points projPoints, translated;
+				translated.p[0].z = tri.p[0].z + 3.f;
+				translated.p[1].z = tri.p[1].z + 3.f;
+				translated.p[2].z = tri.p[2].z + 3.f;
+
+				
+
+				multiplyMat4Vec3(translated.p[0], projPoints.p[0], matrixProj);
+				multiplyMat4Vec3(translated.p[1], projPoints.p[1], matrixProj);
+				multiplyMat4Vec3(translated.p[2], projPoints.p[2], matrixProj);
+
+
+				projPoints.p[0].x += 1.f; projPoints.p[0].y += 1.f;
+				projPoints.p[1].x += 1.f; projPoints.p[1].y += 1.f;
+				projPoints.p[2].x += 1.f; projPoints.p[2].y += 1.f;
+
+				projPoints.p[0].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[0].y *= 0.5f * static_cast<float>(screenHeight);
+				projPoints.p[1].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[1].y *= 0.5f * static_cast<float>(screenHeight);
+				projPoints.p[2].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[2].y *= 0.5f * static_cast<float>(screenHeight);
+
+				drawTriangle(projPoints.p[0].x, projPoints.p[0].y, projPoints.p[1].x, projPoints.p[1].y,
+						projPoints.p[2].x, projPoints.p[2].y,'o', 0x0009);
+
+			}
+		}
+
+
+
+
 
 
 	private:
@@ -253,6 +340,8 @@ class Console3d {
 		DWORD bytesWritten{};
 		SMALL_RECT windowRect{};
 		bool running{false};
+		Mesh vertex{};
+		Mat4 matrixProj{};
 };
 
 
