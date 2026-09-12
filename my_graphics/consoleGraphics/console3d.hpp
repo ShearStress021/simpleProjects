@@ -6,7 +6,7 @@
 #include <chrono>
 #include <thread>
 #include <vector>
-#include <math.h>
+#include <cmath>
 #include <algorithm>
 
 
@@ -14,17 +14,19 @@ struct Vec3 {
 	float x,y, z;
 };
 
-struct triangle {
+struct Points{
 	Vec3 p[3];
 };
 
 struct Mesh {
-	std::vector<triangle> tris{};
+	std::vector<Points> triangle{};
 
 };
 
 struct Mat4 {
-	float m[4][4]{};
+	float mat[4][4]{};
+
+
 };
 
 	
@@ -88,6 +90,8 @@ class Console3d {
 
 		}
 
+
+
 		void draw(int x, int y, short c = 0x8000, short color = 0x000F){
 			if(x>= 0 && x < screenWidth && y >= 0 && y < screenHeight){
 				screen[y * screenWidth + x].Char.UnicodeChar = c;
@@ -134,10 +138,11 @@ class Console3d {
 			int dx = std::abs(x2 - x1);
 			int dy = std::abs(y2 - y1);
 
-			int x = std::min(x1, x2);
-			int y = std::min(y1, y2);
-			int xe = std::max(x1, x2);
-			int ye = std::max(y1, y2);
+			int x = x1;
+			int y = y1;
+
+			int cx = (x1 < x2) ? 1 : -1;
+			int cy = (y1 < y2) ? 1 : -1;
 	
 
 			draw(x,y,c,color);
@@ -146,13 +151,13 @@ class Console3d {
 			if(dx  >= dy){
 				// decision parameter
 				int P = ((2*dy) - dx);
-				while(x != xe){
+				while(x != x2){
 					if (P < 0){
-						x += 1;
+						x += cx;
 						draw(x, y, c, color);
 						P = P + 2 * dy;
 					} else {
-						x+=1; y+= 1;
+						x+=cx; y+= cy;
 						draw(x, y, c, color);
 						P = P + 2 * dy - 2 * dx;
 					}
@@ -160,14 +165,14 @@ class Console3d {
 				}
 			}else {    // slope (dy/dx) > 1;
 			    int P = ((2 *dx) - dy);
-				while(y != ye){
+				while(y != y2){
 					if(P < 0){
-						y += 1;
+						y += cy;
 						draw(x, y, c, color);
 						P = P + 2 * dx;
 					}
 					else {
-						x += 1, y += 1;
+						x += cx, y += cy;
 						draw(x,y,c , color);
 						P = P + 2 * dx - 2 * dy;
 					}
@@ -214,10 +219,16 @@ class Console3d {
 					screen[2* screenWidth + i].Char.UnicodeChar= '=';
 				}
 
+				createPerspectiveMatrix();
+
+				drawCube();
+
 //
 
 
-				drawTriangle(20,10,30,20,50,20);
+				//drawTriangle(30,10,20,20,50,20);
+			//drawLine(30,10,10,20);
+				
 
 
 			
@@ -229,6 +240,96 @@ class Console3d {
 			}
 			
 		}
+		void multiplyMat4Vec3(const Vec3 &v, Vec3 &res, Mat4 &m) {
+			res.x = v.x * m.mat[0][0] + v.y * m.mat[1][0] + v.z * m.mat[2][0] + m.mat[3][0];
+			res.y = v.x * m.mat[0][1] + v.y * m.mat[1][1] + v.z * m.mat[2][1] + m.mat[3][1];
+			res.z = v.x * m.mat[0][2] + v.y * m.mat[1][2] + v.z * m.mat[2][2] + m.mat[3][2];
+			float w = v.x * m.mat[0][3] + v.y * m.mat[1][3] + v.z * m.mat[2][3] + m.mat[3][3];
+
+
+			if(w != 0.f){
+				res.x /= w;
+				res.y /= w;
+				res.z /= w;
+			}
+		}
+
+		void createPerspectiveMatrix(){
+			float nearPlane{0.1f};
+			float farPlane{100.f};
+			float aspectRatio {static_cast<float>(screenHeight)/static_cast<float>(screenWidth)};
+			float fieldOfView{90.f};
+			float fieldOfViewRad{1.0f/std::tanf(fieldOfView * 0.5 * 3.14159f / 180)};
+
+			matrixProj.mat[0][0] = aspectRatio * fieldOfView;
+			matrixProj.mat[1][1] = fieldOfViewRad;
+			matrixProj.mat[2][2] =  farPlane / (farPlane - nearPlane);
+			matrixProj.mat[3][2] = (-farPlane * nearPlane) / (farPlane - nearPlane);
+			matrixProj.mat[2][3] = 1.0f;
+			matrixProj.mat[3][3] = 0.0f;
+		}
+
+		void drawCube(){
+			vertex.triangle =  {
+				// SOUTH
+				{ 0.0f, 0.0f, 0.0f,    0.0f, 1.0f, 0.0f,    1.0f, 1.0f, 0.0f  },
+				{ 0.0f, 0.0f, 0.0f,    1.0f, 1.0f, 0.0f,    1.0f, 0.0f, 0.0f  },
+
+				// EAST                                                      
+				{ 1.0f, 0.0f, 0.0f,    1.0f, 1.0f, 0.0f,    1.0f, 1.0f, 1.0f  },
+				{ 1.0f, 0.0f, 0.0f,    1.0f, 1.0f, 1.0f,    1.0f, 0.0f, 1.0f  },
+				//
+				// NORTH                                                     
+				{ 1.0f, 0.0f, 1.0f,    1.0f, 1.0f, 1.0f,    0.0f, 1.0f, 1.0f  },
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 1.0f, 1.0f,    0.0f, 0.0f, 1.0f  },
+				//
+				// 						// WEST                                                      
+				{ 0.0f, 0.0f, 1.0f,    0.0f, 1.0f, 1.0f,    0.0f, 1.0f, 0.0f  },
+				{ 0.0f, 0.0f, 1.0f,    0.0f, 1.0f, 0.0f,    0.0f, 0.0f, 0.0f  },
+				//
+				// TOP                                                       
+				{ 0.0f, 1.0f, 0.0f,    0.0f, 1.0f, 1.0f,    1.0f, 1.0f, 1.0f  },
+				{ 0.0f, 1.0f, 0.0f,    1.0f, 1.0f, 1.0f,    1.0f, 1.0f, 0.0f  },
+				
+				//Bottom
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 0.0f, 1.0f,    0.0f, 0.0f, 0.0f  },
+				{ 1.0f, 0.0f, 1.0f,    0.0f, 0.0f, 0.0f,    1.0f, 0.0f, 0.0f  },
+
+			};
+
+			for (auto tri : vertex.triangle) {
+				Points projPoints, translated;
+				translated.p[0].z = tri.p[0].z + 3.f;
+				translated.p[1].z = tri.p[1].z + 3.f;
+				translated.p[2].z = tri.p[2].z + 3.f;
+
+				
+
+				multiplyMat4Vec3(translated.p[0], projPoints.p[0], matrixProj);
+				multiplyMat4Vec3(translated.p[1], projPoints.p[1], matrixProj);
+				multiplyMat4Vec3(translated.p[2], projPoints.p[2], matrixProj);
+
+
+				projPoints.p[0].x += 1.f; projPoints.p[0].y += 1.f;
+				projPoints.p[1].x += 1.f; projPoints.p[1].y += 1.f;
+				projPoints.p[2].x += 1.f; projPoints.p[2].y += 1.f;
+
+				projPoints.p[0].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[0].y *= 0.5f * static_cast<float>(screenHeight);
+				projPoints.p[1].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[1].y *= 0.5f * static_cast<float>(screenHeight);
+				projPoints.p[2].x *= 0.5f * static_cast<float>(screenWidth);
+				projPoints.p[2].y *= 0.5f * static_cast<float>(screenHeight);
+
+				drawTriangle(projPoints.p[0].x, projPoints.p[0].y, projPoints.p[1].x, projPoints.p[1].y,
+						projPoints.p[2].x, projPoints.p[2].y,'o', 0x0009);
+
+			}
+		}
+
+
+
+
 
 
 	private:
@@ -239,6 +340,8 @@ class Console3d {
 		DWORD bytesWritten{};
 		SMALL_RECT windowRect{};
 		bool running{false};
+		Mesh vertex{};
+		Mat4 matrixProj{};
 };
 
 
