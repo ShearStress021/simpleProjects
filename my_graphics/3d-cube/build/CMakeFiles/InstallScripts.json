@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/projects/simpleProjects/my_graphics/3d-cube/build/cmake_install.cmake",
+		"D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/cmake_install.cmake",
+		"D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

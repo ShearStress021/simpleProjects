@@ -1,0 +1,3 @@
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir
