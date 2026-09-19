@@ -1,0 +1,12 @@
+D:/projects/simpleProjects/ModernVulkan/build/CMakeFiles/res.dir
+D:/projects/simpleProjects/ModernVulkan/build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/sdl3-build/CMakeFiles/SDL3-static.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/sdl3-build/CMakeFiles/SDL_uclibc.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/sdl3-build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/sdl3-build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-build/glm/CMakeFiles/glm.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir
