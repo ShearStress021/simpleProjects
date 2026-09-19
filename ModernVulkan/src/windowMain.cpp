@@ -24,3 +24,22 @@ void MainWindow::Error(const char* msg) const{
 	SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", msg,window);
 	
 }
+
+bool MainWindow::initVulkan(){
+
+	return true;
+}
+
+bool MainWindow::createVulkanInstance(){
+	vk::ApplicationInfo appInfo {
+		.pApplicationName = "vulkan + sdl3",
+		//.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO,
+		.apiVersion = VK_API_VERSION_1_4 ,
+	};
+
+
+
+
+
+	return true;
+}
