@@ -1,0 +1,3 @@
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-subbuild/CMakeFiles/glm-populate.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-subbuild/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/ModernVulkan/build/_deps/glm-subbuild/CMakeFiles/rebuild_cache.dir
