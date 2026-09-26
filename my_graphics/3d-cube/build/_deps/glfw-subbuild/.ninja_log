@@ -1,0 +1,21 @@
+# ninja log v6
+1	90	8115529422553924	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	6510c96fbd67c819
+1	90	8115529422553924	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	6510c96fbd67c819
+90	3022	8115529451870131	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	c9c038365d03db02
+90	3022	8115529451870131	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	c9c038365d03db02
+3022	3192	8115529451870131	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	f17bfee41382e83a
+3022	3192	8115529451870131	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	f17bfee41382e83a
+3193	3263	8115529454230200	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	50038ae818e876a2
+3193	3263	8115529454230200	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	50038ae818e876a2
+3263	3348	8115529455185404	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	65bf8762c1ec9e18
+3263	3348	8115529455185404	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	65bf8762c1ec9e18
+3349	3415	8115529455813315	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	44ee2d9668f06392
+3349	3415	8115529455813315	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	44ee2d9668f06392
+3415	3484	8115529456443464	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	74a9688049d82d07
+3415	3484	8115529456443464	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	74a9688049d82d07
+3484	3569	8115529457388627	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	22d8c91ed850cc5
+3484	3569	8115529457388627	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	22d8c91ed850cc5
+3569	3662	8115529458332219	CMakeFiles/glfw-populate-complete	29030ed2972edb91
+3569	3662	8115529458332219	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	29030ed2972edb91
+3569	3662	8115529458332219	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete	29030ed2972edb91
+3569	3662	8115529458332219	D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	29030ed2972edb91

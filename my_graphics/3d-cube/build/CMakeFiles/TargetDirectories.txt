@@ -1,0 +1,9 @@
+D:/projects/simpleProjects/my_graphics/3d-cube/build/CMakeFiles/res.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/CMakeFiles/rebuild_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
+D:/projects/simpleProjects/my_graphics/3d-cube/build/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir
