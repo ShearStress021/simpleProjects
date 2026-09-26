@@ -1,0 +1,21 @@
+# ninja log v6
+1	83	8121643180307502	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-mkdir	c29d5d0566de4ebe
+1	83	8121643180307502	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-mkdir	c29d5d0566de4ebe
+83	5438	8121643233911132	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-download	61e7bed113abf377
+83	5438	8121643233911132	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-download	61e7bed113abf377
+5438	5609	8121643233982209	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-update	387671be630a6a94
+5438	5609	8121643233982209	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-update	387671be630a6a94
+5610	5687	8121643236313651	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-patch	20f363341fc5be9f
+5610	5687	8121643236313651	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-patch	20f363341fc5be9f
+5688	5792	8121643237423750	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-configure	ee25a2421f2566d5
+5688	5792	8121643237423750	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-configure	ee25a2421f2566d5
+5792	5867	8121643238201537	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-build	140f412fb4c9ee45
+5792	5867	8121643238201537	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-build	140f412fb4c9ee45
+5868	5943	8121643238997031	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-install	1070b4a6a3027935
+5868	5943	8121643238997031	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-install	1070b4a6a3027935
+5943	6029	8121643239812448	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-test	5610a7f8dc7fcd12
+5943	6029	8121643239812448	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-test	5610a7f8dc7fcd12
+6029	6120	8121643240744406	CMakeFiles/sdl3-populate-complete	ffb4bff565018f7c
+6029	6120	8121643240744406	sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-done	ffb4bff565018f7c
+6029	6120	8121643240744406	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/CMakeFiles/sdl3-populate-complete	ffb4bff565018f7c
+6029	6120	8121643240744406	D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/sdl3-populate-done	ffb4bff565018f7c
