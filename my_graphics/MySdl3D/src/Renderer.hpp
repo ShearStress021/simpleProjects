@@ -26,8 +26,13 @@ class Renderer {
 		void showError(const std::string_view message);
 
 		// vulkan methods
+		// starter
 		bool initVulkan();
 		bool createInstance();
+		bool createSurface();
+
+		// devices
+		VkPhysicalDevice findPhysicalDevice();
 
 	private:
 		SDL_Window* window{};
@@ -37,6 +42,8 @@ class Renderer {
 
 		// vulkan variables
 		VkInstance instance{nullptr};
+		VkSurfaceKHR surface{nullptr};
+		VkPhysicalDevice physicalDevice{nullptr};
 
 };
 

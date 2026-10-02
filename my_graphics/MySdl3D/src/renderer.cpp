@@ -12,6 +12,16 @@ void Renderer::showError(const std::string_view message){
 
 
 void Renderer::cleanUp(){
+
+
+	if(surface){
+		vkDestroySurfaceKHR(instance,surface,nullptr);
+	}
+
+	if(instance){
+		vkDestroyInstance(instance, nullptr);
+	}
+
 	if(window){
 		SDL_DestroyWindow(window);
 	}
@@ -20,7 +30,10 @@ void Renderer::cleanUp(){
 
 
 bool Renderer::init(){
-	SDL_InitSubSystem(SDL_INIT_VIDEO);
+	if(!SDL_InitSubSystem(SDL_INIT_VIDEO)){
+		showError("SDL init Failed!!!");
+		return false;
+	}
 	window = SDL_CreateWindow("vulkan + SDL3",width, height,SDL_WINDOW_VULKAN | SDL_WINDOW_RESIZABLE);
 
 	if(!window){
@@ -51,13 +64,9 @@ void Renderer::run(){
 }
 
 bool Renderer::initVulkan(){
-	if(!createInstance()){
-		showError("vulkan Instance not created!!!");
+	if(!createInstance() && !createSurface()){
 		return false;
 	}
-
-
-
 	return true;
 }
 
@@ -65,7 +74,7 @@ bool Renderer::createInstance(){
 	VkApplicationInfo appInfo{
 		.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO,
 		.pApplicationName = "vulkan sdl",
-		.apiVersion = VK_VERSION_1_4,
+		.apiVersion = VK_API_VERSION_1_4,
 	};
 
 	uint32_t extCount  = 0;
@@ -83,8 +92,70 @@ bool Renderer::createInstance(){
 
 	};
 
-	if(vkCreateInstance(&createInfo,nullptr,&instance) != VK_SUCCESS) return false;
+	if(vkCreateInstance(&createInfo,nullptr,&instance) != VK_SUCCESS){
+		showError("vulkan Instance not created!!!");
+		return false;
+	}
+
 	return true;
+}
+
+bool Renderer::createSurface(){
+	if(!SDL_Vulkan_CreateSurface(window,instance,nullptr,&surface)){
+		showError("vulkan surface not created!!!");
+		return false;
+
+	} 
+	return true;
+}
+
+VkPhysicalDevice Renderer::findPhysicalDevice(){
+	uint32_t physicalDeviceCount {};
+	vkEnumeratePhysicalDevices(instance,&physicalDeviceCount,nullptr);
+	std::vector<VkPhysicalDevice> devices(physicalDeviceCount);
+
+	vkEnumeratePhysicalDevices(instance,&physicalDeviceCount,devices.data());
+
+	VkPhysicalDevice physicalDevice{nullptr};
+
+	if(physicalDeviceCount){
+		physicalDevice = devices[0];
+		
+		for(auto &phyDev: devices){
+			VkPhysicalDeviceProperties properties{};
+			vkGetPhysicalDeviceProperties(physicalDevice,&properties);
+
+			if(properties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU){
+				physicalDevice = phyDev;
+				break;
+			}
+				
+		}
+
+	}
+
+	uint32_t formatCount {};
+	vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice,surface,&formatCount,nullptr);
+	std::vector<VkSurfaceFormatKHR> surfaceFormats(formatCount);
+	vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice,surface,&formatCount,surfaceFormats.data());
+
+	bool formatSupported{false};
+	for(const VkSurfaceFormatKHR &surFormat: surfaceFormats){
+		if(surFormat.format == VK_FORMAT_B8G8R8A8_SRGB) {
+			formatSupported = true;
+			break;
+		}
+	}
+
+	if(!formatSupported){
+		showError("Requested swapchain!!!");
+		return nullptr;
+
+	}
+
+
+
+	return physicalDevice;
 }
 
 
