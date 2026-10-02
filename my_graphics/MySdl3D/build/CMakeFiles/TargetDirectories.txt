@@ -1,8 +1,0 @@
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/CMakeFiles/res.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/CMakeFiles/edit_cache.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/CMakeFiles/rebuild_cache.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/SDL3-static.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/SDL3_test.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/SDL_uclibc.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/edit_cache.dir
-/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/rebuild_cache.dir
