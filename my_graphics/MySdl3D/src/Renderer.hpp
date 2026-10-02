@@ -3,7 +3,12 @@
 
 #define VULKAN_HPP_NO_STRUCT_CONSTRUCTORS
 #include <vulkan/vulkan.h>
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_vulkan.h>
 #include <string>
+#include <cstdint>
+#include <vector>
+
 
 
 class Renderer {
@@ -14,16 +19,24 @@ class Renderer {
 
 
 		bool init();
-		bool run();
+		void run();
+		void cleanUp();
 	
 	private:
-		bool initVulkan();
 		void showError(const std::string_view message);
 
+		// vulkan methods
+		bool initVulkan();
+		bool createInstance();
+
 	private:
+		SDL_Window* window{};
+		uint16_t width{800};
+		uint16_t height{600};
+		bool running{true};
 
-		
-
+		// vulkan variables
+		VkInstance instance{nullptr};
 
 };
 
