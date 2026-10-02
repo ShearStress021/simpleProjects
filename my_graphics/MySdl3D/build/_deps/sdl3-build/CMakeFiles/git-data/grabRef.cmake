@@ -17,27 +17,27 @@
 
 set(HEAD_HASH)
 
-file(READ "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
+file(READ "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
 if(HEAD_CONTENTS MATCHES "ref")
 	# named branch
 	string(REPLACE "ref: " "" HEAD_REF "${HEAD_CONTENTS}")
-	if(EXISTS "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/${HEAD_REF}")
-		configure_file("D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/${HEAD_REF}" "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" COPYONLY)
+	if(EXISTS "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/${HEAD_REF}")
+		configure_file("/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/${HEAD_REF}" "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" COPYONLY)
 	else()
-		configure_file("D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/packed-refs" "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/packed-refs" COPYONLY)
-		file(READ "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/packed-refs" PACKED_REFS)
+		configure_file("/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/packed-refs" "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/packed-refs" COPYONLY)
+		file(READ "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/packed-refs" PACKED_REFS)
 		if(${PACKED_REFS} MATCHES "([0-9a-z]*) ${HEAD_REF}")
 			set(HEAD_HASH "${CMAKE_MATCH_1}")
 		endif()
 	endif()
 else()
 	# detached HEAD
-	configure_file("D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/HEAD" "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" COPYONLY)
+	configure_file("/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src/.git/HEAD" "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" COPYONLY)
 endif()
 
 if(NOT HEAD_HASH)
-	file(READ "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
+	file(READ "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
 	string(STRIP "${HEAD_HASH}" HEAD_HASH)
 endif()

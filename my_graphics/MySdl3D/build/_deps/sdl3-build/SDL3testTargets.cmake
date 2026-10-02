@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.30)
+cmake_policy(VERSION 2.8.3...3.29)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -59,7 +59,7 @@ set_target_properties(SDL3::SDL3_test PROPERTIES
 set_property(TARGET SDL3::SDL3_test APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(SDL3::SDL3_test PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/libSDL3_test.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/libSDL3_test.a"
   )
 
 # Make sure the targets which have been exported in some other

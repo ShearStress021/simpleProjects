@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/projects/simpleProjects/my_graphics/MySdl3D/build/cmake_install.cmake",
-		"D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

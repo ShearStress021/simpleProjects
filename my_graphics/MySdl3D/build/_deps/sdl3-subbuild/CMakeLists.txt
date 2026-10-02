@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file LICENSE.rst or https://cmake.org/licensing for details.
+# file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 4.0.1)
+cmake_minimum_required(VERSION 3.31.6)
 
 # Reject any attempt to use a toolchain file. We must not use one because
 # we could be downloading it here. If the CMAKE_TOOLCHAIN_FILE environment
@@ -18,18 +18,18 @@ project(sdl3-populate NONE)
 
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
-set(GIT_EXECUTABLE [==[C:/Program Files/Git/cmd/git.exe]==])
-set(GIT_VERSION_STRING [==[2.54.0.windows.1]==])
+set(GIT_EXECUTABLE [==[/usr/bin/git]==])
+set(GIT_VERSION_STRING [==[2.47.3]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[C:/Program Files/Git/cmd/git.exe;2.54.0.windows.1]==]
+  [==[/usr/bin/git;2.47.3]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(sdl3-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/libsdl-org/SDL.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "release-3.2.0" "GIT_SHALLOW" "TRUE"
-                    SOURCE_DIR          "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src"
-                    BINARY_DIR          "D:/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build"
+                    SOURCE_DIR          "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-src"
+                    BINARY_DIR          "/home/kanja/projects/simpleProjects/my_graphics/MySdl3D/build/_deps/sdl3-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
