@@ -39,6 +39,7 @@ class Renderer {
 		uint16_t width{800};
 		uint16_t height{600};
 		bool running{true};
+		constexpr static VkFormat swapchainFormat{VK_FORMAT_B8G8R8A8_SRGB};
 
 		// vulkan variables
 		VkInstance instance{nullptr};

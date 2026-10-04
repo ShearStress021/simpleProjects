@@ -64,9 +64,11 @@ void Renderer::run(){
 }
 
 bool Renderer::initVulkan(){
-	if(!createInstance() && !createSurface()){
+	if(!createInstance() && !createSurface() ){
 		return false;
 	}
+
+	if(physicalDevice = findPhysicalDevice(); !physicalDevice) return false;
 	return true;
 }
 
@@ -141,7 +143,7 @@ VkPhysicalDevice Renderer::findPhysicalDevice(){
 
 	bool formatSupported{false};
 	for(const VkSurfaceFormatKHR &surFormat: surfaceFormats){
-		if(surFormat.format == VK_FORMAT_B8G8R8A8_SRGB) {
+		if(surFormat.format == swapchainFormat) {
 			formatSupported = true;
 			break;
 		}
