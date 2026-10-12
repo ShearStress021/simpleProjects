@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24) # FetchContent with integrated find_package() is available in 3.24+
-project(sdl3-3d)
+project(vulkansdl)
 
 
 # Generate compile_commands.json
@@ -25,6 +25,14 @@ FetchContent_Declare(
 	)
 set(BUILD_EXAMPLES OFF CACHE INTERNAL "")
 FetchContent_MakeAvailable(SDL3)
+FetchContent_Declare(
+	VulkanMemoryAllocator	
+	GIT_REPOSITORY https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator 
+	GIT_TAG       v3.3.0 
+	GIT_SHALLOW TRUE
+
+	)
+FetchContent_MakeAvailable(VulkanMemoryAllocator)
 
 #
 
@@ -32,4 +40,38 @@ file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 add_executable(res ${SOURCES})
 #add_executable(res main.cpp)
 
-target_link_libraries(res PRIVATE Vulkan::Vulkan SDL3::SDL3)
+target_link_libraries(res PRIVATE Vulkan::Vulkan SDL3::SDL3-static GPUOpen::VulkanMemoryAllocator)
+
+
+#------ shader (compling with glslc)
+find_program(GLSLC glslc HINTS $ENV{VULKAN_SDK}/Bin REQUIRED)
+
+file(GLOB SHADER_SOURCES CONFIGURE_DEPENDS
+	${CMAKE_SOURCE_DIR}/shaders/*.vert
+	${CMAKE_SOURCE_DIR}/shaders/*.frag
+	)
+
+set(SPV_FILES "")
+foreach(SHADER ${SHADER_SOURCES})
+	get_filename_component(SHADER_NAME ${SHADER} NAME)
+	set(SPV ${CMAKE_SOURCE_DIR}/shaders/${SHADER_NAME}.spv)
+	add_custom_command(
+		OUTPUT ${SPV}
+		COMMAND ${GLSLC} ${SHADER} -o ${SPV}
+		DEPENDS ${SHADER}
+		COMMENT "Compiling ${SHADER_NAME}"
+		)
+	list(APPEND SPV_FILES ${SPV})
+endforeach()
+
+add_custom_target(shaders DEPENDS ${SPV_FILES})
+add_dependencies(res shaders)
+
+
+
+
+
+
+
+
+
