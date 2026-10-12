@@ -122,9 +122,9 @@ class Renderer {
 
 
 		// Image
-		VkImage dImage{VK_NULL_HANDLE};
-		VkImageView  dImageView{VK_NULL_HANDLE};
-		VmaAllocation dImageAllocation{VK_NULL_HANDLE};
+		VkImage depthImage{VK_NULL_HANDLE};
+		VkImageView  depthImageView{VK_NULL_HANDLE};
+		VmaAllocation depthImageAllocation{VK_NULL_HANDLE};
 
 		//Shader module
 		VkShaderModule vertShader{VK_NULL_HANDLE};

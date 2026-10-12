@@ -86,11 +86,20 @@ void Renderer::run(){
 		SDL_Event e{};
 		while (SDL_PollEvent(&e)){
 
-			if (e.type == SDL_EVENT_QUIT) running = false;
+			if (e.type == SDL_EVENT_QUIT) {
+				running = false;
+				break;
+			} 
+			else if(e.type == SDL_EVENT_WINDOW_RESIZED){
+				width = e.window.data1;
+				height = e.window.data2;
+				break;
+			}
+
 
 		}
 
-		display();
+//		display();
 	}
 
 }
@@ -355,25 +364,26 @@ bool Renderer::initializeVMA(){
 	}
 	return true;
 }
-
-bool Renderer::createSwapchain(uint32_t width, uint32_t height){
+bool Renderer::createSwapchain(uint32_t width, uint32_t height)
+{
 	swapchainWidth = width;
 	swapchainHeight = height;
 
 	VkSurfaceCapabilitiesKHR surfaceCaps{};
-
-	if(vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice,surface,&surfaceCaps) != VK_SUCCESS){
+	if (vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice, surface, &surfaceCaps) != VK_SUCCESS)
+	{
 		showError("Couldn't get the surface capabilities");
 		return false;
 	}
 
-	VkSwapchainCreateInfoKHR swapchainCreateInfo {
+	VkSwapchainCreateInfoKHR swapchainCreateInfo
+	{
 		.sType = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR,
 		.surface = surface,
 		.minImageCount = surfaceCaps.minImageCount,
 		.imageFormat = swapchainFormat,
-		.imageColorSpace = VK_COLOR_SPACE_SRGB_NONLINEAR_KHR,
-		.imageExtent{.width = swapchainWidth, .height = swapchainHeight},
+		.imageColorSpace = VK_COLORSPACE_SRGB_NONLINEAR_KHR,
+		.imageExtent{.width = swapchainWidth, .height = swapchainHeight },
 		.imageArrayLayers = 1,
 		.imageUsage = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT,
 		.preTransform = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR,
@@ -381,51 +391,62 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height){
 		.presentMode = VK_PRESENT_MODE_FIFO_KHR
 	};
 
-	if(vkCreateSwapchainKHR(device, &swapchainCreateInfo, nullptr, &swapchain) != VK_SUCCESS){
- 		showError("Failed to create swapchain!!");
+	if (vkCreateSwapchainKHR(device, &swapchainCreateInfo, nullptr, &swapchain) != VK_SUCCESS)
+	{
+		showError("Error creating swapchain");
 		return false;
 	}
-	uint32_t imageCount {};
-	vkGetSwapchainImagesKHR(device,swapchain,&imageCount,nullptr);
+
+	// grab the swapchain images
+	uint32_t imageCount = 0;
+	vkGetSwapchainImagesKHR(device, swapchain, &imageCount, nullptr);
 	swapchainImages.resize(imageCount);
-	vkGetSwapchainImagesKHR(device,swapchain,&imageCount,swapchainImages.data());
+	vkGetSwapchainImagesKHR(device, swapchain, &imageCount, swapchainImages.data());
 	swapchainImageViews.resize(imageCount);
 
-	for(size_t i{}; i < swapchainImages.size(); i++){
-
-		VkImageViewCreateInfo imageViewInfo {
+	// create the swapchain image views
+	for (size_t i = 0; i < swapchainImages.size(); ++i)
+	{
+		VkImageViewCreateInfo imgViewInfo
+		{
 			.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO,
 			.image = swapchainImages[i],
 			.viewType = VK_IMAGE_VIEW_TYPE_2D,
 			.format = swapchainFormat,
-			.subresourceRange {
+			.subresourceRange
+			{
 				.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT,
 				.levelCount = 1,
 				.layerCount = 1
 			}
 		};
 
-		if(vkCreateImageView(device, &imageViewInfo, nullptr, &swapchainImageViews[i]) != VK_SUCCESS){
-			showError("Error in creating swapchain image view");
+		if (vkCreateImageView(device, &imgViewInfo, nullptr, &swapchainImageViews[i]) != VK_SUCCESS)
+		{
+			showError("Error creating swapchain image view");
 			return false;
 		}
 	}
 
+	// semaphores used to signal render completion
 	renderCompleteSemaphores.resize(swapchainImages.size());
-	for(VkSemaphore &semaphore: renderCompleteSemaphores){
-		VkSemaphoreCreateInfo semaphoreInfo {.sType = VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO};
-		if(vkCreateSemaphore(device,&semaphoreInfo,nullptr,&semaphore) != VK_SUCCESS){
-			showError("Error creating the render complete semaphore!!!");
+	for (VkSemaphore &semaphore : renderCompleteSemaphores)
+	{
+		VkSemaphoreCreateInfo semaphoreInfo{ .sType = VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO };
+		if (vkCreateSemaphore(device, &semaphoreInfo, nullptr, &semaphore) != VK_SUCCESS)
+		{
+			showError("Error creating the render-complete semaphore");
 			return false;
 		}
-
 	}
 
-	VkImageCreateInfo depthCreateInfo {
+	// create depth image
+	VkImageCreateInfo depthCreateInfo
+	{
 		.sType = VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO,
 		.imageType = VK_IMAGE_TYPE_2D,
 		.format = depthFormat,
-		.extent{.width = swapchainWidth, .height = swapchainHeight, .depth = 1},
+		.extent{.width = swapchainWidth, .height = swapchainHeight, .depth = 1 },
 		.mipLevels = 1,
 		.arrayLayers = 1,
 		.samples = VK_SAMPLE_COUNT_1_BIT,
@@ -434,30 +455,35 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height){
 		.initialLayout = VK_IMAGE_LAYOUT_UNDEFINED
 	};
 
-	VmaAllocationCreateInfo allocInfo {
+	VmaAllocationCreateInfo allocInfo
+	{
 		.flags = VMA_ALLOCATION_CREATE_DEDICATED_MEMORY_BIT,
 		.usage = VMA_MEMORY_USAGE_AUTO
 	};
-
-	if(vmaCreateImage(vmaAllocator, &depthCreateInfo, &allocInfo, &dImage, &dImageAllocation, nullptr) != VK_SUCCESS){
-		showError("Error allocating depth image!!!");
+	if (vmaCreateImage(vmaAllocator, &depthCreateInfo, &allocInfo, &depthImage, &depthImageAllocation, nullptr) != VK_SUCCESS)
+	{
+		showError("Error allocating depth image");
 		return false;
 	}
 
-	VkImageViewCreateInfo deptImgViewInfo {
+	VkImageViewCreateInfo depthImgViewInfo
+	{
 		.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO,
-		.image = dImage,
+		.image = depthImage,
 		.viewType = VK_IMAGE_VIEW_TYPE_2D,
 		.format = depthFormat,
-		.subresourceRange{.aspectMask = VK_IMAGE_ASPECT_DEPTH_BIT, .levelCount = 1, .layerCount =1},
+		.subresourceRange{.aspectMask = VK_IMAGE_ASPECT_DEPTH_BIT, .levelCount = 1, .layerCount = 1}
 	};
-	
-	if(vkCreateImageView(device,&deptImgViewInfo,nullptr, &dImageView) != VK_SUCCESS){
- 		showError("Error in creating Depth");
+	if (vkCreateImageView(device, &depthImgViewInfo, nullptr, &depthImageView) != VK_SUCCESS)
+	{
+		showError("Error creating depth image view");
 		return false;
 	}
+
 	return true;
 }
+
+
 
 void Renderer::destroySwapchain(){
 	for(VkImageView swapchainImageView: swapchainImageViews){
@@ -474,10 +500,10 @@ void Renderer::destroySwapchain(){
 		vkDestroySwapchainKHR(device,swapchain,nullptr);
 		swapchain = nullptr;
 	}
-	if(dImageView){
-		vkDestroyImageView(device,dImageView,nullptr);
-		vmaDestroyImage(vmaAllocator,dImage,dImageAllocation);
-		dImageView = nullptr;
+	if(depthImageView){
+		vkDestroyImageView(device,depthImageView,nullptr);
+		vmaDestroyImage(vmaAllocator,depthImage,depthImageAllocation);
+		depthImageView = nullptr;
 	}
 
 
@@ -714,10 +740,11 @@ void Renderer::display(){
 	VkResult acquireResult = vkAcquireNextImageKHR(device,swapchain,UINT64_MAX,
 			imageAcquireSemaphore,VK_NULL_HANDLE,&imageIdx);
 	
-	if(acquireResult == VK_SUBOPTIMAL_KHR) requireSwapchainRecreate = true;
-	else if(acquireResult == VK_ERROR_OUT_OF_DATE_KHR) {
+	if(acquireResult == VK_ERROR_OUT_OF_DATE_KHR) {
 		requireSwapchainRecreate = true;
 		return ;
+	} else if(acquireResult == VK_SUBOPTIMAL_KHR){
+		requireSwapchainRecreate = true;
 	}
 
 	VkCommandBufferBeginInfo commandBufBegin {
@@ -755,7 +782,7 @@ void Renderer::display(){
 			.dstAccessMask = VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT,
 			.oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
 			.newLayout = VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL,
-			.image = dImage,
+			.image = depthImage,
 			.subresourceRange {
 				.aspectMask = VK_IMAGE_ASPECT_DEPTH_BIT,
 				.baseMipLevel = 0,
@@ -764,9 +791,6 @@ void Renderer::display(){
 				.layerCount = 1
 
 			}
-			
-
-
 		}
 		
 
@@ -790,7 +814,7 @@ void Renderer::display(){
 
 	VkRenderingAttachmentInfo depthAttachInfo {
 		.sType = VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO,
-		.imageView = dImageView,
+		.imageView = depthImageView,
 		.imageLayout = VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL,
 		.loadOp = VK_ATTACHMENT_LOAD_OP_CLEAR,
 		.storeOp = VK_ATTACHMENT_STORE_OP_DONT_CARE,
