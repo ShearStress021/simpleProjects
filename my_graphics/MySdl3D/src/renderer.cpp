@@ -99,7 +99,7 @@ void Renderer::run(){
 
 		}
 
-//		display();
+		display();
 	}
 
 }
@@ -136,7 +136,7 @@ bool Renderer::initVulkan(){
 		showError("Failded to created shader modules");
 		return false;
 	}
-	if(createSwapchain(width, height)){
+	if(!createSwapchain(width, height)){
 		showError("swapchain failed to be created!!!");
 		return false;
 	}
@@ -372,6 +372,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 	VkSurfaceCapabilitiesKHR surfaceCaps{};
 	if (vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice, surface, &surfaceCaps) != VK_SUCCESS)
 	{
+		std::cerr << "Couldn't get the surface" << '\n';
 		showError("Couldn't get the surface capabilities");
 		return false;
 	}
@@ -393,6 +394,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 
 	if (vkCreateSwapchainKHR(device, &swapchainCreateInfo, nullptr, &swapchain) != VK_SUCCESS)
 	{
+		std::cerr << "Error creating swapchain"<< '\n';
 		showError("Error creating swapchain");
 		return false;
 	}
@@ -423,6 +425,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 
 		if (vkCreateImageView(device, &imgViewInfo, nullptr, &swapchainImageViews[i]) != VK_SUCCESS)
 		{
+			std::cerr << "Error creating swapchain image view" << '\n';
 			showError("Error creating swapchain image view");
 			return false;
 		}
@@ -435,6 +438,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 		VkSemaphoreCreateInfo semaphoreInfo{ .sType = VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO };
 		if (vkCreateSemaphore(device, &semaphoreInfo, nullptr, &semaphore) != VK_SUCCESS)
 		{
+			std::cerr << "Error creating the render-complete semaphore" << '\n';
 			showError("Error creating the render-complete semaphore");
 			return false;
 		}
@@ -462,6 +466,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 	};
 	if (vmaCreateImage(vmaAllocator, &depthCreateInfo, &allocInfo, &depthImage, &depthImageAllocation, nullptr) != VK_SUCCESS)
 	{
+		std::cerr << "Error allocating depth image" << '\n';
 		showError("Error allocating depth image");
 		return false;
 	}
@@ -476,6 +481,7 @@ bool Renderer::createSwapchain(uint32_t width, uint32_t height)
 	};
 	if (vkCreateImageView(device, &depthImgViewInfo, nullptr, &depthImageView) != VK_SUCCESS)
 	{
+		std::cerr << "Error creating depth image view" << '\n';
 		showError("Error creating depth image view");
 		return false;
 	}
@@ -861,6 +867,7 @@ void Renderer::display(){
 		.dstAccessMask = 0,
 		.oldLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL,
 		.newLayout = VK_IMAGE_LAYOUT_PRESENT_SRC_KHR,
+		.image = swapchainImages[imageIdx],
 		.subresourceRange {
 			.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT,
 			.baseMipLevel = 0,
