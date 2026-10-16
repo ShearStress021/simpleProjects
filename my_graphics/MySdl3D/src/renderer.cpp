@@ -158,6 +158,63 @@ bool Renderer::initVulkan(){
 	return true;
 }
 
+void Renderer::loadData(){
+
+	constexpr size_t vertexBufferBytes{64 * 1024 * 1024};
+	constexpr size_t indexBufferBytes{32 * 1024 * 1024};
+	constexpr size_t totalVerts = vertexBufferBytes / sizeof(Vertex);
+	constexpr size_t totalIndices {indexBufferBytes / sizeof(uint32_t)};
+
+	vertices.resize(totalVerts);
+	indices.resize(totalIndices);
+
+	uint32_t whitePixelData{0xFFFFFFFF}; //RGBA
+	Image whitePixel {
+		.width = 1,
+		.height = 1,
+		.channels = 4,
+		.data = reinterpret_cast<unsigned char *>(&whitePixelData)
+	};
+
+	VkCommandBuffer whiteImgCmdBuff{startTransientCommandBuffer()};
+
+
+
+
+
+
+}
+
+VkCommandBuffer Renderer::startTransientCommandBuffer(){
+	VkCommandBufferAllocateInfo cmdAllocInfo {
+		.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO,
+		.commandPool = commandPool,
+		.level = VK_COMMAND_BUFFER_LEVEL_PRIMARY,
+		.commandBufferCount = 1
+		
+	};
+
+	VkCommandBuffer commandBuffer{nullptr};
+
+	if(vkAllocateCommandBuffers(device, &cmdAllocInfo, &commandBuffer) != VK_SUCCESS){
+		showError("Unable to allocate Command Buffer");
+		return nullptr;
+	}
+
+	VkCommandBufferBeginInfo cmdBeginInfo{
+		.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO,
+		.flags = VK_COMMAND_BUFFER_USAGE_ONE_TIME_SUBMIT_BIT
+	};
+
+	if(vkBeginCommandBuffer(commandBuffer, &cmdBeginInfo) != VK_SUCCESS){
+		showError("Unable to begin command buffer!!!!");
+		vkFreeCommandBuffers(device,commandPool,1,&commandBuffer);
+		return nullptr;
+	}
+	return commandBuffer;
+}
+
+
 bool Renderer::createInstance(){
 	VkApplicationInfo appInfo{
 		.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO,
@@ -896,7 +953,7 @@ void Renderer::display(){
 		{
 			.sType = VK_STRUCTURE_TYPE_SEMAPHORE_SUBMIT_INFO,
 			.semaphore = renderCompleteSemaphores[imageIdx],
-			.stageMask = VK_PIPELINE_STAGE_2_COLOR_ATTACHMENT_OUTPUT_BIT
+			.stageMask = VK_PIPELINE_STAGE_2_ALL_GRAPHICS_BIT
 		},
 		{
 			.sType = VK_STRUCTURE_TYPE_SEMAPHORE_SUBMIT_INFO,
@@ -911,7 +968,7 @@ void Renderer::display(){
 	};
 
 	VkSubmitInfo2 submitInfo {
-		.sType = VK_STRUCTURE_TYPE_SUBMIT_INFO,
+		.sType = VK_STRUCTURE_TYPE_SUBMIT_INFO_2,
 		.waitSemaphoreInfoCount = 1,
 		.pWaitSemaphoreInfos = &imageAcquireWaitInfo,
 		.commandBufferInfoCount = 1,
@@ -933,6 +990,27 @@ void Renderer::display(){
 	vkQueuePresentKHR(gfxQueue,&presentInfo);
 }
 
+std::pair<uint32_t, GPUBuffer> Renderer::createImage(VkCommandBuffer commandBuffer, unsigned char *imageData, 
+		uint32_t width, uint32_t height, int channels){
+
+	VkFormat imageFormat = VK_FORMAT_R8G8B8A8_SRGB;
+	VkImageCreateInfo imageInfo {
+		.sType = VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO,
+		.imageType = VK_IMAGE_TYPE_2D,
+		.format = imageFormat,
+		.extent {.width = width, .height = height,.depth=1},
+		.mipLevels = 1,
+		.arrayLayers = 1,
+		.samples = VK_SAMPLE_COUNT_1_BIT,
+		.tiling = VK_IMAGE_TILING_OPTIMAL,
+		.usage = VK_IMAGE_USAGE_TRANSFER_DST_BIT | VK_IMAGE_USAGE_SAMPLED_BIT,
+		.initialLayout = VK_IMAGE_LAYOUT_UNDEFINED
+	};
+	VmaAllocationCreateInfo allocInfo { .usage = VMA_MEMORY_USAGE_AUTO};
+	GPUImage gpuImage{};
+
+
+}
 
 
 

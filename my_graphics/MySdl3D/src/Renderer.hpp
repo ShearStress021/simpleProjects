@@ -5,7 +5,10 @@
 #include <vulkan/vulkan.h>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_vulkan.h>
-#include <shaderc/shaderc.hpp>
+
+
+
+#include "resources.h"
 
 #include <string>
 #include <cstdint>
@@ -27,6 +30,20 @@ struct FrameResources {
 	VkSemaphore imageAcquiredSemaphore{VK_NULL_HANDLE};
 
 };
+
+struct GPUImage {
+	VkImage image{nullptr};
+	VkImageView imageView{nullptr};
+	VmaAllocation allocation{nullptr};
+};
+
+struct GPUBuffer {
+	VkBuffer vkBuffer{nullptr};
+	uint64_t deviceAddress{};
+	VmaAllocation allocation{nullptr};
+};
+
+
 class Renderer {
 	
 	public:
@@ -36,6 +53,7 @@ class Renderer {
 
 		bool init();
 		void run();
+		void loadData();
 		void cleanUp();
 	
 	private:
@@ -69,6 +87,16 @@ class Renderer {
 		bool createSyncResources();
 		bool createCommandBuffers();
 
+		//command buffer
+		VkCommandBuffer startTransientCommandBuffer();
+		void submitTransientCommandBuffer(VkCommandBuffer commandBuffer);
+
+
+		// image buffer
+		std::pair<uint32_t,GPUBuffer> createImage(VkCommandBuffer commandBuffer, 
+				unsigned char *imageData,uint32_t width, uint32_t height, int channels);
+
+
 
 		void display();
 
@@ -98,6 +126,13 @@ class Renderer {
 		uint64_t frameIdx{};
 		uint64_t nextSignalValue{MaxFramesInFlight + 1};
 
+		//cpu resources
+		std::vector<Vertex> vertices{};
+		std::vector<uint32_t> indices{};
+
+		size_t vertOffset{};
+		size_t idxOffset{};
+
 		// vulkan variables
 		VkInstance instance{VK_NULL_HANDLE};
 		VkSurfaceKHR surface{VK_NULL_HANDLE};
@@ -107,6 +142,7 @@ class Renderer {
 		//queue -s
 		uint32_t gfxQueueFamIdx{UINT32_MAX};
 		VkQueue gfxQueue{VK_NULL_HANDLE};
+		VkCommandPool commandPool{VK_NULL_HANDLE};
 
 		// Allocator
 		VmaAllocator vmaAllocator{VK_NULL_HANDLE};
