@@ -5,7 +5,9 @@ int main(int argc, char* argv[])
 {
 	Renderer app{};
 	if(app.init()){
+		app.loadData();
 		app.run();
+
 	}
 }
 

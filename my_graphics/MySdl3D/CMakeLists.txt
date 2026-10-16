@@ -25,6 +25,15 @@ FetchContent_Declare(
 	)
 set(BUILD_EXAMPLES OFF CACHE INTERNAL "")
 FetchContent_MakeAvailable(SDL3)
+
+FetchContent_Declare(
+	glm
+	GIT_REPOSITORY https://github.com/g-truc/glm.git
+	GIT_TAG 1.0.1
+	GIT_SHALLOW TRUE
+	)
+
+FetchContent_MakeAvailable(glm)
 FetchContent_Declare(
 	VulkanMemoryAllocator	
 	GIT_REPOSITORY https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator 
@@ -40,7 +49,7 @@ file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 add_executable(res ${SOURCES})
 #add_executable(res main.cpp)
 
-target_link_libraries(res PRIVATE Vulkan::Vulkan SDL3::SDL3-static GPUOpen::VulkanMemoryAllocator)
+target_link_libraries(res PRIVATE Vulkan::Vulkan SDL3::SDL3-static glm::glm GPUOpen::VulkanMemoryAllocator)
 
 
 #------ shader (compling with glslc)
