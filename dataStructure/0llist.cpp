@@ -1,14 +1,6 @@
 #include <iostream>
 #include <ranges>
 #include <vector>
-
-
-
-
-
-
-
-
 template<typename T>
 class LinkedList {
 	private:
