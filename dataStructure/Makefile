@@ -4,10 +4,10 @@ target ?= main.cpp
 all: run
 
 res:$(target)
-	g++ --std=c++20 $< -o $@
+	g++ --std=c++23 $< -o build/$@ -lstdc++exp
 run: clean res
-	./res $(target)
+	.build/res 
 clean:
-	del res*
+	del \Q build\res*
 
 .PHONY: all res clean
