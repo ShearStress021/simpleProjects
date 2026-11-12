@@ -16,7 +16,7 @@ class LinkedList {
 			Node * newNode = new Node(val);
 			newNode->next = head;
 			head = newNode;
-			delete newNode;
+//			delete newNode;
 		}
 
 		void insertNodeAtLast(const T& val){
@@ -31,7 +31,6 @@ class LinkedList {
 				head = head->next;
 			}
 			head->next = newNode;
-			delete newNode;
 		}
 
 		void printLL(){
