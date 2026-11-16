@@ -27,7 +27,7 @@ int main(void){
 	matPrint(b);
 
 //	matMultiply(m, a, b);
-	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
+//	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
 
 
 
@@ -36,7 +36,7 @@ int main(void){
 
 	//matPrint(m);
 	//matPrint(a);
-	matPrint(b);
+//	matPrint(b);
 	return 0;
 }
 

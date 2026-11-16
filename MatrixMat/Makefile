@@ -2,39 +2,41 @@
 CFLAGS = -Wall -Wextra
 
 
-
 ifeq ($(OS), Windows_NT)
 	RM = del /Q
 	RUN = res.exe
-	PATH = $(subst /,\,$1)
-	EXE = res.exe
+	OBJS_PATH = src\*.o 
+	EXE = exe
 else
 	RM = rm -f
 	RUN = ./res
 	SLASH = /
-	PATH = $1
-	EXE = res
+	OBJS_PATH = src/*.o 
+	EXE = 
 endif
 
 SRC = $(wildcard src/*.c)
 OBJS = $(SRC:.c=.o)
+TARGET = res$(EXE)
 
+
+all: $(TARGET)
 
 
 %.o: %.c
 	gcc ${CFLAGS} -c $< -o $@
 
 
-res: $(OBJS)
-	gcc $^ -o $(EXE)
+$(TARGET): $(OBJS)
+	gcc $^ -o $@
 
 
-run: res
+run: $(TARGET) 
 	$(RUN)
 
 
 
 clean:
-	$(RM) src\*.o res.*
+	$(RM) $(OBJS_PATH) res.*
 
 .PHONY: clean run 
