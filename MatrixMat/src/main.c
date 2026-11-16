@@ -8,37 +8,35 @@
 int main(void){
 
 
-	Mat m = {
+	Mat1 m = {
 		.rows = 2, .cols = 2, 
 		.data = (float[]){1,2,3,4},
 
 	};	
-	Mat a = {
+	Mat1 a = {
 		.rows = 2, .cols = 2, 
-		.data = (float[]){5,4,6,8},
+		.data = (float[]){2,3,4,5},
 
 	};
 
-	Mat b = {
+	Mat1 b = {
 		.rows = 2, .cols = 2, 
 		.data = (float[]){0},
 
 	};
+	matPrint(b);
+
+	matMultiply(m, a, b);
+	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
 
 
 
-	for(size_t i = 0; i < m.rows; ++i){
-		for(size_t k = 0; k < m.rows; ++k){
-			for(size_t j = 0; j < a.cols; ++j){
-				printf("%f\n", a.data[i * a.cols + k]);
-			}
-		}
-	}
+
 
 
 	//matPrint(m);
 	//matPrint(a);
-	//matPrint(b);
+	matPrint(b);
 	return 0;
 }
 
