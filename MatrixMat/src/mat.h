@@ -18,6 +18,6 @@ typedef struct {
 } Mat2;
 
 
-void matPrint(Mat m);
-void matMultiply(Mat* a, Mat *b, Mat *res);
+void matPrint(Mat1 m);
+void matMultiply(Mat1 a, Mat1 b, Mat1 res);
 #endif
