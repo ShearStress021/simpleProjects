@@ -2,11 +2,22 @@
 CFLAGS = -Wall -Wextra
 
 
+
+ifeq ($(OS), Windows_NT)
+	RM = del /Q
+	RUN = res.exe
+	PATH = $(subst /,\,$1)
+	EXE = res.exe
+else
+	RM = rm -f
+	RUN = ./res
+	SLASH = /
+	PATH = $1
+	EXE = res
+endif
+
 SRC = $(wildcard src/*.c)
 OBJS = $(SRC:.c=.o)
-
-
-
 
 
 
@@ -14,16 +25,16 @@ OBJS = $(SRC:.c=.o)
 	gcc ${CFLAGS} -c $< -o $@
 
 
-res.exe: $(OBJS)
-	gcc $^ -o $@
+res: $(OBJS)
+	gcc $^ -o $(EXE)
 
 
-run: clean res.exe
-	res.exe
+run: res
+	$(RUN)
 
 
 
 clean:
-	del /Q src\*.o res.*
+	$(RM) src\*.o res.*
 
 .PHONY: clean run 
