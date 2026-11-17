@@ -1,5 +1,6 @@
 #ifndef MAT_H
 #define MAT_H
+#include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 
