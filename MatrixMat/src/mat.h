@@ -1,6 +1,7 @@
 #ifndef MAT_H
 #define MAT_H
 #include <stdint.h>
+#include <stdlib.h>
 
 typedef struct {
 	size_t rows, cols;
