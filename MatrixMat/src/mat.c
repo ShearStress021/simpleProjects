@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "mat.h"
 #include <string.h>
 
@@ -21,7 +20,7 @@ void matMultiply(Mat1 a, Mat1 b, Mat1 res){
 void matPrint(Mat1 m){
 	for(size_t i = 0; i < m.rows; ++i){
 		for(size_t j=0; j < m.cols; ++j){
-			printf(" %f", m.data[i * m.cols + j]);
+			printf(" %6.2f", m.data[i * m.cols + j]);
 		}
 		printf("\n");
 	}
