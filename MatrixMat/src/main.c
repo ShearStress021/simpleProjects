@@ -26,8 +26,8 @@ int main(void){
 	};
 	matPrint(b);
 
-//	matMultiply(m, a, b);
-	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
+	matMultiply(m, a, b);
+//	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
 
 
 
