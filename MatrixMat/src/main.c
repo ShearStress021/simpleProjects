@@ -11,22 +11,20 @@ int main(void){
 	Mat1 m = {
 		.rows = 2, .cols = 2, 
 		.data = (float[]){1,2,3,4},
-
 	};	
 	Mat1 a = {
 		.rows = 2, .cols = 2, 
 		.data = (float[]){2,3,4,5},
-
 	};
 
-	Mat1 b = {
+	Mat1 out = {
 		.rows = 2, .cols = 2, 
-		.data = (float[]){0},
+		.data = (float[4]){0},
 
 	};
-	matPrint(b);
+	matPrint(out);
 
-	matMultiply(m, a, b);
+	matMultiply(m, a, out);
 //	printf("%zu\n",b.rows * b.cols *sizeof *b.data);
 
 
@@ -36,7 +34,7 @@ int main(void){
 
 	//matPrint(m);
 	//matPrint(a);
-	matPrint(b);
+	matPrint(out);
 	return 0;
 }
 
