@@ -6,7 +6,7 @@ ifeq ($(OS), Windows_NT)
 	RM = del /Q
 	RUN = res.exe
 	OBJS_PATH = src\*.o 
-	EXE = exe
+	EXE = .exe
 else
 	RM = rm -f
 	RUN = ./res
@@ -31,12 +31,12 @@ $(TARGET): $(OBJS)
 	gcc $^ -o $@
 
 
-run: $(TARGET) 
-	$(RUN)
+run: clean $(TARGET) 
+	$(RUN)	
 
 
 
 clean:
-	$(RM) $(OBJS_PATH) res.*
+	$(RM) $(OBJS_PATH) res*
 
 .PHONY: clean run 
